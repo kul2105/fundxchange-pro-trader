@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" />
+  <xs:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+  <xs:element name="GetIndicesList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndicesListResult" nillable="true" type="q1:OperationResultOfArrayOfIndexDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesListAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesListAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndicesListAsProtoResult" nillable="true" type="q2:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitiesListResult" nillable="true" type="q3:OperationResultOfArrayOfEquityDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesListAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesListAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitiesListAsProtoResult" nillable="true" type="q4:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesSnapshot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesSnapshotResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitiesSnapshotResult" nillable="true" type="q5:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesSnapshotAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitiesSnapshotAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitiesSnapshotAsProtoResult" nillable="true" type="q6:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitySnapshotResult" nillable="true" type="q7:OperationResultOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitySnapshotAsProtoResult" nillable="true" type="q8:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotForISINs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="isins" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotForISINsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitySnapshotForISINsResult" nillable="true" type="q10:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotForISINsAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="isins" nillable="true" type="q11:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquitySnapshotForISINsAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquitySnapshotForISINsAsProtoResult" nillable="true" type="q12:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q13:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinnersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetWinnersResult" nillable="true" type="q14:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinnersAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q15:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinnersAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetWinnersAsProtoResult" nillable="true" type="q16:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLosers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q17:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLosersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetLosersResult" nillable="true" type="q18:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLosersAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q19:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLosersAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetLosersAsProtoResult" nillable="true" type="q20:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q21:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop20EquitiesByValueResult" nillable="true" type="q22:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByValueAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q23:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByValueAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop20EquitiesByValueAsProtoResult" nillable="true" type="q24:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByVolume">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q25:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByVolumeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop20EquitiesByVolumeResult" nillable="true" type="q26:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByVolumeAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="instrumentTypes" nillable="true" type="q27:ArrayOfInstrumentTypeDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20EquitiesByVolumeAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop20EquitiesByVolumeAsProtoResult" nillable="true" type="q28:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderbookAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderbookAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetOrderbookAsProtoResult" nillable="true" type="q29:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTradesResult" nillable="true" type="q30:OperationResultOfArrayOfTradeDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradesAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradesAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTradesAsProtoResult" nillable="true" type="q31:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradesForPageSizeAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradesForPageSizeAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTradesForPageSizeAsProtoResult" nillable="true" type="q32:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphots">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphotsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndicesSnaphotsResult" nillable="true" type="q33:OperationResultOfArrayOfIndexValueDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphotsAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphotsAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndicesSnaphotsAsProtoResult" nillable="true" type="q34:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="indexIdentifier" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphotResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndicesSnaphotResult" nillable="true" type="q35:OperationResultOfIndexValueDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphotAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="indexIdentifier" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndicesSnaphotAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndicesSnaphotAsProtoResult" nillable="true" type="q36:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop40Result" nillable="true" type="q37:OperationResultOfArrayOfEquityDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40AsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40AsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop40AsProtoResult" nillable="true" type="q38:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquityCandlesticks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numberOfCandles" type="xs:int" />
+        <xs:element minOccurs="0" name="candleInterval" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquityCandlesticksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquityCandlesticksResult" nillable="true" type="q39:OperationResultOfArrayOfEquityCandlestickJLlf0r_PD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquityCandlesticksAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numberOfCandles" type="xs:int" />
+        <xs:element minOccurs="0" name="candleInterval" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquityCandlesticksAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquityCandlesticksAsProtoResult" nillable="true" type="q40:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexCandlesticks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="identifier" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numberOfCandles" type="xs:int" />
+        <xs:element minOccurs="0" name="candleInterval" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexCandlesticksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndexCandlesticksResult" nillable="true" type="q41:OperationResultOfArrayOfIndexCandlestickJLlf0r_PD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexCandlesticksAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="identifier" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numberOfCandles" type="xs:int" />
+        <xs:element minOccurs="0" name="candleInterval" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexCandlesticksAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndexCandlesticksAsProtoResult" nillable="true" type="q42:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40EquitiesStatistics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40EquitiesStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop40EquitiesStatisticsResult" nillable="true" type="q43:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40EquitiesStatisticsAsProto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="productId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vendorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchangeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40EquitiesStatisticsAsProtoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetTop40EquitiesStatisticsAsProtoResult" nillable="true" type="q44:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

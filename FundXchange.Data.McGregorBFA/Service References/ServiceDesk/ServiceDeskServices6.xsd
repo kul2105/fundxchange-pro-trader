@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Util.Model.Results" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+  <xs:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" />
+  <xs:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.Entities" />
+  <xs:complexType name="OperationResultOfArrayOfIndexDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfIndexDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q1:ArrayOfIndexDto" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q2:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfIndexDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfArrayOfIndexDtogJDp_PiJh" />
+  <xs:complexType name="ErrorResultList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorList" nillable="true" type="tns:ArrayOfError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorResultList" nillable="true" type="tns:ErrorResultList" />
+  <xs:complexType name="ArrayOfError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Error" nillable="true" type="tns:Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfError" nillable="true" type="tns:ArrayOfError" />
+  <xs:complexType name="Error">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Error" nillable="true" type="tns:Error" />
+  <xs:complexType name="OperationResultOfbase64Binary">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="base64Binary" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:base64Binary" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q3:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfbase64Binary" nillable="true" type="tns:OperationResultOfbase64Binary" />
+  <xs:complexType name="OperationResultOfArrayOfEquityDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfEquityDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q4:ArrayOfEquityDto" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q5:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfEquityDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfArrayOfEquityDtogJDp_PiJh" />
+  <xs:complexType name="OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfEquityDetailsDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q6:ArrayOfEquityDetailsDto" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q7:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh" />
+  <xs:complexType name="OperationResultOfEquityDetailsDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EquityDetailsDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q8:EquityDetailsDto" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q9:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfEquityDetailsDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfEquityDetailsDtogJDp_PiJh" />
+  <xs:complexType name="OperationResultOfArrayOfTradeDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfTradeDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q10:ArrayOfTradeDto" />
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q11:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfTradeDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfArrayOfTradeDtogJDp_PiJh" />
+  <xs:complexType name="OperationResultOfArrayOfIndexValueDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfIndexValueDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q12:ArrayOfIndexValueDto" />
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q13:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfIndexValueDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfArrayOfIndexValueDtogJDp_PiJh" />
+  <xs:complexType name="OperationResultOfIndexValueDtogJDp_PiJh">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="IndexValueDto" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" minOccurs="0" name="Result" nillable="true" type="q14:IndexValueDto" />
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q15:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfIndexValueDtogJDp_PiJh" nillable="true" type="tns:OperationResultOfIndexValueDtogJDp_PiJh" />
+  <xs:complexType name="OperationResultOfArrayOfEquityCandlestickJLlf0r_PD">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfEquityCandlestick" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q16:ArrayOfEquityCandlestick" />
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q17:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfEquityCandlestickJLlf0r_PD" nillable="true" type="tns:OperationResultOfArrayOfEquityCandlestickJLlf0r_PD" />
+  <xs:complexType name="OperationResultOfArrayOfIndexCandlestickJLlf0r_PD">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="OperationResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfIndexCandlestick" Namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorResult" nillable="true" type="tns:ErrorResultList" />
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.Entities" minOccurs="0" name="Result" nillable="true" type="q18:ArrayOfIndexCandlestick" />
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" minOccurs="0" name="Status" type="q19:ResultStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResultOfArrayOfIndexCandlestickJLlf0r_PD" nillable="true" type="tns:OperationResultOfArrayOfIndexCandlestickJLlf0r_PD" />
+</xs:schema>

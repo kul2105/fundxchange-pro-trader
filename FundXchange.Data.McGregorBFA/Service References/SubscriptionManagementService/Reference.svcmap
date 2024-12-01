@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e6bcfa63-1767-42ac-bbf2-bcd4d087b44f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www6.fin24.com:25002/SubscriptionManagementService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SubscriptionManagementService5.xsd" MetadataType="Schema" ID="a5f39436-fee0-42fe-acc8-1f84d85737d6" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd1" />
+    <MetadataFile FileName="SubscriptionManagementService51.xsd" MetadataType="Schema" ID="cec9dbca-cbd6-42fa-9f57-6aca0127af4a" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd4" />
+    <MetadataFile FileName="SubscriptionManagementService52.xsd" MetadataType="Schema" ID="abd597c4-debe-47d5-a4ae-94e27fc4adfb" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd2" />
+    <MetadataFile FileName="SubscriptionManagementService53.xsd" MetadataType="Schema" ID="a46d9249-e1d5-4b1f-b341-d3d67a51b40f" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd3" />
+    <MetadataFile FileName="SubscriptionManagementService1.wsdl" MetadataType="Wsdl" ID="566fbaaa-b013-410c-ac29-098aeb0e3c37" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?wsdl" />
+    <MetadataFile FileName="SubscriptionManagementService54.xsd" MetadataType="Schema" ID="c5c7d1c9-50e9-44c8-a608-115d8da22f98" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd0" />
+    <MetadataFile FileName="SubscriptionManagementService1.disco" MetadataType="Disco" ID="4552b413-5aa5-4e53-ae4c-06fe88c0c2f8" SourceId="1" SourceUrl="http://www6.fin24.com:25002/SubscriptionManagementService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

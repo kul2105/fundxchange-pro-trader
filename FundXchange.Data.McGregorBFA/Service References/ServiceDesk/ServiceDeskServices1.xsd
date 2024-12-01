@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfIndexDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IndexDto" nillable="true" type="tns:IndexDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIndexDto" nillable="true" type="tns:ArrayOfIndexDto" />
+  <xs:complexType name="IndexDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Alpha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExchangeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IndexDto" nillable="true" type="tns:IndexDto" />
+  <xs:complexType name="ArrayOfEquityDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquityDto" nillable="true" type="tns:EquityDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquityDto" nillable="true" type="tns:ArrayOfEquityDto" />
+  <xs:complexType name="EquityDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstrumentType" type="tns:InstrumentTypeDto" />
+      <xs:element minOccurs="0" name="ExchangeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquityDto" nillable="true" type="tns:EquityDto" />
+  <xs:simpleType name="InstrumentTypeDto">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Automated_Input_Facility" />
+      <xs:enumeration value="Allotment_Letters" />
+      <xs:enumeration value="Bonds" />
+      <xs:enumeration value="Bulldogs" />
+      <xs:enumeration value="Convertible" />
+      <xs:enumeration value="Covered_Warrants" />
+      <xs:enumeration value="Debentures" />
+      <xs:enumeration value="UK_Equity" />
+      <xs:enumeration value="Depository_Receipt" />
+      <xs:enumeration value="Equity_Warrant" />
+      <xs:enumeration value="Foreign_Government_Bonds" />
+      <xs:enumeration value="Fully_Paid_Letter" />
+      <xs:enumeration value="Foreign_Unit_Trusts" />
+      <xs:enumeration value="Gilts" />
+      <xs:enumeration value="Gilt_Warrants" />
+      <xs:enumeration value="International_Equity" />
+      <xs:enumeration value="Investment_Product" />
+      <xs:enumeration value="Kruger_Rand" />
+      <xs:enumeration value="Loan_Stock" />
+      <xs:enumeration value="Medium_Term_Loans" />
+      <xs:enumeration value="Miscellaneous_Warrants" />
+      <xs:enumeration value="Nil_Paid_Letter" />
+      <xs:enumeration value="Ordinary_Share" />
+      <xs:enumeration value="Partly_paid_letter" />
+      <xs:enumeration value="Portfolio_Notification" />
+      <xs:enumeration value="Preference_Shares" />
+      <xs:enumeration value="Package_Units" />
+      <xs:enumeration value="Rights" />
+      <xs:enumeration value="Structured_Products" />
+      <xs:enumeration value="Stapled_Unit" />
+      <xs:enumeration value="Tradable_Fund" />
+      <xs:enumeration value="Unit_Trust" />
+      <xs:enumeration value="Warrants" />
+      <xs:enumeration value="Zero_Coupon_Bonds" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="InstrumentTypeDto" nillable="true" type="tns:InstrumentTypeDto" />
+  <xs:complexType name="ArrayOfEquityDetailsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquityDetailsDto" nillable="true" type="tns:EquityDetailsDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquityDetailsDto" nillable="true" type="tns:ArrayOfEquityDetailsDto" />
+  <xs:complexType name="EquityDetailsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryOfRegister" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketSegmentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketSectorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VolumeOrdersAtBestBidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="VolumeOrdersAtBestOfferPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="NumberOrdersAtBestBidPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOrdersAtBestOfferPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="BidMarketOrdersIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfferMarketOrdersIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BestBidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="BestOfferPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="MidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="BestPriceStatusIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuoteDateAsTicks" type="xs:long" />
+      <xs:element minOccurs="0" name="ClosingBidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="ClosingOfferPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="ClosingMidTradePrice" type="xs:long" />
+      <xs:element minOccurs="0" name="LastTrade_TradeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastTrade_TradePrice" type="xs:long" />
+      <xs:element minOccurs="0" name="LastTrade_TradeSize" type="xs:long" />
+      <xs:element minOccurs="0" name="LastTrade_TradeDateAsTicks" type="xs:long" />
+      <xs:element minOccurs="0" name="LastTrade_TradeTypeIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastTrade_BargainConditionIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastTrade_TradeTimeIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastTrade_ConvertedPriceIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastTrade_SequenceNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="DailyValue" type="xs:long" />
+      <xs:element minOccurs="0" name="DailyVolume" type="xs:long" />
+      <xs:element minOccurs="0" name="NumberOfDeals" type="xs:long" />
+      <xs:element minOccurs="0" name="Open" type="xs:long" />
+      <xs:element minOccurs="0" name="High" type="xs:long" />
+      <xs:element minOccurs="0" name="Low" type="xs:long" />
+      <xs:element minOccurs="0" name="CentsMoved" type="xs:long" />
+      <xs:element minOccurs="0" name="YesterdayClose" type="xs:long" />
+      <xs:element minOccurs="0" name="LastWeekClose" type="xs:long" />
+      <xs:element minOccurs="0" name="LastMonthClose" type="xs:long" />
+      <xs:element minOccurs="0" name="Last3MonthClose" type="xs:long" />
+      <xs:element minOccurs="0" name="LastYearClose" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquityDetailsDto" nillable="true" type="tns:EquityDetailsDto" />
+  <xs:complexType name="ArrayOfInstrumentTypeDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InstrumentTypeDto" type="tns:InstrumentTypeDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInstrumentTypeDto" nillable="true" type="tns:ArrayOfInstrumentTypeDto" />
+  <xs:complexType name="ArrayOfTradeDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TradeDto" nillable="true" type="tns:TradeDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTradeDto" nillable="true" type="tns:ArrayOfTradeDto" />
+  <xs:complexType name="TradeDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketSegmentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryOfRegister" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradePrice" type="xs:long" />
+      <xs:element minOccurs="0" name="TradeSize" type="xs:long" />
+      <xs:element minOccurs="0" name="Counterparty1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Counterparty2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradeDateAsTicks" type="xs:long" />
+      <xs:element minOccurs="0" name="TradeTimeAsTicks" type="xs:long" />
+      <xs:element minOccurs="0" name="TradeTypeIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BargainConditionIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradeTimeIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConvertedPriceIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quote" nillable="true" type="tns:QuoteDto" />
+      <xs:element minOccurs="0" name="SequenceNumber" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TradeDto" nillable="true" type="tns:TradeDto" />
+  <xs:complexType name="QuoteDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradableInstrumentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryOfRegister" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketSegmentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketSectorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VolumeOfOrdersAtBestBidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="VolumeOfOrdersAtBestOfferPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="NumberOfOrdersAtBestBidPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfOrdersAtBestOfferPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="BidMarketOrdersIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OfferMarketOrdersIndicator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BestBidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="BestOfferPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="MidPrice" type="xs:long" />
+      <xs:element minOccurs="0" name="BestPriceStatusIndicator" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QuoteDto" nillable="true" type="tns:QuoteDto" />
+  <xs:complexType name="ArrayOfIndexValueDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IndexValueDto" nillable="true" type="tns:IndexValueDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIndexValueDto" nillable="true" type="tns:ArrayOfIndexValueDto" />
+  <xs:complexType name="IndexValueDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndexIdentifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndexValue" type="xs:long" />
+      <xs:element minOccurs="0" name="TimeOfIndexValueAsTicks" type="xs:long" />
+      <xs:element minOccurs="0" name="IndexDifferential" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SequenceNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="YesterdayClose" type="xs:long" />
+      <xs:element minOccurs="0" name="LastWeekClose" type="xs:long" />
+      <xs:element minOccurs="0" name="LastMonthClose" type="xs:long" />
+      <xs:element minOccurs="0" name="Last3MonthClose" type="xs:long" />
+      <xs:element minOccurs="0" name="LastYearClose" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IndexValueDto" nillable="true" type="tns:IndexValueDto" />
+</xs:schema>

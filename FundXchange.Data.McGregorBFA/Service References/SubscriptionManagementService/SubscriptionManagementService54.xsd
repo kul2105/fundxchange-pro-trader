@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" />
+  <xs:import schemaLocation="http://www6.fin24.com:25002/SubscriptionManagementService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" />
+  <xs:element name="Subscribe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" minOccurs="0" name="subscriptionType" type="q1:SubscriptionType" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" minOccurs="0" name="parameters" nillable="true" type="q2:ParameterList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubscribeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="SubscribeResult" nillable="true" type="q3:OperationResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Unsubscribe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" minOccurs="0" name="subscriptionType" type="q4:SubscriptionType" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" minOccurs="0" name="parameters" nillable="true" type="q5:ParameterList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnsubscribeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="UnsubscribeResult" nillable="true" type="q6:OperationResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearSubscriptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearSubscriptionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="ClearSubscriptionsResult" nillable="true" type="q7:OperationResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

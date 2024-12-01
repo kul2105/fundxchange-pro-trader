@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ServiceDeskServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" />
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.DTOs" />
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Fin24.Util.General.Container" />
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://www6.fin24.com:25001/ServiceDeskServices?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Common.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceDeskServices_GetIndicesList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesList" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesListAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesListAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesListAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesListAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesList" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesListAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesListAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesListAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesListAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesSnapshot_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesSnapshot" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesSnapshot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesSnapshotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesSnapshotAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesSnapshotAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitiesSnapshotAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitiesSnapshotAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshot_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshot" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshotAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshotAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshotForISINs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotForISINs" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshotForISINs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotForISINsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshotForISINsAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotForISINsAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquitySnapshotForISINsAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquitySnapshotForISINsAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetWinners_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinners" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetWinners_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetWinnersAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinnersAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetWinnersAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinnersAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetLosers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLosers" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetLosers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLosersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetLosersAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLosersAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetLosersAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLosersAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByValue" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByValueAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByValueAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByValueAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByValueAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByVolume_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByVolume" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByVolume_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByVolumeAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByVolumeAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop20EquitiesByVolumeAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20EquitiesByVolumeAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetOrderbookAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderbookAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetOrderbookAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderbookAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTrades_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrades" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTrades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTradesAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradesAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTradesAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradesAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTradesForPageSizeAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradesForPageSizeAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTradesForPageSizeAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradesForPageSizeAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphots_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphots" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphots_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphotsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphotsAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphotsAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphotsAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphotsAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphot_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphot" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphotAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphotAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndicesSnaphotAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndicesSnaphotAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40Response" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40AsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40AsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40AsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40AsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquityCandlesticks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquityCandlesticks" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquityCandlesticks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquityCandlesticksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquityCandlesticksAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquityCandlesticksAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetEquityCandlesticksAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquityCandlesticksAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndexCandlesticks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndexCandlesticks" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndexCandlesticks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndexCandlesticksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndexCandlesticksAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndexCandlesticksAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetIndexCandlesticksAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndexCandlesticksAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40EquitiesStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40EquitiesStatistics" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40EquitiesStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40EquitiesStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40EquitiesStatisticsAsProto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40EquitiesStatisticsAsProto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDeskServices_GetTop40EquitiesStatisticsAsProto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40EquitiesStatisticsAsProtoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceDeskServices">
+    <wsdl:operation name="GetIndicesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesList" message="tns:IServiceDeskServices_GetIndicesList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesListResponse" message="tns:IServiceDeskServices_GetIndicesList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesListAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesListAsProto" message="tns:IServiceDeskServices_GetIndicesListAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesListAsProtoResponse" message="tns:IServiceDeskServices_GetIndicesListAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesList" message="tns:IServiceDeskServices_GetEquitiesList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesListResponse" message="tns:IServiceDeskServices_GetEquitiesList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesListAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesListAsProto" message="tns:IServiceDeskServices_GetEquitiesListAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesListAsProtoResponse" message="tns:IServiceDeskServices_GetEquitiesListAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesSnapshot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesSnapshot" message="tns:IServiceDeskServices_GetEquitiesSnapshot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesSnapshotResponse" message="tns:IServiceDeskServices_GetEquitiesSnapshot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesSnapshotAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesSnapshotAsProto" message="tns:IServiceDeskServices_GetEquitiesSnapshotAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitiesSnapshotAsProtoResponse" message="tns:IServiceDeskServices_GetEquitiesSnapshotAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshot" message="tns:IServiceDeskServices_GetEquitySnapshot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotResponse" message="tns:IServiceDeskServices_GetEquitySnapshot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshotAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotAsProto" message="tns:IServiceDeskServices_GetEquitySnapshotAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotAsProtoResponse" message="tns:IServiceDeskServices_GetEquitySnapshotAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshotForISINs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotForISINs" message="tns:IServiceDeskServices_GetEquitySnapshotForISINs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotForISINsResponse" message="tns:IServiceDeskServices_GetEquitySnapshotForISINs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshotForISINsAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotForISINsAsProto" message="tns:IServiceDeskServices_GetEquitySnapshotForISINsAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotForISINsAsProtoResponse" message="tns:IServiceDeskServices_GetEquitySnapshotForISINsAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWinners">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetWinners" message="tns:IServiceDeskServices_GetWinners_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetWinnersResponse" message="tns:IServiceDeskServices_GetWinners_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWinnersAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetWinnersAsProto" message="tns:IServiceDeskServices_GetWinnersAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetWinnersAsProtoResponse" message="tns:IServiceDeskServices_GetWinnersAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLosers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetLosers" message="tns:IServiceDeskServices_GetLosers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetLosersResponse" message="tns:IServiceDeskServices_GetLosers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLosersAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetLosersAsProto" message="tns:IServiceDeskServices_GetLosersAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetLosersAsProtoResponse" message="tns:IServiceDeskServices_GetLosersAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByValue" message="tns:IServiceDeskServices_GetTop20EquitiesByValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByValueResponse" message="tns:IServiceDeskServices_GetTop20EquitiesByValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByValueAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByValueAsProto" message="tns:IServiceDeskServices_GetTop20EquitiesByValueAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByValueAsProtoResponse" message="tns:IServiceDeskServices_GetTop20EquitiesByValueAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByVolume">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByVolume" message="tns:IServiceDeskServices_GetTop20EquitiesByVolume_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByVolumeResponse" message="tns:IServiceDeskServices_GetTop20EquitiesByVolume_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByVolumeAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByVolumeAsProto" message="tns:IServiceDeskServices_GetTop20EquitiesByVolumeAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByVolumeAsProtoResponse" message="tns:IServiceDeskServices_GetTop20EquitiesByVolumeAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderbookAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetOrderbookAsProto" message="tns:IServiceDeskServices_GetOrderbookAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetOrderbookAsProtoResponse" message="tns:IServiceDeskServices_GetOrderbookAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrades">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTrades" message="tns:IServiceDeskServices_GetTrades_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTradesResponse" message="tns:IServiceDeskServices_GetTrades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTradesAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTradesAsProto" message="tns:IServiceDeskServices_GetTradesAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTradesAsProtoResponse" message="tns:IServiceDeskServices_GetTradesAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTradesForPageSizeAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTradesForPageSizeAsProto" message="tns:IServiceDeskServices_GetTradesForPageSizeAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTradesForPageSizeAsProtoResponse" message="tns:IServiceDeskServices_GetTradesForPageSizeAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphots">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphots" message="tns:IServiceDeskServices_GetIndicesSnaphots_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotsResponse" message="tns:IServiceDeskServices_GetIndicesSnaphots_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphotsAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotsAsProto" message="tns:IServiceDeskServices_GetIndicesSnaphotsAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotsAsProtoResponse" message="tns:IServiceDeskServices_GetIndicesSnaphotsAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphot" message="tns:IServiceDeskServices_GetIndicesSnaphot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotResponse" message="tns:IServiceDeskServices_GetIndicesSnaphot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphotAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotAsProto" message="tns:IServiceDeskServices_GetIndicesSnaphotAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotAsProtoResponse" message="tns:IServiceDeskServices_GetIndicesSnaphotAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40" message="tns:IServiceDeskServices_GetTop40_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40Response" message="tns:IServiceDeskServices_GetTop40_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40AsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40AsProto" message="tns:IServiceDeskServices_GetTop40AsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40AsProtoResponse" message="tns:IServiceDeskServices_GetTop40AsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquityCandlesticks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquityCandlesticks" message="tns:IServiceDeskServices_GetEquityCandlesticks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquityCandlesticksResponse" message="tns:IServiceDeskServices_GetEquityCandlesticks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquityCandlesticksAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquityCandlesticksAsProto" message="tns:IServiceDeskServices_GetEquityCandlesticksAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetEquityCandlesticksAsProtoResponse" message="tns:IServiceDeskServices_GetEquityCandlesticksAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexCandlesticks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndexCandlesticks" message="tns:IServiceDeskServices_GetIndexCandlesticks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndexCandlesticksResponse" message="tns:IServiceDeskServices_GetIndexCandlesticks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexCandlesticksAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndexCandlesticksAsProto" message="tns:IServiceDeskServices_GetIndexCandlesticksAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetIndexCandlesticksAsProtoResponse" message="tns:IServiceDeskServices_GetIndexCandlesticksAsProto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40EquitiesStatistics">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40EquitiesStatistics" message="tns:IServiceDeskServices_GetTop40EquitiesStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40EquitiesStatisticsResponse" message="tns:IServiceDeskServices_GetTop40EquitiesStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40EquitiesStatisticsAsProto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40EquitiesStatisticsAsProto" message="tns:IServiceDeskServices_GetTop40EquitiesStatisticsAsProto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDeskServices/GetTop40EquitiesStatisticsAsProtoResponse" message="tns:IServiceDeskServices_GetTop40EquitiesStatisticsAsProto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceDeskServices" type="tns:IServiceDeskServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetIndicesList">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndicesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesListAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndicesListAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesList">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitiesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesListAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitiesListAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesSnapshot">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitiesSnapshot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitiesSnapshotAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitiesSnapshotAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshot">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitySnapshot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshotAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshotForISINs">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotForISINs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquitySnapshotForISINsAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquitySnapshotForISINsAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWinners">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetWinners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWinnersAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetWinnersAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLosers">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetLosers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLosersAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetLosersAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByValue">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByValueAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByValueAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByVolume">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20EquitiesByVolumeAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop20EquitiesByVolumeAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderbookAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetOrderbookAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrades">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTrades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTradesAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTradesAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTradesForPageSizeAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTradesForPageSizeAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphots">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphots" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphotsAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotsAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphot">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndicesSnaphotAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndicesSnaphotAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop40" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40AsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop40AsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquityCandlesticks">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquityCandlesticks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquityCandlesticksAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetEquityCandlesticksAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexCandlesticks">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndexCandlesticks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexCandlesticksAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetIndexCandlesticksAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40EquitiesStatistics">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop40EquitiesStatistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40EquitiesStatisticsAsProto">
+      <soap:operation soapAction="http://tempuri.org/IServiceDeskServices/GetTop40EquitiesStatisticsAsProto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceDeskServices">
+    <wsdl:port name="BasicHttpBinding_IServiceDeskServices" binding="tns:BasicHttpBinding_IServiceDeskServices">
+      <soap:address location="http://www6.fin24.com:25001/ServiceDeskServices" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/fin24.MarketDataProvisioning.Api.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SubscriptionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Level1" />
+      <xs:enumeration value="Level2" />
+      <xs:enumeration value="Index" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubscriptionType" nillable="true" type="tns:SubscriptionType" />
+  <xs:complexType name="ParameterList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Parameters" nillable="true" type="tns:ArrayOfParameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParameterList" nillable="true" type="tns:ParameterList" />
+  <xs:complexType name="ArrayOfParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Parameter" nillable="true" type="tns:Parameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParameter" nillable="true" type="tns:ArrayOfParameter" />
+  <xs:complexType name="Parameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Parameter" nillable="true" type="tns:Parameter" />
+</xs:schema>
