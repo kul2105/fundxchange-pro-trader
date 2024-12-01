@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" />
+  <xs:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ActionResultOfint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfint" nillable="true" type="tns:ActionResultOfint" />
+  <xs:simpleType name="ResultTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Failure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResultTypes" nillable="true" type="tns:ResultTypes" />
+  <xs:complexType name="BrokerageAssociationListResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfArrayOfBrokerageAssociationGPQlROky">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BrokerageAssociationListResult" nillable="true" type="tns:BrokerageAssociationListResult" />
+  <xs:complexType name="ActionResultOfArrayOfBrokerageAssociationGPQlROky">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfBrokerageAssociation" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" minOccurs="0" name="Object" nillable="true" type="q1:ArrayOfBrokerageAssociation" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfArrayOfBrokerageAssociationGPQlROky" nillable="true" type="tns:ActionResultOfArrayOfBrokerageAssociationGPQlROky" />
+  <xs:complexType name="BrokerageAssociationResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfBrokerageAssociationGPQlROky">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BrokerageAssociationResult" nillable="true" type="tns:BrokerageAssociationResult" />
+  <xs:complexType name="ActionResultOfBrokerageAssociationGPQlROky">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="BrokerageAssociation" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" minOccurs="0" name="Object" nillable="true" type="q2:BrokerageAssociation" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfBrokerageAssociationGPQlROky" nillable="true" type="tns:ActionResultOfBrokerageAssociationGPQlROky" />
+  <xs:complexType name="GeneralResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfboolean">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GeneralResult" nillable="true" type="tns:GeneralResult" />
+  <xs:complexType name="ActionResultOfboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfboolean" nillable="true" type="tns:ActionResultOfboolean" />
+  <xs:complexType name="TradingAccountResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfKeyValuePairOfintstringR8RmUPp7">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TradingAccountResult" nillable="true" type="tns:TradingAccountResult" />
+  <xs:complexType name="ActionResultOfKeyValuePairOfintstringR8RmUPp7">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="KeyValuePairOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+            <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+            <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="Object" type="q3:KeyValuePairOfintstring" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfKeyValuePairOfintstringR8RmUPp7" nillable="true" type="tns:ActionResultOfKeyValuePairOfintstringR8RmUPp7" />
+  <xs:complexType name="TradingAccountListResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfArrayOfKeyValueOfintstringuHEDJ7Dj">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TradingAccountListResult" nillable="true" type="tns:TradingAccountListResult" />
+  <xs:complexType name="ActionResultOfArrayOfKeyValueOfintstringuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfKeyValueOf{0}{1}{#}" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+            <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Object" nillable="true" type="q4:ArrayOfKeyValueOfintstring" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfArrayOfKeyValueOfintstringuHEDJ7Dj" nillable="true" type="tns:ActionResultOfArrayOfKeyValueOfintstringuHEDJ7Dj" />
+  <xs:complexType name="OrderCreateResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfstring">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrderCreateResult" nillable="true" type="tns:OrderCreateResult" />
+  <xs:complexType name="ActionResultOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfstring" nillable="true" type="tns:ActionResultOfstring" />
+  <xs:complexType name="MarketOrderListResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfArrayOfMarketOrderGPQlROky">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MarketOrderListResult" nillable="true" type="tns:MarketOrderListResult" />
+  <xs:complexType name="ActionResultOfArrayOfMarketOrderGPQlROky">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfMarketOrder" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" minOccurs="0" name="Object" nillable="true" type="q5:ArrayOfMarketOrder" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfArrayOfMarketOrderGPQlROky" nillable="true" type="tns:ActionResultOfArrayOfMarketOrderGPQlROky" />
+  <xs:complexType name="StopLossOrderListResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfArrayOfStopLossOrderGPQlROky">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StopLossOrderListResult" nillable="true" type="tns:StopLossOrderListResult" />
+  <xs:complexType name="ActionResultOfArrayOfStopLossOrderGPQlROky">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfStopLossOrder" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" minOccurs="0" name="Object" nillable="true" type="q6:ArrayOfStopLossOrder" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfArrayOfStopLossOrderGPQlROky" nillable="true" type="tns:ActionResultOfArrayOfStopLossOrderGPQlROky" />
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Brokerages">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Sanlam_iTrade" />
+      <xs:enumeration value="FundXchange" />
+      <xs:enumeration value="NotSupported" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Brokerages" nillable="true" type="tns:Brokerages" />
+  <xs:simpleType name="OrderSide">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Buy" />
+      <xs:enumeration value="Sell" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderSide" nillable="true" type="tns:OrderSide" />
+  <xs:simpleType name="OrderStatusses">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="Matched" />
+      <xs:enumeration value="Partially_Filled" />
+      <xs:enumeration value="Awaiting_Authorization" />
+      <xs:enumeration value="Pending_Cancel" />
+      <xs:enumeration value="Filled" />
+      <xs:enumeration value="Expired" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderStatusses" nillable="true" type="tns:OrderStatusses" />
+  <xs:simpleType name="PriceTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Trade" />
+      <xs:enumeration value="Bid" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PriceTypes" nillable="true" type="tns:PriceTypes" />
+</xs:schema>

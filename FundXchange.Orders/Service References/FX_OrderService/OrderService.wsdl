@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="OrderService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" />
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" />
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" />
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrderService_AddBrokerageAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBrokerageAssociation" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddBrokerageAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBrokerageAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetBrokerageAssociations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrokerageAssociations" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetBrokerageAssociations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrokerageAssociationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetBrokerageAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrokerageAssociation" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetBrokerageAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBrokerageAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RemoveBrokerageAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveBrokerageAssociation" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RemoveBrokerageAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveBrokerageAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpdateBrokerageAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBrokerageAssociation" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpdateBrokerageAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBrokerageAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddTradingAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTradingAccount" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddTradingAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTradingAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetTradingAccounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradingAccounts" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetTradingAccounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradingAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RemoveTradingAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTradingAccount" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RemoveTradingAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTradingAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddMarketOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMarketOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddMarketOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMarketOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CancelMarketOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelMarketOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_CancelMarketOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelMarketOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpdateMarketOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMarketOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpdateMarketOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMarketOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MarketOrderMatched_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketOrderMatched" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MarketOrderMatched_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketOrderMatchedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MarketOrderExpired_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketOrderExpired" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_MarketOrderExpired_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketOrderExpiredResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_DeleteMarketOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMarketOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_DeleteMarketOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMarketOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetMarketOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarketOrders" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetMarketOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMarketOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddStopLossOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStopLossOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_AddStopLossOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStopLossOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RemoveStopLossOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveStopLossOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_RemoveStopLossOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveStopLossOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpdateStopLossOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStopLossOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpdateStopLossOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStopLossOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpgradeStopLossOrderToMarketOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpgradeStopLossOrderToMarketOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_UpgradeStopLossOrderToMarketOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpgradeStopLossOrderToMarketOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetStopLossOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStopLossOrders" />
+  </wsdl:message>
+  <wsdl:message name="IOrderService_GetStopLossOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStopLossOrdersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrderService">
+    <wsdl:operation name="AddBrokerageAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/AddBrokerageAssociation" message="tns:IOrderService_AddBrokerageAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/AddBrokerageAssociationResponse" message="tns:IOrderService_AddBrokerageAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBrokerageAssociations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetBrokerageAssociations" message="tns:IOrderService_GetBrokerageAssociations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetBrokerageAssociationsResponse" message="tns:IOrderService_GetBrokerageAssociations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBrokerageAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetBrokerageAssociation" message="tns:IOrderService_GetBrokerageAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetBrokerageAssociationResponse" message="tns:IOrderService_GetBrokerageAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveBrokerageAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/RemoveBrokerageAssociation" message="tns:IOrderService_RemoveBrokerageAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/RemoveBrokerageAssociationResponse" message="tns:IOrderService_RemoveBrokerageAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBrokerageAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/UpdateBrokerageAssociation" message="tns:IOrderService_UpdateBrokerageAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/UpdateBrokerageAssociationResponse" message="tns:IOrderService_UpdateBrokerageAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTradingAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/AddTradingAccount" message="tns:IOrderService_AddTradingAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/AddTradingAccountResponse" message="tns:IOrderService_AddTradingAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTradingAccounts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetTradingAccounts" message="tns:IOrderService_GetTradingAccounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetTradingAccountsResponse" message="tns:IOrderService_GetTradingAccounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTradingAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/RemoveTradingAccount" message="tns:IOrderService_RemoveTradingAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/RemoveTradingAccountResponse" message="tns:IOrderService_RemoveTradingAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMarketOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/AddMarketOrder" message="tns:IOrderService_AddMarketOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/AddMarketOrderResponse" message="tns:IOrderService_AddMarketOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelMarketOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/CancelMarketOrder" message="tns:IOrderService_CancelMarketOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/CancelMarketOrderResponse" message="tns:IOrderService_CancelMarketOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMarketOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/UpdateMarketOrder" message="tns:IOrderService_UpdateMarketOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/UpdateMarketOrderResponse" message="tns:IOrderService_UpdateMarketOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketOrderMatched">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MarketOrderMatched" message="tns:IOrderService_MarketOrderMatched_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MarketOrderMatchedResponse" message="tns:IOrderService_MarketOrderMatched_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketOrderExpired">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/MarketOrderExpired" message="tns:IOrderService_MarketOrderExpired_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/MarketOrderExpiredResponse" message="tns:IOrderService_MarketOrderExpired_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMarketOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/DeleteMarketOrder" message="tns:IOrderService_DeleteMarketOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/DeleteMarketOrderResponse" message="tns:IOrderService_DeleteMarketOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMarketOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetMarketOrders" message="tns:IOrderService_GetMarketOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetMarketOrdersResponse" message="tns:IOrderService_GetMarketOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStopLossOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/AddStopLossOrder" message="tns:IOrderService_AddStopLossOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/AddStopLossOrderResponse" message="tns:IOrderService_AddStopLossOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStopLossOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/RemoveStopLossOrder" message="tns:IOrderService_RemoveStopLossOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/RemoveStopLossOrderResponse" message="tns:IOrderService_RemoveStopLossOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStopLossOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/UpdateStopLossOrder" message="tns:IOrderService_UpdateStopLossOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/UpdateStopLossOrderResponse" message="tns:IOrderService_UpdateStopLossOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpgradeStopLossOrderToMarketOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/UpgradeStopLossOrderToMarketOrder" message="tns:IOrderService_UpgradeStopLossOrderToMarketOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/UpgradeStopLossOrderToMarketOrderResponse" message="tns:IOrderService_UpgradeStopLossOrderToMarketOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStopLossOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrderService/GetStopLossOrders" message="tns:IOrderService_GetStopLossOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrderService/GetStopLossOrdersResponse" message="tns:IOrderService_GetStopLossOrders_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="basicHttpBindingConfig_IOrderService" type="tns:IOrderService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddBrokerageAssociation">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/AddBrokerageAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBrokerageAssociations">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetBrokerageAssociations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBrokerageAssociation">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetBrokerageAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveBrokerageAssociation">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/RemoveBrokerageAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBrokerageAssociation">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/UpdateBrokerageAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTradingAccount">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/AddTradingAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTradingAccounts">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetTradingAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTradingAccount">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/RemoveTradingAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMarketOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/AddMarketOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelMarketOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/CancelMarketOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMarketOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/UpdateMarketOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MarketOrderMatched">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MarketOrderMatched" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MarketOrderExpired">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/MarketOrderExpired" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMarketOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/DeleteMarketOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMarketOrders">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetMarketOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStopLossOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/AddStopLossOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveStopLossOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/RemoveStopLossOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStopLossOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/UpdateStopLossOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpgradeStopLossOrderToMarketOrder">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/UpgradeStopLossOrderToMarketOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStopLossOrders">
+      <soap:operation soapAction="http://tempuri.org/IOrderService/GetStopLossOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrderService">
+    <wsdl:port name="basicHttpBindingConfig_IOrderService" binding="tns:basicHttpBindingConfig_IOrderService">
+      <soap:address location="http://localhost:4081/OrderService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

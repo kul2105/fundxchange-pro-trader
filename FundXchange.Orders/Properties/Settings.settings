@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FundXchange.Orders.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FundXchange_Orders_iTradeService_FundXchange" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.sanlamitrade.co.za/FundXchange/FundXchange.asmx</Value>
+    </Setting>
+    <Setting Name="FundXchange_Orders_FinSwitchUAT_FinSwitchWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://finswitchuat.finswitch.com/webservices/finswitchwebservice.asmx</Value>
+    </Setting>
+    <Setting Name="FundXchange_Orders_FinSwitchLIVE_FinSwitchWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://finswitch2.finswitch.com/webservices/finswitchwebservice.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

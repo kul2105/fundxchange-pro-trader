@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" />
+  <xs:complexType name="ArrayOfBrokerageAssociation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BrokerageAssociation" nillable="true" type="tns:BrokerageAssociation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBrokerageAssociation" nillable="true" type="tns:ArrayOfBrokerageAssociation" />
+  <xs:complexType name="BrokerageAssociation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractEntity">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="Brokerage" type="q1:Brokerages" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BrokerageAssociation" nillable="true" type="tns:BrokerageAssociation" />
+  <xs:complexType name="AbstractEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LastUpdated" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AbstractEntity" nillable="true" type="tns:AbstractEntity" />
+  <xs:complexType name="ArrayOfMarketOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MarketOrder" nillable="true" type="tns:MarketOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMarketOrder" nillable="true" type="tns:ArrayOfMarketOrder" />
+  <xs:complexType name="MarketOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpiryDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="OrderStatus" nillable="true" type="q2:OrderStatusses" />
+          <xs:element minOccurs="0" name="Price" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:int" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="Side" nillable="true" type="q3:OrderSide" />
+          <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MarketOrder" nillable="true" type="tns:MarketOrder" />
+  <xs:complexType name="ArrayOfStopLossOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StopLossOrder" nillable="true" type="tns:StopLossOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStopLossOrder" nillable="true" type="tns:ArrayOfStopLossOrder" />
+  <xs:complexType name="StopLossOrder">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="Brokerage" nillable="true" type="q4:Brokerages" />
+          <xs:element minOccurs="0" name="CancelStopLossPrice" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpiryDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="PriceType" nillable="true" type="q5:PriceTypes" />
+          <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:int" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="Side" nillable="true" type="q6:OrderSide" />
+          <xs:element minOccurs="0" name="StopLossPrice" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TriggerPrice" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StopLossOrder" nillable="true" type="tns:StopLossOrder" />
+</xs:schema>

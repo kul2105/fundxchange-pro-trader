@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" />
+  <xs:import schemaLocation="http://localhost:4081/OrderService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" />
+  <xs:element name="AddBrokerageAssociation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="brokerageType" type="q1:Brokerages" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddBrokerageAssociationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddBrokerageAssociationResult" nillable="true" type="q2:ActionResultOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBrokerageAssociations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBrokerageAssociationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="GetBrokerageAssociationsResult" nillable="true" type="q3:BrokerageAssociationListResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBrokerageAssociation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brokerageAssociationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBrokerageAssociationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="GetBrokerageAssociationResult" nillable="true" type="q4:BrokerageAssociationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveBrokerageAssociation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brokerageAssociationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveBrokerageAssociationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveBrokerageAssociationResult" nillable="true" type="q5:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBrokerageAssociation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brokerageAssociationId" type="xs:int" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateBrokerageAssociationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="UpdateBrokerageAssociationResult" nillable="true" type="q6:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddTradingAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="accountName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddTradingAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddTradingAccountResult" nillable="true" type="q7:TradingAccountResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradingAccounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradingAccountsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="GetTradingAccountsResult" nillable="true" type="q8:TradingAccountListResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTradingAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveTradingAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveTradingAccountResult" nillable="true" type="q9:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMarketOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="side" type="q10:OrderSide" />
+        <xs:element minOccurs="0" name="price" type="xs:int" />
+        <xs:element minOccurs="0" name="quantity" type="xs:int" />
+        <xs:element minOccurs="0" name="expiryDate" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMarketOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddMarketOrderResult" nillable="true" type="q11:OrderCreateResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelMarketOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelMarketOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="CancelMarketOrderResult" nillable="true" type="q12:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMarketOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="price" type="xs:int" />
+        <xs:element minOccurs="0" name="quantity" type="xs:int" />
+        <xs:element minOccurs="0" name="expiryDate" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMarketOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="UpdateMarketOrderResult" nillable="true" type="q13:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketOrderMatched">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="quantity" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketOrderMatchedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="MarketOrderMatchedResult" nillable="true" type="q14:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketOrderExpired">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketOrderExpiredResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="MarketOrderExpiredResult" nillable="true" type="q15:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMarketOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMarketOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="DeleteMarketOrderResult" nillable="true" type="q16:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMarketOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tradingAccountId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMarketOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="GetMarketOrdersResult" nillable="true" type="q17:MarketOrderListResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddStopLossOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="brokerage" type="q18:Brokerages" />
+        <xs:element minOccurs="0" name="accountNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="triggerPrice" type="xs:int" />
+        <xs:element minOccurs="0" name="stopLossPrice" type="xs:int" />
+        <xs:element minOccurs="0" name="cancelPrice" type="xs:int" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="priceType" type="q19:PriceTypes" />
+        <xs:element minOccurs="0" name="quantity" type="xs:int" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="orderSide" type="q20:OrderSide" />
+        <xs:element minOccurs="0" name="expiryDate" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddStopLossOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddStopLossOrderResult" nillable="true" type="q21:OrderCreateResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveStopLossOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveStopLossOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveStopLossOrderResult" nillable="true" type="q22:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStopLossOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="quantity" type="xs:int" />
+        <xs:element minOccurs="0" name="triggerPrice" type="xs:int" />
+        <xs:element minOccurs="0" name="stopLossPrice" type="xs:int" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="priceType" type="q23:PriceTypes" />
+        <xs:element minOccurs="0" name="cancelPrice" type="xs:int" />
+        <xs:element minOccurs="0" name="expiryDate" nillable="true" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStopLossOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="UpdateStopLossOrderResult" nillable="true" type="q24:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpgradeStopLossOrderToMarketOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="brokerage" type="q25:Brokerages" />
+        <xs:element minOccurs="0" name="accountNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="orderId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="price" type="xs:int" />
+        <xs:element minOccurs="0" name="quantity" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpgradeStopLossOrderToMarketOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="UpgradeStopLossOrderToMarketOrderResult" nillable="true" type="q26:OrderCreateResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStopLossOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/FundXchange.Services.Orders.Enums" minOccurs="0" name="brokerage" type="q27:Brokerages" />
+        <xs:element minOccurs="0" name="accountNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStopLossOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="GetStopLossOrdersResult" nillable="true" type="q28:StopLossOrderListResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
