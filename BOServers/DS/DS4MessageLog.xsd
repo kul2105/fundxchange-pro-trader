@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS4MessageLog" targetNamespace="http://tempuri.org/DS4MessageLog.xsd" xmlns:mstns="http://tempuri.org/DS4MessageLog.xsd" xmlns="http://tempuri.org/DS4MessageLog.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS4MessageLog" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS4MessageLog" msprop:Generator_UserDSName="DS4MessageLog">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMessageLog" msprop:Generator_TableClassName="dtMessageLogDataTable" msprop:Generator_TableVarName="tabledtMessageLog" msprop:Generator_TablePropName="dtMessageLog" msprop:Generator_RowDeletingName="dtMessageLogRowDeleting" msprop:Generator_UserTableName="dtMessageLog" msprop:Generator_RowChangingName="dtMessageLogRowChanging" msprop:Generator_RowEvHandlerName="dtMessageLogRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMessageLogRowDeleted" msprop:Generator_RowEvArgName="dtMessageLogRowChangeEvent" msprop:Generator_RowChangedName="dtMessageLogRowChanged" msprop:Generator_RowClassName="dtMessageLogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Message" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Message" msprop:Generator_ColumnVarNameInTable="columnMessage" msprop:Generator_ColumnPropNameInTable="MessageColumn" msprop:Generator_UserColumnName="Message" type="xs:string" minOccurs="0" />
+              <xs:element name="Account" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="Account" msprop:Generator_ColumnVarNameInTable="columnAccount" msprop:Generator_ColumnPropNameInTable="AccountColumn" msprop:Generator_UserColumnName="Account" type="xs:int" minOccurs="0" />
+              <xs:element name="StrDateTime" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="StrDateTime" msprop:Generator_ColumnVarNameInTable="columnStrDateTime" msprop:Generator_ColumnPropNameInTable="StrDateTimeColumn" msprop:Generator_UserColumnName="StrDateTime" type="xs:string" minOccurs="0" />
+              <xs:element name="Color" msprop:nullValue="White" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" type="xs:string" minOccurs="0" />
+              <xs:element name="MessageType" msprop:Generator_ColumnVarNameInTable="columnMessageType" msprop:Generator_ColumnPropNameInRow="MessageType" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInTable="MessageTypeColumn" msprop:Generator_UserColumnName="MessageType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

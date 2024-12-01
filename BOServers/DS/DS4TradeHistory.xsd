@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS4TradeHistory" targetNamespace="http://tempuri.org/DS4TradeHistory.xsd" xmlns:mstns="http://tempuri.org/DS4TradeHistory.xsd" xmlns="http://tempuri.org/DS4TradeHistory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS4TradeHistory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS4TradeHistory" msprop:Generator_UserDSName="DS4TradeHistory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtTradeHistory" msprop:Generator_TableClassName="dtTradeHistoryDataTable" msprop:Generator_TableVarName="tabledtTradeHistory" msprop:Generator_TablePropName="dtTradeHistory" msprop:Generator_RowDeletingName="dtTradeHistoryRowDeleting" msprop:Generator_UserTableName="dtTradeHistory" msprop:Generator_RowChangingName="dtTradeHistoryRowChanging" msprop:Generator_RowEvHandlerName="dtTradeHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTradeHistoryRowDeleted" msprop:Generator_RowEvArgName="dtTradeHistoryRowChangeEvent" msprop:Generator_RowChangedName="dtTradeHistoryRowChanged" msprop:Generator_RowClassName="dtTradeHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TradeNo" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TradeNo" msprop:Generator_ColumnVarNameInTable="columnTradeNo" msprop:Generator_ColumnPropNameInTable="TradeNoColumn" msprop:Generator_UserColumnName="TradeNo" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNo" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" msprop:Generator_UserColumnName="OrderNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductType" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ProductType" msprop:Generator_ColumnVarNameInTable="columnProductType" msprop:Generator_ColumnPropNameInTable="ProductTypeColumn" msprop:Generator_UserColumnName="ProductType" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="Contract" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Contract" msprop:Generator_ColumnVarNameInTable="columnContract" msprop:Generator_ColumnPropNameInTable="ContractColumn" msprop:Generator_UserColumnName="Contract" type="xs:string" minOccurs="0" />
+              <xs:element name="BS" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BS" msprop:Generator_ColumnVarNameInTable="columnBS" msprop:Generator_ColumnPropNameInTable="BSColumn" msprop:Generator_UserColumnName="BS" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:string" minOccurs="0" />
+              <xs:element name="AvgPrice" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="AvgPrice" msprop:Generator_ColumnVarNameInTable="columnAvgPrice" msprop:Generator_ColumnPropNameInTable="AvgPriceColumn" msprop:Generator_UserColumnName="AvgPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="FillPrice" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="FillPrice" msprop:Generator_ColumnVarNameInTable="columnFillPrice" msprop:Generator_ColumnPropNameInTable="FillPriceColumn" msprop:Generator_UserColumnName="FillPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderType" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="OrderType" msprop:Generator_ColumnVarNameInTable="columnOrderType" msprop:Generator_ColumnPropNameInTable="OrderTypeColumn" msprop:Generator_UserColumnName="OrderType" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="TradeTime" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TradeTime" msprop:Generator_ColumnVarNameInTable="columnTradeTime" msprop:Generator_ColumnPropNameInTable="TradeTimeColumn" msprop:Generator_UserColumnName="TradeTime" type="xs:string" minOccurs="0" />
+              <xs:element name="LastUpdatedTime" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="LastUpdatedTime" msprop:Generator_ColumnVarNameInTable="columnLastUpdatedTime" msprop:Generator_ColumnPropNameInTable="LastUpdatedTimeColumn" msprop:Generator_UserColumnName="LastUpdatedTime" type="xs:string" minOccurs="0" />
+              <xs:element name="LeaveQty" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="LeaveQty" msprop:Generator_ColumnVarNameInTable="columnLeaveQty" msprop:Generator_ColumnPropNameInTable="LeaveQtyColumn" msprop:Generator_UserColumnName="LeaveQty" type="xs:string" minOccurs="0" />
+              <xs:element name="Commission" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Commission" msprop:Generator_ColumnVarNameInTable="columnCommission" msprop:Generator_ColumnPropNameInTable="CommissionColumn" msprop:Generator_UserColumnName="Commission" type="xs:string" minOccurs="0" />
+              <xs:element name="Tax" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Tax" msprop:Generator_ColumnVarNameInTable="columnTax" msprop:Generator_ColumnPropNameInTable="TaxColumn" msprop:Generator_UserColumnName="Tax" type="xs:string" minOccurs="0" />
+              <xs:element name="CounterClOrdId" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="CounterClOrdId" msprop:Generator_ColumnVarNameInTable="columnCounterClOrdId" msprop:Generator_ColumnPropNameInTable="CounterClOrdIdColumn" msprop:Generator_UserColumnName="CounterClOrdId" type="xs:int" minOccurs="0" />
+              <xs:element name="CounterAvgPx" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CounterAvgPx" msprop:Generator_ColumnVarNameInTable="columnCounterAvgPx" msprop:Generator_ColumnPropNameInTable="CounterAvgPxColumn" msprop:Generator_UserColumnName="CounterAvgPx" type="xs:string" minOccurs="0" />
+              <xs:element name="GrossPL" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="GrossPL" msprop:Generator_ColumnVarNameInTable="columnGrossPL" msprop:Generator_ColumnPropNameInTable="GrossPLColumn" msprop:Generator_UserColumnName="GrossPL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

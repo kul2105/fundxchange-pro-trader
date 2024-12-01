@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0328AB18-0726-4DDF-9407-105503F2DF0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BOServers</RootNamespace>
+    <AssemblyName>BOServers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientDLL_Model, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>BODLLs\ClientDLL_Model.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDLL_NET.vs2010, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>BODLLs\ClientDLL_NET.vs2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Nevron.Presentation, Version=9.11.3.12, Culture=neutral, PublicKeyToken=6656c5d1103e75cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Nevron.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="clsContracts.cs" />
+    <Compile Include="clsEnum.cs" />
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="clsNewOrder.cs" />
+    <Compile Include="clsPortfolio.cs" />
+    <Compile Include="clsQueue.cs" />
+    <Compile Include="clsResourceMGR.cs" />
+    <Compile Include="clsTWSContractManager.cs" />
+    <Compile Include="clsTWSDataManager.cs" />
+    <Compile Include="clsTWSOrderManager.cs" />
+    <Compile Include="DS\DS4AccountInfo.Designer.cs" />
+    <Compile Include="DS\DS4AccountInfo1.Designer.cs" />
+    <Compile Include="DS\DS4AccountInfo2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4AccountInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4ContractsInfo.cs">
+      <DependentUpon>DS4ContractsInfo.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS\DS4ContractsInfo.designer.cs">
+      <DependentUpon>DS4ContractsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4ContractsInfo1.Designer.cs" />
+    <Compile Include="DS\DS4ContractsInfo2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4ContractsInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4MarketWatch.cs">
+      <DependentUpon>DS4MarketWatch.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS\DS4MarketWatch.designer.cs">
+      <DependentUpon>DS4MarketWatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4MarketWatch1.Designer.cs" />
+    <Compile Include="DS\DS4MarketWatch2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4MarketWatch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4MessageLog.Designer.cs" />
+    <Compile Include="DS\DS4MessageLog1.Designer.cs" />
+    <Compile Include="DS\DS4MessageLog2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4MessageLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4NetPosition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS\DS4NetPosition.designer.cs" />
+    <Compile Include="DS\DS4NetPosition1.Designer.cs" />
+    <Compile Include="DS\DS4NetPosition2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4NetPosition.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4OrderHistory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS\DS4OrderHistory.designer.cs" />
+    <Compile Include="DS\DS4OrderHistory1.Designer.cs" />
+    <Compile Include="DS\DS4OrderHistory2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4OrderHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4PendingOrders.Designer.cs" />
+    <Compile Include="DS\DS4PendingOrders1.Designer.cs" />
+    <Compile Include="DS\DS4PendingOrders2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4PendingOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4PositionClose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS\DS4PositionClose.designer.cs" />
+    <Compile Include="DS\DS4PositionClose1.Designer.cs" />
+    <Compile Include="DS\DS4PositionClose2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4PositionClose.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4PositionOpen.Designer.cs" />
+    <Compile Include="DS\DS4PositionOpen1.Designer.cs" />
+    <Compile Include="DS\DS4PositionOpen2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4PositionOpen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4TradeHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS4TradeHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS\DS4TradeHistory1.Designer.cs" />
+    <Compile Include="DS\DS4TradeHistory2.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerHostIps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BODLLs\AgentFactory.dll" />
+    <Content Include="BODLLs\ClientDLL_Model.dll" />
+    <Content Include="BODLLs\ClientDLL_NET.vs2010.dll" />
+    <Content Include="BODLLs\ManagerFactory.dll" />
+    <Content Include="BODLLs\ProtocolLib.dll" />
+    <Content Include="BODLLs\Socket.dll" />
+    <Content Include="BODLLs\TestFile.txt" />
+    <Content Include="BODLLs\Utilities.dll" />
+    <Content Include="BODLLs\xLogger.dll" />
+    <Content Include="Symbols.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BODLLs\ClientDLL_Model.dll.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClientDLL_Model.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DS\DS4AccountInfo.xsc">
+      <DependentUpon>DS4AccountInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4AccountInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4AccountInfo2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4AccountInfo.xss">
+      <DependentUpon>DS4AccountInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4ContractsInfo.xsc">
+      <DependentUpon>DS4ContractsInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4ContractsInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4ContractsInfo2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4ContractsInfo.xss">
+      <DependentUpon>DS4ContractsInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4MarketWatch.xsc">
+      <DependentUpon>DS4MarketWatch.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4MarketWatch.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4MarketWatch2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4MarketWatch.xss">
+      <DependentUpon>DS4MarketWatch.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4MessageLog.xsc">
+      <DependentUpon>DS4MessageLog.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4MessageLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4MessageLog2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4MessageLog.xss">
+      <DependentUpon>DS4MessageLog.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4NetPosition.xsc">
+      <DependentUpon>DS4NetPosition.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4NetPosition.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4NetPosition2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4NetPosition.xss">
+      <DependentUpon>DS4NetPosition.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4OrderHistory.xsc">
+      <DependentUpon>DS4OrderHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4OrderHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4OrderHistory2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4OrderHistory.xss">
+      <DependentUpon>DS4OrderHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4PendingOrders.xsc">
+      <DependentUpon>DS4PendingOrders.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4PendingOrders.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4PendingOrders2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4PendingOrders.xss">
+      <DependentUpon>DS4PendingOrders.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4PositionClose.xsc">
+      <DependentUpon>DS4PositionClose.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4PositionClose.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4PositionClose2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4PositionClose.xss">
+      <DependentUpon>DS4PositionClose.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4PositionOpen.xsc">
+      <DependentUpon>DS4PositionOpen.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4PositionOpen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4PositionOpen2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4PositionOpen.xss">
+      <DependentUpon>DS4PositionOpen.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4TradeHistory.xsc">
+      <DependentUpon>DS4TradeHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DS\DS4TradeHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS4TradeHistory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS\DS4TradeHistory.xss">
+      <DependentUpon>DS4TradeHistory.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MYRES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
