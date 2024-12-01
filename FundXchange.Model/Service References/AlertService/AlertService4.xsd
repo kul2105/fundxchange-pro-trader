@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State" />
+  <xs:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.Enumerations" />
+  <xs:complexType name="AlertScriptDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AlertName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Bars" type="xs:int" />
+      <xs:element minOccurs="0" name="BuyScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DayHours" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DefaultScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EndOfDay" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExitLongScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExitShortScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GTC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GTCHours" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Interval" type="xs:int" />
+      <xs:element minOccurs="0" name="IsUserDefined" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Limit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Market" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Period" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Portfolio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="SellScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StopLimit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StopLimitValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StopMarket" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradeSignalScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UniqueId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AlertScriptDTO" nillable="true" type="tns:AlertScriptDTO" />
+  <xs:complexType name="ScannerDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlertScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BarHistory" type="xs:int" />
+      <xs:element minOccurs="0" name="BarInterval" type="xs:int" />
+      <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsLocked" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPaused" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.State" minOccurs="0" name="Periodicity" type="q1:Periodicities" />
+      <xs:element minOccurs="0" name="ScannerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScannerDTO" nillable="true" type="tns:ScannerDTO" />
+  <xs:complexType name="AlertDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlertName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.Enumerations" minOccurs="0" name="AlertType" type="q2:AlertType" />
+      <xs:element minOccurs="0" name="Exchange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tag" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AlertDTO" nillable="true" type="tns:AlertDTO" />
+</xs:schema>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="AlertService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" />
+      <xsd:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" />
+      <xsd:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State" />
+      <xsd:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.Enumerations" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAlertService_AddAlertScript_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAlertScript" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_AddAlertScript_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAlertScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_RemoveAlertScript_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAlertScript" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_RemoveAlertScript_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAlertScriptResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_RemoveAlertScriptById_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAlertScriptById" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_RemoveAlertScriptById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAlertScriptByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_SaveScanner_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScanner" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_SaveScanner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveScannerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_RemoveScanner_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveScanner" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_RemoveScanner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveScannerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_AddAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAlert" />
+  </wsdl:message>
+  <wsdl:message name="IAlertService_AddAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAlertResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAlertService">
+    <wsdl:operation name="AddAlertScript">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlertService/AddAlertScript" message="tns:IAlertService_AddAlertScript_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlertService/AddAlertScriptResponse" message="tns:IAlertService_AddAlertScript_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAlertScript">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlertService/RemoveAlertScript" message="tns:IAlertService_RemoveAlertScript_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlertService/RemoveAlertScriptResponse" message="tns:IAlertService_RemoveAlertScript_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAlertScriptById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlertService/RemoveAlertScriptById" message="tns:IAlertService_RemoveAlertScriptById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlertService/RemoveAlertScriptByIdResponse" message="tns:IAlertService_RemoveAlertScriptById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveScanner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlertService/SaveScanner" message="tns:IAlertService_SaveScanner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlertService/SaveScannerResponse" message="tns:IAlertService_SaveScanner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveScanner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlertService/RemoveScanner" message="tns:IAlertService_RemoveScanner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlertService/RemoveScannerResponse" message="tns:IAlertService_RemoveScanner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAlert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAlertService/AddAlert" message="tns:IAlertService_AddAlert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAlertService/AddAlertResponse" message="tns:IAlertService_AddAlert_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAlertService" type="tns:IAlertService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAlertScript">
+      <soap:operation soapAction="http://tempuri.org/IAlertService/AddAlertScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAlertScript">
+      <soap:operation soapAction="http://tempuri.org/IAlertService/RemoveAlertScript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAlertScriptById">
+      <soap:operation soapAction="http://tempuri.org/IAlertService/RemoveAlertScriptById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveScanner">
+      <soap:operation soapAction="http://tempuri.org/IAlertService/SaveScanner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveScanner">
+      <soap:operation soapAction="http://tempuri.org/IAlertService/RemoveScanner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAlert">
+      <soap:operation soapAction="http://tempuri.org/IAlertService/AddAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AlertService">
+    <wsdl:port name="BasicHttpBinding_IAlertService" binding="tns:BasicHttpBinding_IAlertService">
+      <soap:address location="http://services.fundxchange.co.za/AlertService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

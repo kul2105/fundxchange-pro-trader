@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cfc6b40c-a7ef-499b-b4e7-4229f0959e20" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://41.76.213.147/services/AuthenticationService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="a20dc47c-76b9-43aa-af67-333c0861ac64" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="d58414f2-8678-4c09-bce6-f64a09bbc838" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2e34728e-881a-41eb-a117-7c57dc4cca99" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+    <MetadataFile FileName="FundXchange.Services.ActionResults.xsd" MetadataType="Schema" ID="10de2b6f-ac72-4c7e-98b1-1e2a1ed64ea1" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+    <MetadataFile FileName="FundXchange.Services.State.DTOs.xsd" MetadataType="Schema" ID="b4ea0cfe-79f5-4b4a-b132-13da83091499" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+    <MetadataFile FileName="FundXchange.Services.State.Enumerations.xsd" MetadataType="Schema" ID="6c3269ec-ce9d-4e7a-954f-ed9dbe75140b" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+    <MetadataFile FileName="FundXchange.Services.State.xsd" MetadataType="Schema" ID="55698e04-28fc-4af6-8351-9f09303efccd" SourceId="1" SourceUrl="http://41.76.213.147/services/AuthenticationService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

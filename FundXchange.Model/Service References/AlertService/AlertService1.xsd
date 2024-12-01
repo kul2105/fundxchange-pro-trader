@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" />
+  <xs:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" />
+  <xs:import schemaLocation="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="AddAlertScript">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" minOccurs="0" name="alertScriptDTO" nillable="true" type="q1:AlertScriptDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAlertScriptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddAlertScriptResult" nillable="true" type="q2:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveAlertScript">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="alertName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveAlertScriptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveAlertScriptResult" nillable="true" type="q3:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveAlertScriptById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="alertId" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveAlertScriptByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveAlertScriptByIdResult" nillable="true" type="q5:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveScanner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" minOccurs="0" name="scannerDTO" nillable="true" type="q6:ScannerDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveScannerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="SaveScannerResult" nillable="true" type="q7:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveScanner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="scannerName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveScannerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveScannerResult" nillable="true" type="q8:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAlert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" minOccurs="0" name="alert" nillable="true" type="q9:AlertDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddAlertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddAlertResult" nillable="true" type="q10:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

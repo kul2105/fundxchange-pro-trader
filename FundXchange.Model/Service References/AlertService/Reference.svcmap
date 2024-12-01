@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5d1437c6-86b2-49e8-a121-99d873f47c6f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://services.fundxchange.co.za/AlertService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AlertService.wsdl" MetadataType="Wsdl" ID="24fa9fa1-4360-4cc5-a7cb-fefbfcc74688" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?wsdl" />
+    <MetadataFile FileName="AlertService.xsd" MetadataType="Schema" ID="f27519d9-4fbe-4ca6-bff1-81ed3bccb256" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd5" />
+    <MetadataFile FileName="AlertService1.xsd" MetadataType="Schema" ID="ff739f6e-b2e5-479c-a82a-b0b4f8b785bd" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AlertService2.xsd" MetadataType="Schema" ID="db2871ec-4c1c-41e2-b54a-f81a00f46d83" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AlertService3.xsd" MetadataType="Schema" ID="97a294da-2b7c-40e7-8455-203c566ac2dc" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AlertService.disco" MetadataType="Disco" ID="430d5e91-e578-4690-a998-b1b41dc6eca4" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?disco" />
+    <MetadataFile FileName="AlertService4.xsd" MetadataType="Schema" ID="fc5203de-a20e-4892-a2dc-69cc3b8c0ad2" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AlertService5.xsd" MetadataType="Schema" ID="8389374c-5204-402b-b542-ddca5f21b75f" SourceId="1" SourceUrl="http://services.fundxchange.co.za/AlertService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

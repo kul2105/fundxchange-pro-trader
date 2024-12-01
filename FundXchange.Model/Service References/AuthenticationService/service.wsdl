@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="AuthenticationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.Enumerations" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAuthenticationService_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUser" />
+  </wsdl:message>
+  <wsdl:message name="IAuthenticationService_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAuthenticationService_RecoverPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:RecoverPassword" />
+  </wsdl:message>
+  <wsdl:message name="IAuthenticationService_RecoverPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RecoverPasswordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAuthenticationService">
+    <wsdl:operation name="GetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthenticationService/GetUser" message="tns:IAuthenticationService_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthenticationService/GetUserResponse" message="tns:IAuthenticationService_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecoverPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAuthenticationService/RecoverPassword" message="tns:IAuthenticationService_RecoverPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAuthenticationService/RecoverPasswordResponse" message="tns:IAuthenticationService_RecoverPassword_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="basicHttpBindingConfig_IAuthenticationService" type="tns:IAuthenticationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://tempuri.org/IAuthenticationService/GetUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecoverPassword">
+      <soap:operation soapAction="http://tempuri.org/IAuthenticationService/RecoverPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuthenticationService">
+    <wsdl:port name="basicHttpBindingConfig_IAuthenticationService" binding="tns:basicHttpBindingConfig_IAuthenticationService">
+      <soap:address location="http://fundxchange/Services/AuthenticationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

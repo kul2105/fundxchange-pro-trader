@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://services.fundxchange.co.za/PortfolioService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" />
+  <xs:element name="AddDataPortfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="portfolioName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDataPortfolioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddDataPortfolioResult" nillable="true" type="q1:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveDataPortfolio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="portfolioName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveDataPortfolioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveDataPortfolioResult" nillable="true" type="q2:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDataPortfolioInstrument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="portfolioName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDataPortfolioInstrumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="AddDataPortfolioInstrumentResult" nillable="true" type="q3:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveDataPortfolioInstrument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="portfolioName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="symbol" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveDataPortfolioInstrumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" minOccurs="0" name="RemoveDataPortfolioInstrumentResult" nillable="true" type="q4:GeneralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

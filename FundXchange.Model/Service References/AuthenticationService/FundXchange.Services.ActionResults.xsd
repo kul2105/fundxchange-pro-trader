@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" />
+  <xs:complexType name="UserResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfUserDTOcAGUi1Ju">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserResult" nillable="true" type="tns:UserResult" />
+  <xs:complexType name="ActionResultOfUserDTOcAGUi1Ju">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="UserDTO" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.DTOs" minOccurs="0" name="Object" nillable="true" type="q1:UserDTO" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfUserDTOcAGUi1Ju" nillable="true" type="tns:ActionResultOfUserDTOcAGUi1Ju" />
+  <xs:simpleType name="ResultTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Failure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResultTypes" nillable="true" type="tns:ResultTypes" />
+  <xs:complexType name="RecoverPasswordResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActionResultOfboolean">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecoverPasswordResult" nillable="true" type="tns:RecoverPasswordResult" />
+  <xs:complexType name="ActionResultOfboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ActionResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.ActionResults" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" type="tns:ResultTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActionResultOfboolean" nillable="true" type="tns:ActionResultOfboolean" />
+</xs:schema>

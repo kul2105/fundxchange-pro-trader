@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.Enumerations" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FundXchange.Services.State.Enumerations" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="PaymentModelTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Trial" />
+      <xs:enumeration value="Monthly" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PaymentModelTypes" nillable="true" type="tns:PaymentModelTypes" />
+  <xs:simpleType name="Product">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoProduct" />
+      <xs:enumeration value="QuoteBoardLite" />
+      <xs:enumeration value="QuoteBoardPro" />
+      <xs:enumeration value="TraderLite" />
+      <xs:enumeration value="TraderPro" />
+      <xs:enumeration value="WebTrader" />
+      <xs:enumeration value="Terminal" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Product" nillable="true" type="tns:Product" />
+  <xs:simpleType name="Role">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Default" />
+      <xs:enumeration value="User" />
+      <xs:enumeration value="Administrator" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Role" nillable="true" type="tns:Role" />
+  <xs:simpleType name="AlertType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="News" />
+      <xs:enumeration value="Script" />
+      <xs:enumeration value="Order" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AlertType" nillable="true" type="tns:AlertType" />
+  <xs:simpleType name="BrokerageTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Sanlam_iTrade">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FundXchange">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BrokerageTypes" nillable="true" type="tns:BrokerageTypes" />
+  <xs:simpleType name="Salutations">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Mr" />
+      <xs:enumeration value="Mrs" />
+      <xs:enumeration value="Miss" />
+      <xs:enumeration value="Ms" />
+      <xs:enumeration value="Dr" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Salutations" nillable="true" type="tns:Salutations" />
+  <xs:simpleType name="SubscriptionStatuses">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pending" />
+      <xs:enumeration value="Confirmed" />
+      <xs:enumeration value="Suspended" />
+      <xs:enumeration value="Cancelled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubscriptionStatuses" nillable="true" type="tns:SubscriptionStatuses" />
+</xs:schema>
