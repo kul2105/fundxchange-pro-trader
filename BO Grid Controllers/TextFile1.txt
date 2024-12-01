@@ -1,0 +1,161 @@
+﻿View
+
+public partial class frmAttendancePoints : Form, IAttendancePointsView
+{
+        private void frmEnterAttendance_Load(object sender, EventArgs e)
+        {
+            ShowAttendancePoints(sender, e);
+        }
+
+        public void LoadAttendacePointsGridWithData(DataTable dt)
+        {
+            dgAttendancePoints.DataSource = dt;
+        }
+
+        public event EventHandler ShowAttendancePoints;
+}
+Presenter
+
+class AttendancePointPresenter : BasePresenter
+{
+    IAttendancePointsView _View;
+    IDataService _ds;
+
+    public AttendancePointPresenter(IAttendancePointsView View, IDataService ds)
+    {
+        _View = View;
+        _ds = ds;
+        WireUpViewEvents();
+    }
+
+    private void WireUpViewEvents()
+    {
+        this._View.ShowAttendancePoints +=new EventHandler(_View_ShowAttendancePoints);
+    }
+
+    private void _View_ShowAttendancePoints(object sender, EventArgs e)
+    {
+        ShowAttendancePoints();
+    }
+
+    private void ShowAttendancePoints()
+    {
+        var dt = _ds.GetAttendancePoints();
+        this._View.LoadAttendacePointsGridWithData(dt);
+    }
+
+    public void Show()
+    {
+        _View.ShowDialog();
+    }
+}
+DataService
+
+public class DataServie
+{
+        public DataTable GetAttendancePoints()
+        {
+            string selectStatement = "SELECT PID, point_name + ', ' + point_add AS point, area, sm, atten_status FROM Point WHERE Status='Active'";
+            using (SqlConnection sqlConnection = new SqlConnection(db.GetConnectionString))
+            {
+                using (SqlCommand sqlCommand = new SqlCommand(selectStatement, sqlConnection))
+                {
+                    using (SqlDataAdapter da = new SqlDataAdapter(sqlCommand))
+                    {
+                        using (DataSet ds = new DataSet())
+                        {
+                            using (DataTable dt = new DataTable())
+                            {
+                                ds.Tables.Add(dt);    
+                                sqlConnection.Open();
+                                da.Fill(dt);
+                                return dt;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+Programme
+
+    IAttendancePointsView AttendancePointView = new frmAttendancePoints();
+    IDataService ds = new DataService();
+
+    var Presenter = new AttendancePointPresenter(AttendancePointView, ds);
+    Presenter.Show();
+
+
+
+	For the simplicity I'm not using a "model class" for this [...]
+
+Then it's not Model-View-Presenter you have here.
+
+var Presenter = new AttendancePointPresenter(AttendancePointView, ds);
+I love it. What you've done here, is called Dependency Injection - more specifically, constructor injection. It's a technique that, when applied consistently, greatly contributes to making your code more cohesive and less coupled.
+
+I think AttendancePointView being a local variable, should be named attendancePointView, or simply view - same for Presenter, it's a local variable, should be presenter; and ds could simply be called service, so the presenter code would read:
+
+var presenter = new AttendancePointPresenter(view, service);
+presenter.Show();
+Which is awesome! Well done!
+
+The only thing is that in Program.cs it doesn't matter that the view and the service are injected as interfaces, since Program is coupled with frmAttendancePoints and DataService anyway. I'd write it like this:
+
+var view = new frmAttendancePoints();
+var service = new DataService();
+
+var presenter = new AttendancePointPresenter(view, service);
+presenter.Show();
+The presenter still receives its dependencies as abstractions, per its constructor.
+
+View
+
+You're declaring an event that looks more like a method:
+
+public event EventHandler ShowAttendancePoints;
+Seeing that it's raised when the form gets loaded...
+
+private void frmEnterAttendance_Load(object sender, EventArgs e)
+{
+    ShowAttendancePoints(sender, e);
+}
+That event does nothing that Load doesn't do. I think you should have an IView interface that exposes that Load event, and everything a presenter needs to know about any view:
+
+public interface IView
+{
+    event EventHandler Load;
+    void ShowDialog();
+    void BindModel(IModel model);
+}
+Now the form's code can look like this*:
+
+public partial class frmAttendancePoints : Form, IView
+{
+    public frmAttendancePoints()
+    {
+        InitializeComponents();
+    }
+
+    public void BindModel(IModel model)
+    {
+        dgAttendancePoints.DataSource = model;
+    }
+}
+DataService
+
+This class should spit out your model, not a boilerplate-level DataTable.
+
+One thing though, is that you can stack the using blocks for fewer levels of indentation:
+
+using (SqlConnection sqlConnection = new SqlConnection(db.GetConnectionString))
+using (SqlCommand sqlCommand = new SqlCommand(selectStatement, sqlConnection))
+using (SqlDataAdapter da = new SqlDataAdapter(sqlCommand))
+using (DataSet ds = new DataSet())
+using (DataTable dt = new DataTable())
+{
+    ds.Tables.Add(dt);    
+    sqlConnection.Open();
+    da.Fill(dt);
+    return dt;
+}
