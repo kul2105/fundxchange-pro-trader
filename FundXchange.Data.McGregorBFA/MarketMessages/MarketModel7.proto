@@ -1,0 +1,47 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.DTOs;
+
+message OrderbookDto {
+   repeated DepthItemDto Bids = 1;
+   repeated DepthItemDto Offers = 2;
+   optional int64 LastMessageNumberProcessed = 3;
+}
+
+message DepthItemDto {
+   optional int64 Price = 1;
+   optional int64 Volume = 2;
+   repeated OrderDto Orders = 3;
+}
+
+message OrderDto {
+   optional string BDG = 1;
+   optional string MessageType = 2;
+   optional bool IsResendIndicator = 3;
+   optional int64 SequenceNumber = 4;
+   optional int32 GlobalMessageNumber = 5;
+   optional int32 AgentMessageNumber = 6;
+   optional string TradableInstrumentCode = 7;
+   optional string Symbol = 8;
+   optional string ExchangeCode = 9;
+   optional string SegmentCode = 10;
+   optional string SectorCode = 11;
+   optional string CountryOfRegister = 12;
+   optional string CurrencyCode = 13;
+   optional string ParticipantCode = 14;
+   optional string BuySellIndicator = 15;
+   optional string MarketMechanismGroup = 16;
+   optional string PrivateOrderCode = 17;
+   optional string MarketMechanismType = 18;
+   optional int64 OrderPrice = 19;
+   optional int64 AggregateSize = 20;
+   optional string Capacity = 21;
+   optional string TimeValidity = 22;
+   optional string DateValidity = 23;
+   optional string PersonalExposure = 24;
+   optional string OrderReference = 25;
+   optional string ClientReference = 26;
+   optional string SingleFillIndicator = 27;
+   optional string BroadcastUpdateAction = 28;
+   optional int64 TimeMessageReceivedAsTicks = 29;
+}
+

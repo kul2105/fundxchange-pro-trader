@@ -1,0 +1,13 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.Protocol.DataFeed;
+
+message ProtocolHeader {
+   optional ProtocolTypeEnum CommandType = 1 [default = Undefined];
+}
+enum ProtocolTypeEnum {
+   Undefined = 0;
+   HandshakeMessage = 1;
+   StringMessage = 2;
+   AckMessage = 3;
+}
+

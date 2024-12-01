@@ -1,0 +1,48 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.DTOs;
+
+message TradeDtoCollection {
+   repeated TradeDto Trades = 1;
+}
+
+message TradeDto {
+   optional string Symbol = 1;
+   optional string Exchange = 2;
+   optional string ISIN = 3;
+   optional string MarketSegmentCode = 4;
+   optional string CountryOfRegister = 5;
+   optional string CurrencyCode = 6;
+   optional string TradeCode = 7;
+   optional int64 TradePrice = 8;
+   optional int64 TradeSize = 9;
+   optional string Counterparty1 = 10;
+   optional string Counterparty2 = 11;
+   optional int64 TradeDateAsTicks = 12;
+   optional int64 TradeTimeAsTicks = 13;
+   optional string TradeTypeIndicator = 14;
+   optional string BargainConditionIndicator = 15;
+   optional string TradeTimeIndicator = 16;
+   optional string ConvertedPriceIndicator = 17;
+   optional QuoteDto Quote = 18;
+   optional int64 SequenceNumber = 19;
+}
+
+message QuoteDto {
+   optional string Symbol = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string MarketSegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string MarketSectorCode = 6;
+   optional int64 VolumeOfOrdersAtBestBidPrice = 7;
+   optional int64 VolumeOfOrdersAtBestOfferPrice = 8;
+   optional int32 NumberOfOrdersAtBestBidPrice = 9;
+   optional int32 NumberOfOrdersAtBestOfferPrice = 10;
+   optional string BidMarketOrdersIndicator = 11;
+   optional string OfferMarketOrdersIndicator = 12;
+   optional int64 BestBidPrice = 13;
+   optional int64 BestOfferPrice = 14;
+   optional int64 MidPrice = 15;
+   optional string BestPriceStatusIndicator = 16;
+}
+

@@ -1,0 +1,7 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.Protocol.DataFeed;
+
+message StringMessage {
+   optional string Text = 1;
+}
+

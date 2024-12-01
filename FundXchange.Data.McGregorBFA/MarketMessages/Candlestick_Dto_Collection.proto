@@ -1,0 +1,21 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Candlestick.Services.API.DTOs;
+
+message CandlestickCollectionDto {
+   repeated CandlestickDto Candlesticks = 1;
+}
+
+message CandlestickDto {
+   optional string Exchange = 1;
+   optional string Identifier = 2;
+   optional int32 OpenPrice = 3;
+   optional int32 HighPrice = 4;
+   optional int32 LowPrice = 5;
+   optional int32 ClosePrice = 6;
+   optional int64 CloseSequenceNumber = 7;
+   optional string TimeOfStart = 8;
+   optional string TimeOfClose = 9;
+   optional int64 TotalValue = 10;
+   optional int64 TotalVolume = 11;
+}
+

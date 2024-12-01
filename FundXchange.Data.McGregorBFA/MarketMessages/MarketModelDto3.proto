@@ -1,0 +1,52 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.DTOs;
+
+message EquityDtoCollection {
+   repeated EquityDto Equities = 1;
+}
+
+message EquityDto {
+   optional string Symbol = 1;
+   optional string ISIN = 2;
+   optional string ShortName = 3;
+   optional string LongName = 4;
+   optional InstrumentTypeDto InstrumentType = 5;
+   optional string ExchangeCode = 6;
+}
+enum InstrumentTypeDto {
+   Automated_Input_Facility = 0;
+   Allotment_Letters = 1;
+   Bonds = 2;
+   Bulldogs = 3;
+   Convertible = 4;
+   Covered_Warrants = 5;
+   Debentures = 6;
+   UK_Equity = 7;
+   Depository_Receipt = 8;
+   Equity_Warrant = 9;
+   Foreign_Government_Bonds = 10;
+   Fully_Paid_Letter = 11;
+   Foreign_Unit_Trusts = 12;
+   Gilts = 13;
+   Gilt_Warrants = 14;
+   International_Equity = 15;
+   Investment_Product = 16;
+   Kruger_Rand = 17;
+   Loan_Stock = 18;
+   Medium_Term_Loans = 19;
+   Miscellaneous_Warrants = 20;
+   Nil_Paid_Letter = 21;
+   Ordinary_Share = 22;
+   Partly_paid_letter = 23;
+   Portfolio_Notification = 24;
+   Preference_Shares = 25;
+   Package_Units = 26;
+   Rights = 27;
+   Structured_Products = 28;
+   Stapled_Unit = 29;
+   Tradable_Fund = 30;
+   Unit_Trust = 31;
+   Warrants = 32;
+   Zero_Coupon_Bonds = 33;
+}
+

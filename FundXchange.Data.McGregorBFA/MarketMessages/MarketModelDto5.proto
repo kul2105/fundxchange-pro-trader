@@ -1,0 +1,15 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.DTOs;
+
+message IndexDtoCollection {
+   repeated IndexDto Indices = 1;
+}
+
+message IndexDto {
+   optional string Code = 1;
+   optional string Alpha = 2;
+   optional string LongName = 3;
+   optional string ShortName = 4;
+   optional string ExchangeCode = 5;
+}
+

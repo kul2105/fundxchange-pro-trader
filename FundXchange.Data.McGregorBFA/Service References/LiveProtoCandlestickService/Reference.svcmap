@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6dd67ed4-580e-427d-b83e-a9eaa07ee59d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://app12.fin24.com:25001/LiveProtoCandlestickServices" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LiveProtoCandlestickServices.xsd" MetadataType="Schema" ID="f2a48af3-33fa-4d18-8f21-c36c38b4da4d" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd0" />
+    <MetadataFile FileName="LiveProtoCandlestickServices.disco" MetadataType="Disco" ID="b6ef4e49-b822-4fe2-8777-9bcd405a6d78" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?disco" />
+    <MetadataFile FileName="LiveProtoCandlestickServices1.xsd" MetadataType="Schema" ID="f4af314b-28f1-4e85-84ed-935f697ffbaa" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd3" />
+    <MetadataFile FileName="LiveProtoCandlestickServices2.xsd" MetadataType="Schema" ID="3fb6e3ee-ff8b-4e1a-818b-fae53399b815" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd5" />
+    <MetadataFile FileName="LiveProtoCandlestickServices3.xsd" MetadataType="Schema" ID="b9795fd1-1a17-4fab-936e-c2944f2a1f97" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd1" />
+    <MetadataFile FileName="LiveProtoCandlestickServices.wsdl" MetadataType="Wsdl" ID="3c35e52a-f049-4154-baa0-81ddbff8dfd8" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?wsdl" />
+    <MetadataFile FileName="LiveProtoCandlestickServices4.xsd" MetadataType="Schema" ID="c06ff2fc-c68c-4bd2-a768-246dc57df35c" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd2" />
+    <MetadataFile FileName="LiveProtoCandlestickServices5.xsd" MetadataType="Schema" ID="ef647624-4a5a-4b00-8e5c-51300bca664e" SourceId="1" SourceUrl="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

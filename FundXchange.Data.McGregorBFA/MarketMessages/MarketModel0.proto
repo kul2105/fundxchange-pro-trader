@@ -1,0 +1,631 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.MarketModel.MarketMessages;
+
+message MarketMessages {
+   optional MessageWrapper MessageWrapper = 1;
+   optional Announcement Announcement = 2;
+   optional CumulativeNumberAndVolumeOfTrades CumulativeNumberAndVolumeOfTrades = 3;
+   optional EnhancedBestPrice EnhancedBestPrice = 4;
+   optional EquityBackgroundData EquityBackgroundData = 5;
+   optional ExMarkerStatus ExMarkerStatus = 6;
+   optional FrameworkMessage FrameworkMessage = 7;
+   optional IdlePoll IdlePoll = 8;
+   optional IndexStatus IndexStatus = 9;
+   optional IndexValue IndexValue = 10;
+   optional InstrumentTradingData InstrumentTradingData = 11;
+   optional MarketDescription MarketDescription = 12;
+   optional MarketStatusInformation MarketStatusInformation = 13;
+   optional MemberDetails MemberDetails = 14;
+   optional MemberInSegment MemberInSegment = 15;
+   optional MemberRoleInInstrument MemberRoleInInstrument = 16;
+   optional NewsControl NewsControl = 17;
+   optional NewsServiceHeader NewsServiceHeader = 18;
+   optional NewsServiceTrailer NewsServiceTrailer = 19;
+   optional NewsText NewsText = 20;
+   optional OrderDeletion OrderDeletion = 21;
+   optional OrderDetails OrderDetails = 22;
+   optional PeriodExtension PeriodExtension = 23;
+   optional PeriodForMarketSector PeriodForMarketSector = 24;
+   optional PeriodHandlingForMarketMechanismType PeriodHandlingForMarketMechanismType = 25;
+   optional PeriodHandlingForValidityType PeriodHandlingForValidityType = 26;
+   optional PeriodRules PeriodRules = 27;
+   optional PeriodRulesForMarketMechanismAndValidityType PeriodRulesForMarketMechanismAndValidityType = 28;
+   optional RelatedAnnouncement RelatedAnnouncement = 29;
+   optional SectorDescription SectorDescription = 30;
+   optional SectorPeriodChange SectorPeriodChange = 31;
+   optional SegmentDescription SegmentDescription = 32;
+   optional SettlementVenueForTradableInstrument SettlementVenueForTradableInstrument = 33;
+   optional SettlementVenues SettlementVenues = 34;
+   optional TemporaryPeriodForATradableInstrumentOrCurrency TemporaryPeriodForATradableInstrumentOrCurrency = 35;
+   optional TickSizeMatrixForSegmentOrCurrency TickSizeMatrixForSegmentOrCurrency = 36;
+   optional TradableInstrumentControl TradableInstrumentControl = 37;
+   optional TradableInstrumentOrCurrencyPeriodChange TradableInstrumentOrCurrencyPeriodChange = 38;
+   optional TradeReport TradeReport = 39;
+   optional TradeTypePerSegment TradeTypePerSegment = 40;
+   optional UncrossingCompleted UncrossingCompleted = 41;
+   optional UncrossingPriceAndVolume UncrossingPriceAndVolume = 42;
+   optional VWAPFromTrades VWAPFromTrades = 43;
+   optional ClosingPrice ClosingPrice = 44;
+}
+
+message MessageWrapper {
+   optional int32 MessageType = 1;
+   optional bytes Payload = 2;
+}
+
+message Announcement {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string MarketSegmentCode = 4;
+   optional string MarketSectorCode = 5;
+   optional string TradableInstrumentDisplayMnemonic = 6;
+   optional string AnnouncementNumber = 7;
+   optional string AnnouncementCode = 8;
+   optional string SetAnnouncementMarker = 9;
+}
+
+message HeaderMessage {
+   optional string BDG = 1;
+   optional string MessageType = 2;
+   optional bool IsResendIndicator = 3;
+   optional int64 SequenceNumber = 4;
+   optional int32 GlobalMessageNumber = 5;
+   optional int32 AgentMessageNumber = 6;
+   optional string TradableInstrumentCode = 7;
+   optional string Symbol = 8;
+   optional string ExchangeCode = 9;
+   optional int64 TimeMessageReceivedAsTicks = 10;
+}
+
+message CumulativeNumberAndVolumeOfTrades {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string MarketSegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string AutomaticTradesIndicator = 6;
+   optional int64 VolumeOfTrades = 7;
+   optional int64 NumberOfTrades = 8;
+   optional string DateOfPreparationAsString = 9;
+   optional string Symbol = 10;
+}
+
+message EnhancedBestPrice {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string MarketSegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string MarketSectorCode = 6;
+   optional int64 VolumeOfOrdersAtBestBidPrice = 7;
+   optional int64 VolumeOfOrdersAtBestOfferPrice = 8;
+   optional int32 NumberOfOrdersAtBestBidPrice = 9;
+   optional int32 NumberOfOrdersAtBestOfferPrice = 10;
+   optional string BidMarketOrdersIndicator = 11;
+   optional string OfferMarketOrdersIndicator = 12;
+   optional int64 BestBidPrice = 13;
+   optional int64 BestOfferPrice = 14;
+   optional int64 MidPrice = 15;
+   optional string BestPriceStatusIndicator = 16;
+   optional string DateOfPreparationAsString = 17;
+   optional string Symbol = 18;
+}
+
+message EquityBackgroundData {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string SegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string IssuerCode = 6;
+   optional string TradableInstrumentType = 7;
+   optional string TradableInstrumentShortName = 8;
+   optional string TradableInstrumentName = 9;
+   optional string SEDOLCode = 10;
+   optional string DefaultCurrency = 11;
+   optional string BidStatus = 12;
+   optional int64 StandardMarketSize = 13;
+   optional int64 NormalMarketSize = 14;
+   optional string DOLClassification = 15;
+   optional string DOLIndicator = 16;
+   optional int64 DOLSpread = 17;
+   optional string DOLSectionNumber = 18;
+   optional string DOLSpreadChangeDateAsString = 19;
+   optional string IndustrySectorCode = 20;
+   optional string LocalMarketTIDM = 21;
+   optional string TradableInstrumentSymbolCodeGroupA = 22;
+   optional string TradableInstrumentSymbolCodeGroupB = 23;
+   optional int64 UnitOfQuotation = 24;
+   optional string AssetClass = 25;
+   optional string CountryOfRegisterStatus = 26;
+   optional int64 NumberOfUnitsIssued = 27;
+   optional string IssuerName = 28;
+   optional int64 ExpectedDateInterimResults = 29;
+   optional int64 ExpectedDateFinalResults = 30;
+   optional int64 ProfitAfterTax = 31;
+   optional int64 CompanyTurnover = 32;
+   optional int32 FreeMarketCapitalisation = 33;
+   optional string StrikePrice = 34;
+   optional string Ratio = 35;
+   optional string ExpiryDateAsString = 36;
+   optional string ExpirySource = 37;
+   optional string SettlementType = 38;
+   optional int64 NetInterimDividend = 39;
+   optional int64 NetFinalDividend = 40;
+   optional string BroadcastUpdateAction = 41;
+   optional string Symbol = 42;
+}
+
+message ExMarkerStatus {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string SegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string ExMarkerCode = 6;
+   optional string ExMarkerStartDateAsString = 7;
+   optional string ExMarkerEndDateAsString = 8;
+   optional string BroadcastUpdateAction = 9;
+   optional string Symbol = 10;
+}
+
+message FrameworkMessage {
+   optional HeaderMessage Header = 1;
+}
+
+message IdlePoll {
+   optional HeaderMessage Header = 1;
+}
+
+message IndexStatus {
+   optional HeaderMessage Header = 1;
+   optional string IndexIdentifier = 2;
+   optional string Status = 3;
+   optional string TimeOfChangeAsString = 4;
+}
+
+message IndexValue {
+   optional HeaderMessage Header = 1;
+   optional string IndexIdentifier = 2;
+   optional int64 Value = 3;
+   optional string IndexDifferential = 4;
+   optional string TimeOfIndexValueAsString = 5;
+   optional string IndexExceptionalStatusIndicator = 6;
+}
+
+message InstrumentTradingData {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string SegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string SectorCode = 6;
+   optional string TradableInstrumentDisplayMnemonic = 7;
+   optional string SuspendedIndicator = 8;
+   optional int64 ExchangeMarketSize = 9;
+   optional int64 PublicationThresholdSize = 10;
+   optional int32 LotSize = 11;
+   optional int64 MinimumSize = 12;
+   optional int32 MinimumPeakSizeMultiplier = 13;
+   optional string PriceFormatCode = 14;
+   optional int32 SecurityMaximumSpread = 15;
+   optional int64 MaximumSpreadFloor = 16;
+   optional int32 StaticPriceMonitoringValue = 17;
+   optional int32 DynamicPriceMoitoringValue = 18;
+   optional string TradableInstrumentEffectiveDateAsString = 19;
+   optional string ValidateTradePrice = 20;
+   optional int64 MinimumTradePrice = 21;
+   optional int64 MaximumTradePrice = 22;
+   optional string BroadcastUpdateAction = 23;
+   optional string Symbol = 24;
+}
+
+message MarketDescription {
+   optional HeaderMessage Header = 1;
+   optional string MarketCode = 2;
+   optional string MarketName = 3;
+   optional string TimeZoneOffset = 4;
+   optional string DaylightSavingsRequired = 5;
+   optional string MarketOpen = 6;
+   optional string MarketClose = 7;
+   optional string BroadcastUpdateAction = 8;
+}
+
+message MarketStatusInformation {
+   optional HeaderMessage Header = 1;
+   optional string MarketSegmentCode = 2;
+   optional string MarketSectorCode = 3;
+   optional string BroadcastMessageLine1 = 4;
+   optional string BroadcastMessageLine2 = 5;
+   optional string PeriodName = 6;
+   optional string PeriodStartTime = 7;
+   optional string CurrencyCode = 8;
+   optional string ParticipantCode = 9;
+   optional string TradableInstrumentCode = 10;
+   optional string CountryOfRegister = 11;
+   optional string ParticipantMnemonic = 12;
+   optional string TradableInstrumentDisplayMnemonic = 13;
+   optional string MarketStatusCondition = 14;
+   optional string Symbol = 15;
+}
+
+message MemberDetails {
+   optional HeaderMessage Header = 1;
+   optional string MemberID = 2;
+   optional string MemberMnemonic = 3;
+   optional string MemberName = 4;
+   optional string BroadcastUpdateAction = 5;
+}
+
+message MemberInSegment {
+   optional HeaderMessage Header = 1;
+   optional string MemberId = 2;
+   optional string SegmentCode = 3;
+   optional string SuspendedIndicator = 4;
+   optional string BroadcastUpdateAction = 5;
+}
+
+message MemberRoleInInstrument {
+   optional HeaderMessage Header = 1;
+   optional string MemberId = 2;
+   optional string TradableInstrumentCode = 3;
+   optional string CountryOfRegister = 4;
+   optional string SegmentCode = 5;
+   optional string CurrencyCode = 6;
+   optional string Role = 7;
+   optional string RegistrationSuspendedStatus = 8;
+   optional string BroadcastUpdateAction = 9;
+   optional string Symbol = 10;
+}
+
+message NewsControl {
+   optional HeaderMessage Header = 1;
+   optional string AnnouncementNumber = 2;
+   optional string AnnouncementDateOfReleaseAsString = 3;
+   optional string AnnouncementCorrectionCode = 4;
+   optional string PreviousAnnouncementNumber = 5;
+   optional string AnnouncementStandbyCode = 6;
+   optional int32 NumberAssociatedTextRecords = 7;
+   optional string AnnouncementHeadline = 8;
+   optional string CompanyDescription = 9;
+   optional string TradableInstrumentCode = 10;
+   optional string CountryOfRegister = 11;
+   optional string TradableInstrumentDisplayMnemonic = 12;
+   optional string AnnouncementGroupCode = 13;
+   optional string Category = 14;
+   optional string SEAQ_I_Indiactor = 15;
+   optional RelatedAnnouncement RelatedAnnouncement1 = 16;
+   optional RelatedAnnouncement RelatedAnnouncement2 = 17;
+   optional RelatedAnnouncement RelatedAnnouncement3 = 18;
+   optional RelatedAnnouncement RelatedAnnouncement4 = 19;
+   optional string NonLondonTradableInstrumentCode = 20;
+   optional string CountryOfPrimaryListing = 21;
+   optional string Symbol = 22;
+}
+
+message RelatedAnnouncement {
+   optional HeaderMessage Header = 1;
+   optional string AnnouncementHeadline = 2;
+   optional string CompanyDescription = 3;
+   optional string TradableInstrumentCode = 4;
+   optional string CoutryOfRegister = 5;
+   optional string TradableInstrumentDisplayMnemonic = 6;
+   optional string Symbol = 7;
+}
+
+message NewsServiceHeader {
+   optional HeaderMessage Header = 1;
+   optional int64 NewsServiceDate = 2;
+   optional int64 NewsServiceTime = 3;
+}
+
+message NewsServiceTrailer {
+   optional HeaderMessage Header = 1;
+   optional int64 NewsServiceDate = 2;
+   optional int64 NewsServiceTime = 3;
+}
+
+message NewsText {
+   optional HeaderMessage Header = 1;
+   optional string AnnouncementNumber = 2;
+   optional int32 NewsMessageSequenceNumber = 3;
+   optional string AnnouncementMessageText = 4;
+}
+
+message OrderDeletion {
+   optional HeaderMessage Header = 1;
+   optional string OrderCode = 2;
+}
+
+message OrderDetails {
+   optional HeaderMessage Header = 1;
+   optional string SegmentCode = 2;
+   optional string SectorCode = 3;
+   optional string TradableInstrumentCode = 4;
+   optional string CountryOfRegister = 5;
+   optional string CurrencyCode = 6;
+   optional string ParticipantCode = 7;
+   optional string BuySellIndicator = 8;
+   optional string MarketMechanismGroup = 9;
+   optional string PrivateOrderCode = 10;
+   optional string MarketMechanismType = 11;
+   optional int64 OrderPrice = 12;
+   optional int64 AggregateSize = 13;
+   optional string Capacity = 14;
+   optional string TimeValidity = 15;
+   optional string DateValidity = 16;
+   optional string PersonalExposure = 17;
+   optional string OrderReference = 18;
+   optional string ClientReference = 19;
+   optional string SingleFillIndicator = 20;
+   optional string BroadcastUpdateAction = 21;
+}
+
+message PeriodExtension {
+   optional HeaderMessage Header = 1;
+   optional string PeriodName = 2;
+   optional string ExtensionPeriodName = 3;
+   optional int32 ExtensionPeriodDuration = 4;
+   optional int32 ExtensionMaximumIterations = 5;
+   optional string ActionExtensionIndicator = 6;
+   optional int32 InvocationSequence = 7;
+   optional string DynamicPriceMonitoringBasis = 8;
+   optional int32 StaticPriceTolerance = 9;
+   optional int32 DynamicPriceTolerance = 10;
+   optional int32 StaticPriceMonitoringMultiplier = 11;
+   optional int32 DynamicPriceMonitoringMultiplier = 12;
+   optional string BroadcastUpdateAction = 13;
+}
+
+message PeriodForMarketSector {
+   optional HeaderMessage Header = 1;
+   optional string MarketSectorCode = 2;
+   optional string PeriodStartTime = 3;
+   optional string MarketSegmentCode = 4;
+   optional string PeriodName = 5;
+   optional string BroadcastUpdateAction = 6;
+}
+
+message PeriodHandlingForMarketMechanismType {
+   optional HeaderMessage Header = 1;
+   optional string PeriodName = 2;
+   optional string MarketMechanismType = 3;
+   optional string ExpireAtStart = 4;
+   optional string BroadcastUpdateAction = 5;
+}
+
+message PeriodHandlingForValidityType {
+   optional HeaderMessage Header = 1;
+   optional string PeriodName = 2;
+   optional string ValidityType = 3;
+   optional string EntryCondition = 4;
+   optional string InjectAtStart = 5;
+   optional string ExpireAtStart = 6;
+   optional string BroadcastUpdateAction = 7;
+}
+
+message PeriodRules {
+   optional HeaderMessage Header = 1;
+   optional string PeriodName = 2;
+   optional string PeriodDescription = 3;
+   optional string PeriodStatus = 4;
+   optional string ExecutionIndicator = 5;
+   optional string ImportedAuctionPriceIndicator = 6;
+   optional string ExtensionCheckRequired = 7;
+   optional string PeriodBasedPriceMonitoringFlag = 8;
+   optional string MinimumAuctionVolumeIndicator = 9;
+   optional int32 MinimumAuctionVolumeMultiplier = 10;
+   optional string BookCleardownIndicator = 11;
+   optional string EntryAllowed = 12;
+   optional string ClosingPriceDisseminationIndicator = 13;
+   optional string BroadcastUpdateAction = 14;
+}
+
+message PeriodRulesForMarketMechanismAndValidityType {
+   optional HeaderMessage Header = 1;
+   optional string PeriodName = 2;
+   optional string ValidityType = 3;
+   optional string MarketMechanismType = 4;
+   optional string EntryAllowedIndicator = 5;
+   optional string ModificationAllowedIndicator = 6;
+   optional string DeleteOrCloseAllowedIndicator = 7;
+   optional string BroadcastpdateAction = 8;
+}
+
+message SectorDescription {
+   optional HeaderMessage Header = 1;
+   optional string SectorCode = 2;
+   optional string SectorName = 3;
+   optional string SegmentCode = 4;
+   optional string BroadcastUpdateAction = 5;
+}
+
+message SectorPeriodChange {
+   optional HeaderMessage Header = 1;
+   optional string MarketSectorCode = 2;
+   optional string PeriodStartTime = 3;
+   optional string MarketSegmentCode = 4;
+   optional string PeriodName = 5;
+}
+
+message SegmentDescription {
+   optional HeaderMessage Header = 1;
+   optional string SegmentCode = 2;
+   optional string SegmentName = 3;
+   optional int32 MaximumSizeMultiplier = 4;
+   optional string ValidateMaximumExpiryDate = 5;
+   optional int32 MaximumNumberOfValidDaysForOrder = 6;
+   optional string TradeReportingPeriodStartTime = 7;
+   optional string TradeReportingPeriodEndTime = 8;
+   optional string MarketCode = 9;
+   optional string TradeReportingBasis = 10;
+   optional string OvernightTradeTimeLimit = 11;
+   optional string TraderIDRequiredIndicator = 12;
+   optional string NotificationBasis = 13;
+   optional string ConsiderationBasedMultiplierFlag = 14;
+   optional string TradesBasedSegmentIndicator = 15;
+   optional string ClosingPriceIndicatorVWAP = 16;
+   optional string ClosingPriceIndicatorMidPrice = 17;
+   optional string BestPriceTypeIndicator = 18;
+   optional string BroadcastUpdateAction = 19;
+}
+
+message SettlementVenueForTradableInstrument {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string SegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string SettlementVenue = 6;
+   optional string ExecutionType = 7;
+   optional bool SuspendedIndicator = 8;
+   optional string BroadcastUpdateAction = 9;
+   optional string Symbol = 10;
+}
+
+message SettlementVenues {
+   optional HeaderMessage Header = 1;
+   optional string SettlementVenue = 2;
+   optional string SettlementVenueName = 3;
+   optional string NovationFlag = 4;
+   optional string ReservedField = 5;
+   optional string BroadcastUpdateAction = 6;
+}
+
+message TemporaryPeriodForATradableInstrumentOrCurrency {
+   optional HeaderMessage Header = 1;
+   optional string MarketSegmentCode = 2;
+   optional string TradableInstrumentCode = 3;
+   optional string CountryOfRegister = 4;
+   optional string CurrencyCode = 5;
+   optional string PeriodStartTime = 6;
+   optional string PeriodName = 7;
+   optional string BroadcastUpdateAction = 8;
+   optional string Symbol = 9;
+}
+
+message TickSizeMatrixForSegmentOrCurrency {
+   optional HeaderMessage Header = 1;
+   optional string SegmentCode = 2;
+   optional string CurrencyCode = 3;
+   optional int64 UpperPriceBand = 4;
+   optional int64 LowerPriceBand = 5;
+   optional int64 TickSize = 6;
+   optional string BroadcastUpdateAction = 7;
+}
+
+message TradableInstrumentControl {
+   optional HeaderMessage Header = 1;
+   optional string MarketSegmentCode = 2;
+   optional string TradableInstrumentCode = 3;
+   optional string CountryOfRegister = 4;
+   optional string CurrencyCode = 5;
+   optional string TradableInstrumentSuspendedStatus = 6;
+   optional string SEDOLCode = 7;
+   optional string ReservedField1 = 8;
+   optional string ReservedField2 = 9;
+   optional string ReservedField3 = 10;
+   optional string ReservedField4 = 11;
+   optional string Symbol = 12;
+}
+
+message TradableInstrumentOrCurrencyPeriodChange {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string MarketSegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string PeriodStartTime = 6;
+   optional string PeriodName = 7;
+   optional string Symbol = 8;
+}
+
+message TradeReport {
+   optional HeaderMessage Header = 1;
+   optional string MarketSegmentCode = 2;
+   optional string TradableInstrumentCode = 3;
+   optional string CountryOfRegister = 4;
+   optional string CurrencyCode = 5;
+   optional string TradeCode = 6;
+   optional int64 TradePrice = 7;
+   optional int64 TradeSize = 8;
+   optional string Counterparty1 = 9;
+   optional string Counterparty2 = 10;
+   optional string TradeDateAsString = 11;
+   optional string TradeTimeAsString = 12;
+   optional string TradeTypeIndicator = 13;
+   optional string BargainConditionIndicator = 14;
+   optional string TradeTimeIndicator = 15;
+   optional string ConvertedPriceIndicator = 16;
+   optional string BroadcastUpdateAction = 17;
+   optional string Symbol = 18;
+   optional EnhancedBestPrice Quote = 19;
+}
+
+message TradeTypePerSegment {
+   optional HeaderMessage Header = 1;
+   optional string SegmentCode = 2;
+   optional string TradeTypeIndicator = 3;
+   optional string ConsiderationBasedIndicator = 4;
+   optional int32 MinimumSizeMultiplier = 5;
+   optional string BroadcastUpdateAction = 6;
+}
+
+message UncrossingCompleted {
+   optional HeaderMessage Header = 1;
+   optional string MarketSegmentCode = 2;
+   optional string MarketSectorCode = 3;
+   optional string TradableInstrumentCode = 4;
+   optional string CountryOfRegister = 5;
+   optional string CurrencyCode = 6;
+   optional string Symbol = 7;
+}
+
+message UncrossingPriceAndVolume {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string MarketSegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string MarketSectorCode = 6;
+   optional int64 BestBidPrice = 7;
+   optional int64 BestOfferPrice = 8;
+   optional int64 MidPrice = 9;
+   optional int64 UncrossingPrice = 10;
+   optional int64 UncrossingVolume = 11;
+   optional string UncrossingPriceStatusIndicator = 12;
+   optional string DateOfPreparationAsString = 13;
+   optional string TimeOfPreparationAsString = 14;
+   optional string Symbol = 15;
+}
+
+message VWAPFromTrades {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 2;
+   optional string CountryOfRegister = 3;
+   optional string SegmentCode = 4;
+   optional string CurrencyCode = 5;
+   optional string SectorCode = 6;
+   optional int64 VWAP = 7;
+   optional int64 DateOfPreparation = 8;
+   optional int64 TimeOfPreparation = 9;
+   optional string Symbol = 10;
+}
+
+message ClosingPrice {
+   optional HeaderMessage Header = 1;
+   optional string TradableInstrumentCode = 8;
+   optional string CountryOfRegister = 9;
+   optional string MarketSegmentCode = 10;
+   optional string CurrencyCode = 11;
+   optional string MarketSectorCode = 12;
+   optional int64 ClosingBidPrice = 13;
+   optional int64 ClosingOfferPrice = 14;
+   optional int64 ClosingMidTradePrice = 15;
+   optional string BestPriceStatusIndicator = 16;
+   optional string ClosingPriceDeterminationIndicator = 17;
+   optional string RepublicationIndicator = 18;
+   optional string Symbol = 19;
+}
+

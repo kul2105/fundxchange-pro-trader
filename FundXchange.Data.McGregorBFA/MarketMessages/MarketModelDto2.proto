@@ -1,0 +1,52 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.DTOs;
+
+message EquityDetailsDtoCollection {
+   repeated EquityDetailsDto Equities = 1;
+}
+
+message EquityDetailsDto {
+   optional string Exchange = 1;
+   optional string ISIN = 2;
+   optional string Symbol = 3;
+   optional string CountryOfRegister = 4;
+   optional string MarketSegmentCode = 5;
+   optional string CurrencyCode = 6;
+   optional string MarketSectorCode = 7;
+   optional int64 VolumeOrdersAtBestBidPrice = 8;
+   optional int64 VolumeOrdersAtBestOfferPrice = 9;
+   optional int32 NumberOrdersAtBestBidPrice = 10;
+   optional int32 NumberOrdersAtBestOfferPrice = 11;
+   optional string BidMarketOrdersIndicator = 12;
+   optional string OfferMarketOrdersIndicator = 13;
+   optional int64 BestBidPrice = 14;
+   optional int64 BestOfferPrice = 15;
+   optional int64 MidPrice = 16;
+   optional string BestPriceStatusIndicator = 17;
+   optional int64 QuoteDateAsTicks = 18;
+   optional int64 ClosingBidPrice = 19;
+   optional int64 ClosingOfferPrice = 20;
+   optional int64 ClosingMidTradePrice = 21;
+   optional string LastTrade_TradeCode = 22;
+   optional int64 LastTrade_TradePrice = 23;
+   optional int64 LastTrade_TradeSize = 24;
+   optional int64 LastTrade_TradeDateAsTicks = 25;
+   optional string LastTrade_TradeTypeIndicator = 26;
+   optional string LastTrade_BargainConditionIndicator = 27;
+   optional string LastTrade_TradeTimeIndicator = 28;
+   optional string LastTrade_ConvertedPriceIndicator = 29;
+   optional int64 LastTrade_SequenceNumber = 30;
+   optional int64 DailyValue = 31;
+   optional int64 DailyVolume = 32;
+   optional int64 NumberOfDeals = 33;
+   optional int64 Open = 34;
+   optional int64 High = 35;
+   optional int64 Low = 36;
+   optional int64 CentsMoved = 37;
+   optional int64 YesterdayClose = 38;
+   optional int64 LastWeekClose = 39;
+   optional int64 LastMonthClose = 40;
+   optional int64 Last3MonthClose = 41;
+   optional int64 LastYearClose = 42;
+}
+

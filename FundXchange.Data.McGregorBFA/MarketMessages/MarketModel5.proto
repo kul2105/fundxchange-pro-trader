@@ -1,0 +1,9 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.Protocol.DataFeed;
+
+message SocketHandshakeResponse {
+   optional int32 ResultCode = 1;
+   optional string SessionId = 2;
+   optional string ResultMessage = 3;
+}
+

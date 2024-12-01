@@ -1,0 +1,25 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.Protocol.DataFeed;
+
+message AddSubscriptionCommand {
+   optional string ExchangeName = 1;
+   optional string ItemCode = 2;
+   optional SubscriptionLevel SubscriptionLevel = 3;
+   optional string SessionId = 4;
+   optional string ProductId = 5;
+}
+message RemoveSubscriptionCommand {
+   optional string ExchangeName = 1;
+   optional string ItemCode = 2;
+   optional SubscriptionLevel SubscriptionLevel = 3;
+   optional string SessionId = 4;
+   optional string ProductId = 5;
+}
+enum SubscriptionLevel {
+   None = 0;
+   Level1 = 1;
+   Level2 = 2;
+   Level2Restricted = 4;
+   Index = 8;
+}
+

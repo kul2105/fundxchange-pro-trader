@@ -1,0 +1,8 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.Protocol.DataFeed;
+
+message JSERawMessage {
+   optional int64 TimeReceivedAsTicks = 1;
+   optional string RawMessage = 2;
+}
+

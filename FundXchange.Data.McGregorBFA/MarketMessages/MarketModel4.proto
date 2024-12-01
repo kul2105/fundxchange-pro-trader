@@ -1,0 +1,13 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.Protocol.DataFeed;
+
+message SocketHandshakeRequest {
+   optional string Username = 1;
+   optional string Password = 2;
+   optional string CustomCredentials = 3;
+   optional string Context = 4;
+   optional string VendorId = 5;
+   optional string ProductId = 6;
+   optional bool ForceSessionOverride = 7;
+}
+

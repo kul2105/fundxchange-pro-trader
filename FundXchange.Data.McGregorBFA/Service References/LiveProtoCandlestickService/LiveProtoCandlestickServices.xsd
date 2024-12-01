@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" />
+  <xs:import schemaLocation="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Util.Model.Results" />
+  <xs:element name="GetEquityCandlesticks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" minOccurs="0" name="credentials" nillable="true" type="q1:CredentialDto" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" minOccurs="0" name="instrumentRequest" nillable="true" type="q2:InstrumentRequestDto" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" minOccurs="0" name="candleRequest" nillable="true" type="q3:CandleRequestDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquityCandlesticksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetEquityCandlesticksResult" nillable="true" type="q4:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexCandlesticks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" minOccurs="0" name="credentials" nillable="true" type="q5:CredentialDto" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" minOccurs="0" name="instrumentRequest" nillable="true" type="q6:InstrumentRequestDto" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" minOccurs="0" name="candleRequest" nillable="true" type="q7:CandleRequestDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexCandlesticksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Util.Model.Results" minOccurs="0" name="GetIndexCandlesticksResult" nillable="true" type="q8:OperationResultOfbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

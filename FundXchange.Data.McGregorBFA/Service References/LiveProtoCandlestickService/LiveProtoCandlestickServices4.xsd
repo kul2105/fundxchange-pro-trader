@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://app12.fin24.com:25001/LiveProtoCandlestickServices?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.Enumerations" />
+  <xs:complexType name="CredentialDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VendorId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CredentialDto" nillable="true" type="tns:CredentialDto" />
+  <xs:complexType name="InstrumentRequestDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExchangeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Identifier" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InstrumentRequestDto" nillable="true" type="tns:InstrumentRequestDto" />
+  <xs:complexType name="CandleRequestDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Interval" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfCandles" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Fin24.LiveData.Candlestick.Services.API.Enumerations" minOccurs="0" name="Period" type="q1:PeriodEnum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CandleRequestDto" nillable="true" type="tns:CandleRequestDto" />
+</xs:schema>

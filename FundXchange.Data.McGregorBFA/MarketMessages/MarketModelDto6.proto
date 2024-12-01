@@ -1,0 +1,21 @@
+option optimize_for = SPEED;
+package Fin24.LiveData.Common.DTOs;
+
+message IndexValueDtoCollection {
+   repeated IndexValueDto Indices = 1;
+}
+
+message IndexValueDto {
+   optional string Exchange = 1;
+   optional string IndexIdentifier = 2;
+   optional int64 IndexValue = 3;
+   optional int64 TimeOfIndexValueAsTicks = 4;
+   optional string IndexDifferential = 5;
+   optional int64 SequenceNumber = 6;
+   optional int64 YesterdayClose = 7;
+   optional int64 LastWeekClose = 8;
+   optional int64 LastMonthClose = 9;
+   optional int64 Last3MonthClose = 10;
+   optional int64 LastYearClose = 11;
+}
+

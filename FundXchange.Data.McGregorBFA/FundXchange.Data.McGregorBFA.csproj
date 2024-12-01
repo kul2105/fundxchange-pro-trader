@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4BE7DB0-2D77-43A3-ABCC-F10ED65A0047}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FundXchange.Data.McGregorBFA</RootNamespace>
+    <AssemblyName>FundXchange.Data.McGregorBFA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JsonLibCommon">
+      <HintPath>..\DLLs\JsonLibCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NHibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MQTTnet">
+      <HintPath>..\DLLs\MQTTnet.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=1.0.0.282, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ProtoBuf\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoSharp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b6b45f27e2749b17, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OECDDLL\ProtoSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncUserToken.cs" />
+    <Compile Include="DataAdapter.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="MarketMessages\Candlestick_Dto_Collection.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Candlestick_Dto_Collection.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel0.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel0.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel1.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel10.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel11.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel2.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel3.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel4.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel5.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel6.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel7.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModel8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModel8.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto1.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto2.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto3.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto4.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto5.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto6.proto</DependentUpon>
+    </Compile>
+    <Compile Include="MarketMessages\MarketModelDto7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MarketModelDto7.proto</DependentUpon>
+    </Compile>
+    <Compile Include="OrderbookEvent.cs" />
+    <Compile Include="ProtocolParser.cs" />
+    <Compile Include="ProtocolTypeMapper.cs" />
+    <Compile Include="ProtoId.cs" />
+    <Compile Include="RealtimeDataProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\LiveProtoCandlestickService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceDesk\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SubscriptionManagementService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fin24.Util\Util.General\Util.General.csproj">
+      <Project>{AFC1C90E-9C82-4879-BC81-7190B8D39141}</Project>
+      <Name>Util.General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.DataProviderContracts\FundXchange.DataProviderContracts.csproj">
+      <Project>{8988F757-656D-4F68-AF7F-850AAEA4DFF8}</Project>
+      <Name>FundXchange.DataProviderContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.Domain\FundXchange.Domain.csproj">
+      <Project>{25E9FD71-50F8-4A30-8CB3-83F8FA443AA5}</Project>
+      <Name>FundXchange.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InsightCapital.STTAPI.MessageLibrary\InsightCapital.STTAPI.MessageLibrary.csproj">
+      <Project>{143d1d3c-dac4-4bd9-bc02-6b1d9bea481c}</Project>
+      <Name>InsightCapital.STTAPI.MessageLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JSEServersAPI\JSEServersAPI.csproj">
+      <Project>{8b46982a-8281-4b9e-aee3-0d551fb542cf}</Project>
+      <Name>JSEServersAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MQTTAPI\MQTTAPI.csproj">
+      <Project>{cc25ea75-8652-49cb-8eb8-5a025816124a}</Project>
+      <Name>MQTTAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{2227038A-097C-4E36-A81B-FC6DDB66F086}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\LiveProtoCandlestickService\" />
+    <WCFMetadataStorage Include="Service References\ServiceDesk\" />
+    <WCFMetadataStorage Include="Service References\SubscriptionManagementService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceDesk\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceDesk\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceDesk\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SubscriptionManagementService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SubscriptionManagementService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SubscriptionManagementService\FundXchange.Data.McGregorBFA.SubscriptionManagementService.OperationResultOfboolean.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SubscriptionManagementService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfEquityCandlestickJLlf0r_PD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfEquityDetailsDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfEquityDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfIndexCandlestickJLlf0r_PD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfIndexDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfIndexValueDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfArrayOfTradeDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfbase64Binary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfEquityDetailsDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceDesk\FundXchange.Data.McGregorBFA.ServiceDesk.OperationResultOfIndexValueDtogJDp_PiJh.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService1.wsdl" />
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService5.xsd" />
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService51.xsd" />
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService52.xsd" />
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService53.xsd" />
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService54.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SubscriptionManagementService\SubscriptionManagementService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceDesk\ServiceDeskServices.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices1.wsdl" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices1.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices2.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices3.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices4.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices5.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices6.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MarketMessages\Candlestick_Dto_Collection.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>Candlestick_Dto_Collection.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel0.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel0.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel1.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel1.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel10.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel10.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel11.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel11.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel2.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel2.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel3.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel3.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel4.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel4.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel5.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel5.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel6.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel6.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel7.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel7.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModel8.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModel8.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto1.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto1.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto2.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto2.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto3.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto3.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto4.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto4.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto5.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto5.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto6.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto6.cs</LastGenOutput>
+    </None>
+    <None Include="MarketMessages\MarketModelDto7.proto">
+      <Generator>ProtoBufTool</Generator>
+      <LastGenOutput>MarketModelDto7.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices.xsd" />
+    <None Include="Service References\ServiceDesk\ServiceDeskServices1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices.disco" />
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices.wsdl" />
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices1.xsd" />
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices2.xsd" />
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices3.xsd" />
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices4.xsd" />
+    <None Include="Service References\LiveProtoCandlestickService\LiveProtoCandlestickServices5.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LiveProtoCandlestickService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LiveProtoCandlestickService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LiveProtoCandlestickService\FundXchange.Data.McGregorBFA.LiveProtoCandlestickService.OperationResultOfbase64Binary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LiveProtoCandlestickService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
