@@ -1,0 +1,90 @@
+2010-07-19 11:23:12Z
+J250|JSE|ALEX|SA Financials and Industrials      |SA Fini and I
+JA3R|JSE|ALLAFR30R|FTSE/JSE All Africa ex SA 30 Index|ALLAFR30R
+JA0R|JSE|ALLAFRICA40R|FTSE/JSE All Africa 40 Index - Rand|ALLAFRICA40R
+J203|JSE|ALSH|All Share                          |All Share    
+J232|JSE|ALTI|Alt X                              |Alt X        
+J233|JSE|ALTX|FTSE/JSE ALTX 15                   |ALTX 15      
+J257|JSE|ASIN|SA Industrials                     |SA Industrial
+J335|JSE|AUTM|Automobiles & Parts                |Automobiles  
+J835|JSE|BANK|Banks                              |Banks        
+J510|JSE|BASM|Basic Materials                    |Basic Materia
+J353|JSE|BEVR|Beverages                          |Beverages    
+J303|JSE|CALS|Capped All Share Index             |Capped Alsi  
+J135|JSE|CHES|Chemicals                          |Chemicals    
+J151|JSE|COAL|Coal Mining                        |Coal Mining  
+J530|JSE|CONG|Consumer Goods                     |Con Goods    
+J235|JSE|CONM|Construction & Materials           |Construction 
+J550|JSE|CONS|Consumer Services                  |Con Services 
+J300|JSE|CTOP|Capped Top 40 Index                |Capped Top 40
+J403|JSE|DALS|Shareholder Weighted All Share     |Share Alsi   
+J230|JSE|DEVC|Development Capital                |Develop Cap  
+J259|JSE|DIVP|Dividend+                          |Div+         
+J400|JSE|DTOP|Shareholder Weighted Top 40        |Share Top 40 
+J273|JSE|ELEE|Electronic & Electrical Equipment  |Electronic   
+J898|JSE|EQII|Equity Investment Instruments      |Eq Investment
+J2EQ|JSE|ETOP|Equally Weighted Top 40 Index|ETOP
+J580|JSE|FINA|Financials                         |Financials   
+J212|JSE|FINI|Financial 15                       |Financial 15 
+J331|JSE|FJGI|Growth Index                       |Growth Index 
+J330|JSE|FJVI|Value Index                        |Value Index  
+J204|JSE|FLED|Fledgling                          |Fledgling    
+J213|JSE|FNDI|Financial and Industrial 30        |Findi 30     
+J357|JSE|FOOD|Food Producers                     |Food Prod    
+J533|JSE|FOOR|Food & Drug Retailers              |Food and Dr  
+J173|JSE|FORE|Forestry & Paper                   |Forestry & Pa
+J653|JSE|FTEL|Fixed Line Telecommunications      |Fixed Telecom
+J877|JSE|GENF|General Financial                  |General Finan
+J272|JSE|GENI|General Industrials                |Gen Industry 
+J537|JSE|GERE|General Retailers                  |Gen Retailers
+J150|JSE|GLDX|Gold Mining                        |Gold Mining  
+J957|JSE|HCOM|Technology Hardware & Equipment    |Tech Hard&Equ
+J540|JSE|HEAL|Health Care                        |Health Care  
+J453|JSE|HEES|Health Care Equipment & Services   |Health & Serv
+J372|JSE|HOUS|Household Goods                    |House Goods  
+J520|JSE|IIND|Industrials                        |Industrials  
+J275|JSE|INDE|Industrial Engineering             |Industrial En
+J211|JSE|INDI|Industrial 25                      |Industrial 25
+J175|JSE|INDM|Industrial Metals                  |Industrial Me
+J277|JSE|INDT|Industrial Transportation          |Ind Transport
+J101|JSE|JSE SRI SWIX|JSE SRI SWIX|JSE SRI SWIX
+J374|JSE|LEIS|Leisure Goods                      |Leisure Goods
+J857|JSE|LIFE|Life Insurance                     |Life Assuranc
+J555|JSE|MEDI|Media                              |Media        
+J154|JSE|METL|General Mining                     |Gen Mining   
+J201|JSE|MIDC|Mid Cap                            |Mid Cap      
+J177|JSE|MINI|Mining                             |Mining       
+J657|JSE|MTEL|Mobile Telecommunications          |Mob Telecoms 
+J853|JSE|NLIF|Nonlife Insurance                  |Nonlife Ins  
+J500|JSE|OILG|Oil & Gas                          |Oil and Gas  
+J055|JSE|OILP|Oil & Gas Producers                |Oil & Gas Pro
+J254|JSE|PCAP|Capped Property Index              |Capped Proper
+J376|JSE|PERG|Personal Goods                     |Pers Goods   
+J457|JSE|PHAR|Pharmaceuticals & Biotechnology    |Pharm & Biote
+J153|JSE|PLAT|Platinum Mining                    |Platinum Mine
+J251|JSE|PREF|FTSE/JSE Preference Share Index|PREF
+J255|JSE|PRUT|Property Unit Trust                |Prop Unit Tr 
+J256|JSE|PULS|Property Loan Stock                |Prop Loan Stk
+J283|JSE|RAFCAP|FTSE/JSE Capped RAFI All Share Inde|Capped RAFI
+J260|JSE|RAFI|RAFI 40|RAFI 40
+J263|JSE|RALS|FTSE/JSE RAFI All Share|RAFI All Share
+J863|JSE|REDS|Real Estate Development & Services |Real Estate D
+J867|JSE|REIV|Real Estate Investment Trusts      |Real Estate I
+J210|JSE|RESI|Resource 20                        |Resource 20  
+J253|JSE|SAPY|SA Listed Property                 |SA Property  
+J258|JSE|SARI|SA Resources                       |Resources    
+SAVI|JSE|SAVI|SA Volatility Index|SAVI
+SAVID|JSE|SAVID|SAVI US Dollar|SAVID
+SAVWM|JSE|SAVWM|SAVI White Maize|SAVI Maize
+J953|JSE|SCOM|Software & Computer Services       |Software     
+J143|JSE|SHARIAH|FTSE/JSE Shariah All Share Index|SHARIAH
+J140|JSE|SHARIAH40|FTSE/JSE Shariah Top 40 Index|SHARIAH40
+J202|JSE|SMLC|Small Cap                          |Small Cap    
+J100|JSE|SRII|JSE SRI Index                      |JSE SRI Index
+J279|JSE|SUPS|Support Services                   |Sup Services 
+J378|JSE|TABA|Tobacco                            |Tobacco      
+J590|JSE|TECH|Technology                         |Technology   
+J560|JSE|TELE|Telecommunication                  |Telecoms     
+J200|JSE|TOPI|Top 40                             |Top 40       
+J575|JSE|TRAV|Travel & Leisure                   |Lei and Hotel
+J231|JSE|VENC|Venture Capital                    |Venture Cap  

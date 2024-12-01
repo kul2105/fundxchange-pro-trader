@@ -1,0 +1,936 @@
+2010-08-13 09:13:02Z
+ZAE000102026|JSE|Ordinary_Share|1TIME HOLDINGS LTD                      |1TIME          |1TM
+ZAE000137980|JSE|Investment_Product|ABLSISPX514JULY2014                     |ABLSISPX5      |ABAC05
+ZAE000147070|JSE|Investment_Product|ABAC SP 08 - 8 JUNE 2015                |AB AC SP 08    |ABAC08
+ZAE000119889|JSE|Investment_Product|AB LSI RESET COMM 10MAY15               |ABLSIBB01      |ABBB01
+ZAE000119384|JSE|Investment_Product|AB LSI RESET COMM 3MAY13                |ABLSICD01      |ABCD01
+ZAE000122487|JSE|Investment_Product|ABLSI RESET COMM1JUL13                  |ABLSICD02      |ABCD02
+ZAE000111803|JSE|Investment_Product|ABLSICPITOP405DEC2012                   |ABLSICT01      |ABCT01
+ZAE000118238|JSE|Investment_Product|AB LSI CPI TOP40 4AP2013                |ABLSICT02      |ABCT02
+ZAE000134821|JSE|Investment_Product|ABLSIERAFI26MAR2012                     |ABLSIER01      |ABER01
+ZAE000118444|JSE|Investment_Product|AB LSI GOLDPRICE 12APR2011              |ABLSIGP02      |ABGP02
+ZAE000105169|JSE|Ordinary_Share|AFRICAN BRICK CENTRE LTD                |AFBRICK        |ABK
+ZAE000030060|JSE|Ordinary_Share|AFRICAN BANK INVESTMENTS                |ABIL           |ABL
+ZAE000141818|JSE|Investment_Product|NB ABL 1528CID 1:1OCT10                 |NB ABL CID     |ABLNID
+ZAE000065215|JSE|Preference_Shares|AFRICAN BANK INV PREF                   |ABIL PREF      |ABLP
+ZAE000142394|JSE|Warrants|SB ABL 3200CF 8:1JUL10                  |SB ABL CF      |ABLSBF
+ZAE000146346|JSE|Warrants|SB ABL 3350CG 8:1DEC10                  |SB ABL CG      |ABLSBG
+ZAE000143517|JSE|Warrants|SB ABL 2750PS 10:1AUG10                 |SB ABL PS      |ABLSBS
+ZAE000145322|JSE|Warrants|SB ABL 3300PT 8:1NOV10                  |SB ABL PT      |ABLSBT
+ZAE000146460|JSE|Investment_Product|SB ABL 2300CFT 1:1JUN11                 |SB ABL CFT     |ABLSTF
+ZAE000144267|JSE|Ordinary_Share|ABSOLUTE HOLDINGS LTD                   |ABSOLUTE       |ABO
+ZAE000079810|JSE|Preference_Shares|ABSA BANK LTD PREF                      |ABSA BANK - P  |ABSP
+ZAE000107363|JSE|Investment_Product|ABLSIRESETSWIX408OCT15                  |ABLSISW01      |ABSW01
+ZAE000108320|JSE|Investment_Product|ABLSIRESETSWIX4015OCT15                 |ABLSISW02      |ABSW02
+ZAE000110011|JSE|Investment_Product|ABLSIRESETSWIX407AUG15                  |ABLSISW03      |ABSW03
+ZAE000116893|JSE|Investment_Product|ABLSIRESETSWIX4003MAR16                 |ABLSISW05      |ABSW05
+ZAE000123444|JSE|Investment_Product|ABLSIRESETSWIX4018JUL16                 |ABLSISW07      |ABSW07
+ZAE000123782|JSE|Investment_Product|ABLSIRESETSWIX4025JUL16                 |ABLSISW08      |ABSW08
+ZAE000134805|JSE|Investment_Product|ABLSIRESETSWIX4021AUG17                 |ABLSISW10      |ABSW10
+ZAE000136776|JSE|Investment_Product|ABLSIRESETSWIX4008DEC17                 |ABLSISW11      |ABSW11
+ZAE000138814|JSE|Investment_Product|ABLSIRESETSWIX4014AUG17                 |ABLSISW12      |ABSW12
+ZAE000142790|JSE|Investment_Product|ABLSISW13 NOVEMBER2018                  |ABLSISW13      |ABSW13
+ZAE000143996|JSE|Investment_Product|AB LSI SW14 JANUARY2011                 |ABLSISW14      |ABSW14
+ZAE000146080|JSE|Investment_Product|AB LSI SW15-13APRIL2011                 |ABLSISW15      |ABSW15
+ZAE000146536|JSE|Investment_Product|AB LSI SW 16 - 11MAY2018                |ABLSISW16      |ABSW16
+ZAE000135307|JSE|Investment_Product|ABLSITOP12MAY2012                       |ABLSITFO1      |ABTF01
+ZAE000135299|JSE|Investment_Product|ABLSITOP22MAY2012                       |ABLSIFT02      |ABTF02
+ZAE000136743|JSE|Investment_Product|ABLSITOPI25MAY2012                      |ABLSITF03      |ABTF03
+ZAE000136750|JSE|Investment_Product|ABLSITOPI25MAY2012                      |ABLSITF04      |ABTF04
+ZAE000136768|JSE|Investment_Product|ABLSITOPI25MAY2012                      |ABLSITF05      |ABTF05
+ZAE000137675|JSE|Investment_Product|ABLSITOP629JUNE2012                     |ABLSITF06      |ABTF06
+ZAE000137659|JSE|Investment_Product|ABLSITOP729JUNE2012                     |ABLSITF07      |ABTF07
+ZAE000137667|JSE|Investment_Product|ABLSITOP829JUNE2012                     |ABLSITF08      |ABTF08
+ZAE000138509|JSE|Investment_Product|ABLSITOP923JULY2012                     |ABLSITF09      |ABTF09
+ZAE000138525|JSE|Investment_Product|ABLSITP1023JULY2012                     |ABLSITF10      |ABTF10
+ZAE000138517|JSE|Investment_Product|ABLSITP1123JULY2012                     |ABLSITF11      |ABTF11
+ZAE000139085|JSE|Investment_Product|ABLSITF12AUGUST2012                     |ABLSITF12      |ABTF12
+ZAE000139077|JSE|Investment_Product|ABLSITF13AUGUST2012                     |ABLSITF13      |ABTF13
+ZAE000139093|JSE|Investment_Product|ABLSITF14AUGUST2012                     |ABLSITF14      |ABTF14
+ZAE000140414|JSE|Investment_Product|AB LSITF15 SEPTEMBER2012                |ABLSITF15      |ABTF15
+ZAE000140422|JSE|Investment_Product|AB LSITF16 SEPTEMBER2012                |ABLSITF16      |ABTF16
+ZAE000140430|JSE|Investment_Product|AB LSITF17 SEPTEMBER2012                |ABLSITF17      |ABTF17
+ZAE000142105|JSE|Investment_Product|AB LSITF18 OCTOBER 2012                 |ABLSITF18      |ABTF18
+ZAE000142113|JSE|Investment_Product|AB LSITF19 OCTOBER 2012                 |ABLSITF19      |ABTF19
+ZAE000142121|JSE|Investment_Product|AB LSITF20 OCTOBER 2012                 |ABLSITF20      |ABTF20
+ZAE000142949|JSE|Investment_Product|ABLSITF21 NOVEMBER2012                  |ABLSITF21      |ABTF21
+ZAE000142956|JSE|Investment_Product|ABLSITF22 NOVEMBER2012                  |ABLSITF22      |ABTF22
+ZAE000142964|JSE|Investment_Product|ABLSITF23 NOVEMBER2012                  |ABLSITF23      |ABTF23
+ZAE000103800|JSE|Investment_Product|ABLSIRESETTOP4023AUG13                  |ABLSITP01      |ABTP01
+ZAE000106092|JSE|Investment_Product|ABLSIRESETTOP4027SEP13                  |ABLSITP02      |ABTP02
+ZAE000111647|JSE|Investment_Product|ABLSIRESETTOP4026NOV13                  |ABLSITP03      |ABTP03
+ZAE000112777|JSE|Investment_Product|ABLSIRESETTOP4019OCT2015                |ABLSITP04      |ABTP04
+ZAE000122107|JSE|Investment_Product|ABLSIRESETTOP40 24JUNE13                |ABLSITP05      |ABTP05
+ZAE000128690|JSE|Investment_Product|ABLSI RESETTOP40 24OCT13                |ABLSITOP06     |ABTP06
+ZAE000130407|JSE|Investment_Product|ABLSITOP404JUN2012                      |ABLSITOP08     |ABTP08
+ZAE000130928|JSE|Investment_Product|ABLSITOP409JAN2012                      |ABLSITOP09     |ABTP09
+ZAE000102059|JSE|Ordinary_Share|ABE CONSTR CHEMICALS LTD                |ABE            |ABU
+ZAE000115986|JSE|Ordinary_Share|ACCENTUATE LTD                          |ACCENT         |ACE
+ZAE000134961|JSE|Ordinary_Share|ARCELORMITTAL SA LTD                    |ARCMITTAL      |ACL
+ZAE000141347|JSE|Investment_Product|NB ACL5750CIF 1:1OCT10                  |NB ACL CIF     |ACLNIF
+ZAE000142402|JSE|Warrants|SB ACL R110CL 40:1JUL10                 |SB ACL CL      |ACLSBL
+ZAE000143509|JSE|Warrants|SB ACL 9500PW 35:1AUG10                 |SB ACL PW      |ACLSBW
+ZAE000141511|JSE|Investment_Product|SI ACL 5750CE 1:1SEP10                  |SI ACL CE      |ACLSIE
+ZAE000134763|JSE|Investment_Product|SBACL6000CDT1:0.9000SE10                |SB ACL CDT     |ACLSTD
+ZAE000037651|JSE|Ordinary_Share|ACUCAP PROPERTIES LTD                   |ACUCAP         |ACP
+ZAE000078416|JSE|Ordinary_Share|AFROCENTRIC INV CORP LTD                |AFRO-C         |ACT
+ZAE000082269|JSE|Preference_Shares|AFROCENTRIC INV CORP PRF                |AFRO-C PREF    |ACTP
+ZAE000031035|JSE|Ordinary_Share|ADVTECH LTD                             |ADVTECH        |ADH
+ZAE000113163|JSE|Ordinary_Share|ADAPTIT HOLDINGS LTD                    |ADAPTIT        |ADI
+ZAE000000139|JSE|Ordinary_Share|ADCORP HLDGS LTD ORD                    |ADCORP         |ADR
+ZAE000060703|JSE|Ordinary_Share|AFRICAN DAWN CAPITAL LTD                |AFDAWN         |ADW
+GB0003394813|JSE|Ordinary_Share|AFRICAN EAGLE RES PLC                   |AFEAGLE        |AEA
+ZAE000111829|JSE|Ordinary_Share|AVENG LTD                               |AVENG          |AEG
+ZAE000141826|JSE|Investment_Product|NB AEG 2078CID 1:1OCT10                 |NB AEG CID     |AEGNID
+ZAE000070587|JSE|Ordinary_Share|AMALGAMATED ELEC CORP LD                |AMECOR         |AER
+ZAE000092847|JSE|Ordinary_Share|ALERT STEEL HOLDINGS LTD                |ALERT          |AET
+ZAE000000220|JSE|Ordinary_Share|A E C I LTD ORD                         |A E C I        |AFE
+ZAE000000238|JSE|Preference_Shares|A E C I 5,5% CUM PREF                   |AECI 5,5%P     |AFEP
+ZAE000098067|JSE|Ordinary_Share|ALEX FORBES PF SHARE INV                |AFPREFINV      |AFP
+ZAE000040549|JSE|Ordinary_Share|AFGRI LTD                               |AFGRI          |AFR
+ZAE000086302|JSE|Ordinary_Share|AFRIMAT LTD                             |AFRIMAT        |AFT
+ZAE000067120|JSE|Ordinary_Share|AFRICAN OXYGEN LTD ORD                  |AFROX          |AFX
+ZAE000039467|JSE|Ordinary_Share|AG INDUSTRIES LTD                       |AGI            |AGI
+GB00B1XZS820|JSE|Ordinary_Share|ANGLO AMERICAN PLC                      |ANGLO          |AGL
+ZAE000138129|JSE|Warrants|IB AGL R234CN100:1JUL10                 |IB AGL CN      |AGLIBN
+ZAE000138152|JSE|Warrants|IB AGL  R234PR100:1JUL10                |IB AGL PR      |AGLIBR
+ZAE000143004|JSE|Investment_Product|IB AGL18100CDI1:1AUG10                  |IB AGL CDI     |AGLIDI
+ZAE000144515|JSE|Investment_Product|IB AGL22000CHG1:1NOV10                  |IB AGL CHG     |AGLIHG
+ZAE000142295|JSE|Investment_Product|IB AGLR433.75PRQ1:1JUL10                |IB AGL PRQ     |AGLIRQ
+ZAE000145421|JSE|Investment_Product|NB AGLR163.72CIH1:1APR11                |NB AGL CIH     |AGLNIH
+ZAE000140216|JSE|Investment_Product|NB AGLR172.17CND1:1OCT10                |NB AGL CND     |AGLNND
+ZAE000142832|JSE|Warrants|SB AGL R350CL 125:1JUL10                |SB AGL CL      |AGLSBL
+ZAE000144234|JSE|Warrants|SB AGL R300CM 120:1SEP10                |SB AGL CM      |AGLSBM
+ZAE000146577|JSE|Warrants|SB AGL R300CN 120:1JAN11                |SB AGL CN      |AGLSBN
+ZAE000142915|JSE|Warrants|SB AGL R300PS 90:1JUL10                 |SB AGL PS      |AGLSBS
+ZAE000143491|JSE|Warrants|SBAGL R310PT110:1AUG10                  |SB AGL PT      |AGLSBT
+ZAE000146890|JSE|Warrants|SB AGL R280PU 100:1JAN11                |SB AGL PU      |AGLSBU
+ZAE000138921|JSE|Investment_Product|SI AGL R122CE 1:1SEP10                  |SI AGL CE      |AGLSIE
+ZAE000134771|JSE|Investment_Product|SB AGL R145CDT 1:1SEP10                 |SB AGL CDT     |AGLSTD
+ZAE000129177|JSE|Ordinary_Share|AH-VEST LIMITED                         |AH-VEST        |AHL
+ZAE000123436|JSE|Ordinary_Share|ADCOCK INGRAM HLGS LD                   |ADCOCK         |AIP
+ZAE000138772|JSE|Investment_Product|NB AIP 2320CIB 1:1SEP10                 |NB AIP CIB     |AIPNIB
+ZAE000104733|JSE|Ordinary_Share|ALLIANCE MINING CORP LTD                |ALLIANCE       |ALM
+ZAE000015251|JSE|Ordinary_Share|ALLIED TECHNOLOGIES                     |ALTECH         |ALT
+ZAE000012647|JSE|Ordinary_Share|AMALGAMATED APPL HLD LTD                |AMAPS          |AMA
+ZAE000055802|JSE|Ordinary_Share|AFRICAN MEDIA ENTERTAIN                 |AME            |AME
+ZAE000013181|JSE|Ordinary_Share|ANGLO PLATINUM LTD                      |ANGLOPLAT      |AMS
+ZAE000138236|JSE|Warrants|IB AMSR565CO200:1JUL10                  |IB AMS CO      |AMSIBO
+ZAE000138244|JSE|Warrants|IB AMSR565PQ150:1JUL10                  |IB AMS PQ      |AMSIBQ
+ZAE000146783|JSE|Investment_Product|IB AMS432.25CDD1:1FEB11                 |IB AMS CDD     |AMSIDD
+ZAE000146494|JSE|Investment_Product|IB AMS1137.50PRS1:1FEB11                |IB AMS PRS     |AMSIRS
+ZAE000140729|JSE|Investment_Product|NBAMSR344.50CIG 1:1OCT10                |NB AMS CIG     |AMSNIG
+ZAE000142410|JSE|Warrants|SBAMSR777.64CG292:1SEP10                |SB AMS CG      |AMSSBG
+ZAE000145876|JSE|Warrants|SB AMS R760PP 250:1DEC10                |SB AMS PP      |AMSSBP
+ZAE000143293|JSE|Warrants|SBAMSR729.04PZ243:1JUL10                |SB AMS PZ      |AMSSBZ
+ZAE000142386|JSE|Investment_Product|SIAMS R308.06CA 1:1NOV10                |SI AMS CA      |AMSSIA
+ZAE000137840|JSE|Investment_Product|SBAMS R377.55CDT1:1SEP10                |SB AMS CDT     |AMSSTD
+ZAE000143525|JSE|Investment_Product|AMLSITF01DECEMBER2012                   |AMLSITF01      |AMTF01
+ZAE000145074|JSE|Investment_Product|AMLSI TF04 19MARCH2013                  |AMLSITF04      |AMTF04
+ZAE000125894|JSE|Ordinary_Share|ANDULELA INVEST HLDGS LD                |ANDULELA       |AND
+ZAE000043485|JSE|Ordinary_Share|ANGLOGOLD ASHANTI LTD                   |ANGGOLD        |ANG
+ZAE000146791|JSE|Investment_Product|IB ANG178.50CDI1:1FEB11                 |IB ANG CDI     |ANGIDI
+ZAE000146510|JSE|Investment_Product|IB ANG238.75CHG1:1FEB11                 |IB ANG CHG     |ANGIHG
+ZAE000145413|JSE|Investment_Product|NB ANGR141.80CIG1:1APR11                |NB ANG CIG     |ANGNIG
+ZAE000144028|JSE|Warrants|SB ANG R320CD 130:1SEP10                |SB ANG CD      |ANGSBD
+ZAE000144390|JSE|Warrants|SB ANG R290PT 120:1SEP10                |SB ANG PT      |ANGSBT
+ZAE000143699|JSE|Investment_Product|SI ANG 153.50CA 1:1JAN11                |SI ANG CA      |ANGSIA
+ZAE000139531|JSE|Investment_Product|SB ANG R235CDT 1:1SEP10                 |SB ANG CDT     |ANGSTD
+GB00B1XZS820|JSE|Ordinary_Share|ANGLO-AMERICAN PLC NM                   |ANGLO-AMRC NM  |ANM
+ZAE000097028|JSE|Ordinary_Share|ANSYS LTD                               |ANSYS          |ANS
+ZAE000009718|JSE|Ordinary_Share|AFRICAN AND OVERSEAS -N-                |AF & OVR -N-   |AON
+ZAE000000485|JSE|Ordinary_Share|AFR AND OSEAS ENTER ORD                 |AF & OVR       |AOO
+ZAE000000493|JSE|Preference_Shares|AFR AND OSEAS ENT 6PRTPR                |AF&OVR 6%PP    |AOVP
+ZAE000067120|JSE|Ordinary_Share|AFROX NM                                |AFROX NM       |AOX
+ZAE000096962|JSE|Ordinary_Share|ASTRAPAK LTD                            |ASTRAPAK       |APK
+ZAE000087201|JSE|Preference_Shares|ASTRAPAK LTD PREF                       |ASTRAPAK PREF  |APKP
+ZAE000066692|JSE|Ordinary_Share|ASPEN PHARMACARE HLDGS.                 |ASPEN          |APN
+ZAE000141834|JSE|Investment_Product|NB APN 3200CID 1:1OCT10                 |NB APN CID     |APNNID
+BMG0440M1284|JSE|Ordinary_Share|AQUARIUS PLATINUM LTD                   |AQUARIUS       |AQP
+ZAE000109435|JSE|Ordinary_Share|ARB HOLDINGS LTD                        |ARB            |ARH
+ZAE000015210|JSE|Preference_Shares|ANGLORAND HLDGS 5,5%PREF                |ARH 5,5%P      |ARHP
+ZAE000054045|JSE|Ordinary_Share|AFRICAN RAINBOW MINERALS                |ARM            |ARI
+ZAE000143087|JSE|Investment_Product|NB ARI 8050CIC 1:1DEC10                 |NB ARI CIC     |ARINIC
+ZAE000142501|JSE|Investment_Product|SI ARI 7500CA 1:1NOV10                  |SI ARI CA      |ARISIA
+ZAE000029757|JSE|Ordinary_Share|ASTRAL FOODS LTD                        |ASTRAL         |ARL
+CA03633E1088|JSE|Ordinary_Share|ANOORAQ RESOURCES CORPORATION           |ANOORAQ        |ARQ
+ZAE000019188|JSE|Ordinary_Share|ARGENT INDUSTRIAL LTD                   |ARGENT         |ART
+ZAE000067237|JSE|Ordinary_Share|ABSA GROUP LIMITED                      |ABSA           |ASA
+ZAE000142303|JSE|Investment_Product|IB ASA 6625CDG 1:1JUL10                 |IB ASA CDG     |ASAIDG
+ZAE000144150|JSE|Investment_Product|IB ASA99.50CHF1:1NOV10                  |IB ASA CHF     |ASAIHF
+ZAE000140737|JSE|Investment_Product|NB ASA 6103CIF 1:1OCT10                 |NB ASA CIF     |ASANIF
+ZAE000143731|JSE|Warrants|SB ASA R140CN 30:1AUG10                 |SB ASA CN      |ASASBN
+ZAE000146726|JSE|Warrants|SB ASA R140CO 35:1JAN11                 |SB ASA CO      |ASASBO
+ZAE000143939|JSE|Warrants|SB ASA R125PY 35:1SEP10                 |SB ASA PY      |ASASBY
+ZAE000146130|JSE|Investment_Product|SB ASA R105CET 1:1MAY11                 |SB ASA CET     |ASASTE
+ZAE000090882|JSE|Ordinary_Share|AUSTRO GROUP LIMITED                    |AUSTRO         |ASO
+ZAE000017117|JSE|Ordinary_Share|ASSORE LTD                              |ASSORE         |ASR
+ZAE000029658|JSE|Ordinary_Share|ALLIED ELECTRONICS CORP                 |ALTRON         |ATN
+ZAE000029666|JSE|Preference_Shares|ALLIED ELECT COR PARTPRF                |ALTRON PP      |ATNP
+ZAE000088084|JSE|Ordinary_Share|AFRICA CELLULAR TOWERS                  |ACTOWERS       |ATR
+ZAE000049433|JSE|Ordinary_Share|AVI LTD                                 |A V I          |AVI
+ZAE000140810|JSE|Investment_Product|NB AVI 950CIC 1:1OCT10                  |NB AVI CIC     |AVINIC
+ZAE000115895|JSE|Ordinary_Share|AVUSA LTD                               |AVUSA          |AVU
+ZAE000013769|JSE|Ordinary_Share|AWETHU BREWERIES LTD ORD                |AWETHU         |AWT
+LU0011857645|JSE|Ordinary_Share|BRAIT S.A.                              |BRAIT          |BAT
+ZAE000026639|JSE|Ordinary_Share|BARLOWORLD LTD                          |BARWORLD       |BAW
+ZAE000140745|JSE|Investment_Product|NB BAW 2350CIG 1:1OCT10                 |NB BAW CIG     |BAWNIG
+ZAE000026647|JSE|Preference_Shares|BARWORLD LTD 6%CUMPRF                   |BARWORLD 6%P   |BAWP
+ZAE000144077|JSE|Investment_Product|SB BAW 3500CET 1:1JAN11                 |SB BAW CET     |BAWSTE
+ZAE000144507|JSE|Tradable_Fund|BETTABETA COLLECTIVE INV                |BBEWT40        |BBET40
+CA05565C1095|JSE|Ordinary_Share|BRC DIAMONDCORE LTD                     |BRC            |BCD
+ZAE000030797|JSE|Ordinary_Share|BOWLER METCALF LTD                      |BOWCALF        |BCF
+ZAE000105391|JSE|Ordinary_Share|BEST CUT LTD                            |BEST CUT       |BCH
+ZAE000054631|JSE|Ordinary_Share|BUSINESS CONNEXION GROUP                |BCX            |BCX
+ZAE000011250|JSE|Ordinary_Share|BUILDMAX LTD                            |BUILDMAX       |BDM
+ZAE000044111|JSE|Ordinary_Share|BEGET HOLDINGS LTD                      |BEGET          |BEE
+ZAE000034161|JSE|Ordinary_Share|BEIGE HOLDINGS LTD                      |BEIGE          |BEG
+ZAE000097036|JSE|Preference_Shares|BEIGE HOLDINGS LTD PREF                 |BEIGE PREF     |BEGP
+ZAE000028304|JSE|Ordinary_Share|BELL EQUIPMENT LTD                      |BELL           |BEL
+ZAE000083655|JSE|Ordinary_Share|BLUE FINANCIAL SERVICES                 |BLUE           |BFS
+ZW0009011074|JSE|Ordinary_Share|BICC CAFCA LTD                          |BICAF          |BIC
+ZAE000101945|JSE|Ordinary_Share|BRIKOR LTD                              |BRIKOR         |BIK
+GB0000566504|JSE|Ordinary_Share|BHP BILLITON PLC                        |BHPBILL        |BIL
+ZAE000138145|JSE|Warrants|IBBIL  R190CE 100:1JUL10                |IB BIL CE      |BILIBE
+ZAE000138186|JSE|Warrants|IB BIL R190PY 100:1JUL10                |IB BIL PY      |BILIBY
+ZAE000146809|JSE|Investment_Product|IB BIL114.50CDH1:1FEB11                 |IB BIL CDH     |BILIDH
+ZAE000146585|JSE|Investment_Product|IB BIL150.00CHG1:1FEB11                 |IB BIL CHG     |BILIHG
+ZAE000145777|JSE|Investment_Product|IB BIL376.00PRR1:1JAN11                 |IB BIL PRR     |BILIRR
+ZAE000145405|JSE|Investment_Product|NB BILR127.83CIG1:1APR11                |NB BIL CIG     |BILNIG
+ZAE000140224|JSE|Investment_Product|NB BILR148.11CNC1:1OCT10                |NB BIL CNC     |BILNNC
+ZAE000143483|JSE|Warrants|SB BIL R270CD 80:1AUG10                 |SB BIL CD      |BILSBD
+ZAE000146163|JSE|Warrants|SB BIL R240CE 80:1DEC10                 |SB BIL CE      |BILSBE
+ZAE000146601|JSE|Warrants|SB BIL R210CF 80:1JAN11                 |SB BIL CF      |BILSBF
+ZAE000143921|JSE|Warrants|SB BIL R230PP 55:1AUG10                 |SB BIL PP      |BILSBP
+ZAE000146916|JSE|Warrants|SB BIL R200PQ 60:1JAN11                 |SB BIL PQ      |BILSBQ
+ZAE000137857|JSE|Investment_Product|SB BIL R140CFT 1:1SEP10                 |SB BIL CFT     |BILSTF
+ZAE000115036|JSE|Ordinary_Share|BIOSCIENCE BRANDS LTD                   |BIOSCI         |BIO
+ZAE000134185|JSE|Tradable_Fund|BIPS GOVT INFLATION LBF                 |INFLATION      |BIPINF
+ZAE000127767|JSE|Tradable_Fund|BIPS TOP 40 PORTFOLIO                   |BIPSTOP40      |BIPS40
+ZAE000014262|JSE|Ordinary_Share|BARNARD JACOBS MELLET                   |BJM            |BJM
+ZAE000109088|JSE|Ordinary_Share|BLUE LABEL TELECOMS LTD                 |BLUETEL        |BLU
+AU000000BMN9|JSE|Ordinary_Share|BANNERMAN RESOURCES LTD                 |BANNERMAN      |BMN
+ZAE000013694|JSE|Ordinary_Share|BONATLA PROPERTY HLDGS                  |BONATLA        |BNT
+ZAE000015285|JSE|Ordinary_Share|BRIMSTONE INVESTMENT -N-                |BRIMSTN-N-     |BRN
+ZAE000015277|JSE|Ordinary_Share|BRIMSTONE INVESTMNT CORP                |BRIMSTON       |BRT
+ZAE000029781|JSE|Ordinary_Share|BASIL READ HLDGS LTD                    |BASREAD        |BSR
+ZAE000125134|JSE|Ordinary_Share|BSI STEEL LTD                           |BSI STEEL      |BSS
+GB0002875804|JSE|Ordinary_Share|BRITISH AM. TOBACCO PLC                 |BATS           |BTI
+ZAE000142311|JSE|Investment_Product|IB BTI R136CDB 1:1JUL10                 |IB BTI CDB     |BTIIDB
+ZAE000143541|JSE|Investment_Product|IB BTI180.75CHB1:1SEPT10                |IB BTI CHB     |BTIIHB
+ZAE000140828|JSE|Investment_Product|SI BTI R118CA 1:1SEP10                  |SI BTI CA      |BTISIA
+ZAE000137865|JSE|Investment_Product|SB BTI R170CDT 1:1SEP10                 |SB BTI CDT     |BTISTD
+NA000A0Q5TN0|JSE|Ordinary_Share|BIDVEST NAMIBIA LTD NM                  |BIDNAM NM      |BVN
+ZAE000117321|JSE|Ordinary_Share|BIDVEST LTD ORD                         |BIDVEST        |BVT
+ZAE000140752|JSE|Investment_Product|NB BVT 5955CIF 1:1OCT10                 |NB BVT CIF     |BVTNIF
+ZAE000098687|JSE|Ordinary_Share|B&W INSTRUMENT & ELEC LD                |B&W            |BWI
+ZAE000110219|JSE|Ordinary_Share|BUILDWORKS GROUP LTD                    |BUILDWK        |BWK
+ZAE000026639|JSE|Ordinary_Share|BARWORLD NM                             |BARWORLD NM    |BWL
+ZAE000145066|JSE|Ordinary_Share|CAPE EMPOWERMENT LTD                    |CAPEMR         |CAP
+ZAE000043345|JSE|Ordinary_Share|CAXTON CTP PUBLISH PRINT                |CAXTON         |CAT
+ZAE000043352|JSE|Preference_Shares|CAXTON CTP PUBLISH 6%CPP                |CAXTON 6%CPP   |CATP
+ZAE000094835|JSE|Ordinary_Share|COUNTRY BIRD HOLDINGS LD                |CBH            |CBH
+MU0249S00005|JSE|Investment_Product|STERLING WATERFORD CCN SP               |SWCCN          |CBN013
+NA0009174278|JSE|Ordinary_Share|CIC HOLDINGS LTD                        |CIC            |CCI
+ZAE000016564|JSE|Ordinary_Share|COMPU CLEARING OUTS LTD                 |COMPCLEAR      |CCL
+GB00B62G9D36|JSE|Ordinary_Share|CAPITAL & COUNTIES PROP PLC             |CAPCO          |CCO
+ZAE000017661|JSE|Ordinary_Share|CADIZ HOLDINGS LTD                      |CADIZ          |CDZ
+CH0045159024|JSE|Ordinary_Share|COMPAGNIE FIN RICHEMONT                 |RICHEMONT      |CFR
+ZAE000141792|JSE|Investment_Product|NB CFR 1120CIB 1:1OCT10                 |NB CFR CIB     |CFRNIB
+ZAE000143475|JSE|Warrants|SB CFR 2700CD 10:1AUG10                 |SB CFR CD      |CFRSBD
+ZAE000146924|JSE|Warrants|SB CFR 2800CE 10:1JAN11                 |SB CFR CE      |CFRSBE
+ZAE000143467|JSE|Warrants|SB CFR 2300PQ 6:1AUG10                  |SB CFR PQ      |CFRSBQ
+ZAE000137873|JSE|Investment_Product|SB CFR 1300CDT 1:1SEP10                 |SB CFR CDT     |CFRSTD
+ZAE000109203|JSE|Ordinary_Share|CALGRO M3 HOLDINGS LTD                  |CALGRO M3      |CGR
+ZAE000001434|JSE|Ordinary_Share|CROOKES BROS LTD                        |CROOKES        |CKS
+ZAE000117792|JSE|Ordinary_Share|CITY LODGE HTLS LTD ORD                 |CITYLDG        |CLH
+ZAE000117438|JSE|Ordinary_Share|CLIENTELE LTD                           |CLIENTELE      |CLI
+ZAE000134854|JSE|Ordinary_Share|CLICKS GROUP LTD                        |CLICKS         |CLS
+ZAE000023131|JSE|Ordinary_Share|COMMAND HOLDINGS LTD                    |COMMAND        |CMA
+ZAE000001533|JSE|Ordinary_Share|CENMAG HOLDINGS LTD                     |CENMAG         |CMG
+ZAE000088050|JSE|Ordinary_Share|COMBINED MOTOR HLDGS LTD                |CMH            |CMH
+ZAE000047353|JSE|Ordinary_Share|CORONATION FUND MNGRS LD                |CORONAT        |CML
+ZAE000070249|JSE|Ordinary_Share|CHROMETCO LTD                           |CHROMETCO      |CMO
+ZAE000128179|JSE|Ordinary_Share|CIPLA MEDPRO SA LTD                     |CIPLAMED       |CMP
+ZAE000073128|JSE|Ordinary_Share|CONDUIT CAPITAL LTD                     |CONDUIT        |CND
+ZAE000001665|JSE|Ordinary_Share|CONTROL INSTRUMENTS GRP                 |CONTROL        |CNL
+ZAE000099461|JSE|Ordinary_Share|COLLIERS S A HOLDINGS LD                |COLLIERS       |COL
+ZAE000029823|JSE|Ordinary_Share|COMAIR LTD                              |COMAIR         |COM
+ZAE000035861|JSE|Ordinary_Share|CAPITEC BANK HLDGS LTD                  |CAPITEC        |CPI
+ZAE000083838|JSE|Preference_Shares|CAPITEC BANK HLDGS PREF                 |CAPITEC PREF   |CPIP
+ZAE000001731|JSE|Ordinary_Share|CAPITAL PROPERTY FUND                   |CAPITAL        |CPL
+GG00B24HM601|JSE|Ordinary_Share|CENTRAL RAND GOLD LTD                   |CENRAND        |CRD
+ZAE000001764|JSE|Ordinary_Share|CARGO CARRIERS LTD                      |CARGO          |CRG
+ZAE000008538|JSE|Ordinary_Share|CERAMIC INDUSTRIES LTD                  |CERAMIC        |CRM
+ZAE000001806|JSE|Ordinary_Share|CORWIL INVESTMENTS LTD                  |CORWIL         |CRW
+ZAE000028320|JSE|Ordinary_Share|CASHBUILD LTD                           |CASHBIL        |CSB
+GB0006834344|JSE|Ordinary_Share|CAPITAL SHOP CENTRES GRP PLC            |CAPSHOP        |CSO
+ZAE000109427|JSE|Ordinary_Share|CHEMICAL SPECIALITIES LTD               |CHEMSPEC       |CSP
+ZAE000013710|JSE|Ordinary_Share|CULLINAN HOLDINGS ORD                   |CULINAN        |CUL
+ZAE000001947|JSE|Preference_Shares|CULLINAN HLDG5,5%CUMPREF                |CULINAN5,5%P   |CULP
+ZAE000136446|JSE|Ordinary_Share|CAPEVIN INV LTD                         |CAPEVIN        |CVI
+ZAE000102067|JSE|Ordinary_Share|CONVERGENET HOLDINGS LTD                |CONVERGE       |CVN
+AU000000CZA6|JSE|Ordinary_Share|COAL OF AFRICA LTD                      |COAL           |CZA
+ZAE000018834|JSE|Ordinary_Share|DISTRIBUTION AND WAREHSG                |DAWN           |DAW
+DE000DB0T0H0|JSE|Investment_Product|DB STUBNPN 21AUG2010                    |DBSTNPN1       |DBNPN1
+DE000DB0T1D7|JSE|Investment_Product|DB STUBNPN 12NOV2010                    |DBSTNPN2       |DBNPN2
+DE000DB0T1L0|JSE|Investment_Product|DB STUBNPN3 01DEC2010                   |DBSTNPN3       |DBNPN3
+DE000DB0T1M8|JSE|Investment_Product|DB STUBNPN4 11JAN2011                   |DBSTNPN4       |DBNPN4
+DE000DB0T1N6|JSE|Investment_Product|DB STUBNPN5 09MAR2011                   |DBSTNPN5       |DBNPN5
+ZAE000115937|JSE|Tradable_Fund|DB X-TRACKERS DJ EU ST 50               |DBXEURO50      |DBXEU
+ZAE000115176|JSE|Tradable_Fund|DB X-TRACKERS COL IN JAP                |DBX JAPAN      |DBXJP
+ZAE000115929|JSE|Tradable_Fund|DB X-TRACKERS FTSE 100                  |DBXFT100       |DBXUK
+ZAE000115192|JSE|Tradable_Fund|DB X-TRACKERS COL IN USA                |DBX USA        |DBXUS
+ZAE000115184|JSE|Tradable_Fund|DB X-TRACKERS COL IN WLD                |DBX WORLD      |DBXWD
+ZAE000016051|JSE|Ordinary_Share|DATACENTRIX HOLDINGS LTD                |DCENTRIX       |DCT
+GB0008435405|JSE|Ordinary_Share|DIMENSION DATA HLDGS PLC                |DIDATA         |DDT
+ZAE000141842|JSE|Investment_Product|NB DDT 450CID 1:1OCT10                  |NB DDT CID     |DDTNID
+ZAE000143046|JSE|Warrants|SB DDT 1000CG 3:1JUL10                  |SB DDT CG      |DDTSBG
+ZAE000145868|JSE|Warrants|SB DDT 1150CH 4:1DEC10                  |SB DDT CH      |DDTSBH
+ZAE000139549|JSE|Investment_Product|SI DDT 375CE 1:1SEP10                   |SI DDT CE      |DDTSIE
+ZAE000108247|JSE|Ordinary_Share|DECILLION LTD                           |DECILLION      |DEC
+ZAE000016945|JSE|Ordinary_Share|DIGICORE HOLDINGS LTD                   |DIGICORE       |DGC
+ZAE000083820|JSE|Ordinary_Share|DIALOGUE GROUP HLDGS LTD                |DIALOGUE       |DLG
+ZAE000002168|JSE|Preference_Shares|DORBYL LTD 5,5% CUM PREF                |DORBYL 5,5%P   |DLP1
+ZAE000002184|JSE|Ordinary_Share|DORBYL LTD ORD                          |DORBYL         |DLV
+ZAE000002200|JSE|Preference_Shares|DORBYL LTD 5% CUM PREF                  |DORBYL 5%P     |DLVP
+GB00B183ZC46|JSE|Ordinary_Share|DIAMONDCORP PLC                         |DIAMONDCP      |DMC
+ZAE000008462|JSE|Ordinary_Share|DON GROUP LTD                           |DON            |DON
+ZAE000058723|JSE|Ordinary_Share|DRDGOLD LTD                             |DRDGOLD        |DRD
+ZAE000142659|JSE|Investment_Product|SI DRD 175CE 1:1NOV10                   |SI DRD CE      |DRDSIE
+ZAE000028668|JSE|Ordinary_Share|DISTELL GROUP LTD                       |DISTELL        |DST
+ZAE000022331|JSE|Ordinary_Share|DISCOVERY HOLDINGS LTD                  |DISCOVERY      |DSY
+ZAE000132817|JSE|Ordinary_Share|DELTA EMD LTD                           |DELTA          |DTA
+ZAE000017745|JSE|Ordinary_Share|DATATEC LTD                             |DATATEC        |DTC
+ZAE000144986|JSE|Investment_Product|IB DTC17.75CHH1:1DEC10                  |IB DTC CHH     |DTCIDH
+ZAE000124681|JSE|Ordinary_Share|DTH DYNAMIC TECH HLDG LD                |DTH            |DTH
+AU000000DYL4|JSE|Ordinary_Share|DEEP YELLOW LTD NM                      |DEEPYELLO NM   |DYL
+ZAE000133286|JSE|Ordinary_Share|EFFICIENT FIN HLDGS LTD                 |EFFICIENT      |EFF
+ZAE000103081|JSE|Ordinary_Share|ELLIES HOLDINGS LTD                     |ELLIES         |ELI
+ZAE000035101|JSE|Ordinary_Share|ELB GROUP LTD ORD                       |ELBGROUP       |ELR
+ZAE000035333|JSE|Preference_Shares|ELB GROUP LTD 6%CUMPREF                 |ELBGROUP 6%P   |ELRP
+ZAE000050712|JSE|Ordinary_Share|EMIRA PROPERTY FUND                     |EMIRA          |EMI
+ZAE000071072|JSE|Ordinary_Share|EOH HOLDINGS LTD                        |EOH            |EOH
+CA2768551038|JSE|Ordinary_Share|EASTERN PLATINUM LIMITED                |EASTPLATS      |EPS
+ZAE000117123|JSE|Ordinary_Share|EQSTRA HOLDINGS LTD                     |EQSTRA         |EQS
+ZAE000146189|JSE|Nil_Paid_Letter|EQSTRA HOLDINGS LTD NPL                 |EQSTRA NPL     |EQSN
+ZAE000111571|JSE|Ordinary_Share|ERBACON INV HLDGS LTD                   |ERBACON        |ERB
+ZAE000133369|JSE|Ordinary_Share|ESORFRANKI LTD                          |ESORFRANK      |ESR
+ZAE000143780|JSE|Investment_Product|SB EUR 1100CA 3:1SEP10                  |SB EUR CA      |EURSCA
+ZAE000143772|JSE|Investment_Product|SB EUR 1050PP 2:1SEP10                  |SB EUR PP      |EURSCP
+ZAE000026092|JSE|Ordinary_Share|EXCELLERATE HLDGS LTD                   |EXCELL         |EXL
+AU000000EXT7|JSE|Ordinary_Share|EXTRACT RESOURCES LTD                   |EXTRACT        |EXT
+ZAE000084992|JSE|Ordinary_Share|EXXARO RESOURCES LTD                    |EXXARO         |EXX
+ZAE000141339|JSE|Investment_Product|NB EXX 4500CID 1:1OCT10                 |NB EXX CID     |EXXNID
+ZAE000143913|JSE|Warrants|SB EXX R125CJ 35:1AUG10                 |SB EXX CJ      |EXXSBJ
+ZAE000146593|JSE|Warrants|SB EXX R115CL 45:1JAN11                 |SB EXX CL      |EXXSBL
+ZAE000143905|JSE|Warrants|SB EXX R105PR 30:1AUG10                 |SB EXX PR      |EXXSBR
+ZAE000145850|JSE|Warrants|SB EXX R120PT 35:1DEC10                 |SB EXX PT      |EXXSBT
+ZAE000137881|JSE|Investment_Product|SB EXX 5900CDT 1:1SEP10                 |SB EXX CDT     |EXXSTD
+ZAE000053328|JSE|Ordinary_Share|FAMOUS BRANDS LTD                       |FAMBRANDS      |FBR
+ZAE000054466|JSE|Debentures|FOORD COMPASS LTD DEB                   |FOORDCMPS DEB  |FCPD
+ZAE000141313|JSE|Ordinary_Share|FORTRESS INCOME FD LTD A                |FORTRESSA      |FFA
+ZAE000141321|JSE|Ordinary_Share|FORTRESS INCOME FD LTD B                |FORTRESSB      |FFB
+ZAE000138095|JSE|Ordinary_Share|FINBOND GROUP LTD                       |FINBOND        |FGL
+NA0003475176|JSE|Ordinary_Share|FNB HOLDINGS LTD NM                     |FNB HOLDINGSNM |FNB
+ZAE000031019|JSE|Ordinary_Share|FOSCHINI LTD ORD                        |FOSCHNI        |FOS
+ZAE000143558|JSE|Investment_Product|IB FOS43.25CHE1:1SEPT10                 |IB FOS CHE     |FOSIHE
+ZAE000141859|JSE|Investment_Product|NB FOS 3176CID 1:1OCT10                 |NB FOS CID     |FOSNID
+ZAE000031027|JSE|Preference_Shares|FOSCHINI LTD 6,5%CUMPREF                |FOSCHNI6,5%P   |FOSP
+ZAE000144069|JSE|Investment_Product|SB FOS 4100CDT 1:1JAN11                 |SB FOS CDT     |FOSSTD
+ZAE000097416|JSE|Ordinary_Share|FOUNTAINHEAD PROP TRST                  |FPT            |FPT
+ZAE000098265|JSE|Investment_Product|IB FPT 131CBV 1:1JUL09                  |IB FPT CBV     |FPTIVB
+ZAE000016838|JSE|Ordinary_Share|FARITEC HOLDINGS LTD                    |FARITEC        |FRT
+AU000000FSE6|JSE|Ordinary_Share|FIRESTONE ENERGY LTD                    |FIRESTONE      |FSE
+ZAE000066304|JSE|Ordinary_Share|FIRSTRAND LTD                           |FIRSTRAND      |FSR
+ZAE000144143|JSE|Investment_Product|IB FSR10.25CDG1:1NOV10                  |IB FSR CDG     |FSRIDG
+ZAE000143566|JSE|Investment_Product|IB FSR13.60CHF1:1SEPT10                 |IB FSR CHF     |FSRIHF
+ZAE000145397|JSE|Investment_Product|NB FSR1010CIG1:1APR11                   |NB FSR CIG     |FSRNIG
+ZAE000138103|JSE|Investment_Product|NB FSR 1029CND 1:1JUL10                 |NB FSR CND     |FSRNND
+ZAE000140232|JSE|Investment_Product|NB FSR 1191CNE 1:1OCT10                 |NB FSR CNE     |FSRNNE
+ZAE000060141|JSE|Preference_Shares|FIRSTRAND LTD B PREF                    |FIRSTRAND B-P  |FSRP
+ZAE000143459|JSE|Warrants|SB FSR 2000CA 6:1AUG10                  |SB FSR CA      |FSRSBA
+ZAE000146718|JSE|Warrants|SB FSR 2100CB 5:1JAN11                  |SB FSR CB      |FSRSBB
+ZAE000143897|JSE|Warrants|SB FSR 1700PY 4:1SEP10                  |SB FSR PY      |FSRSBY
+ZAE000146155|JSE|Warrants|SB FSR 1950PZ 5:1DEC10                  |SB FSR PZ      |FSRSBZ
+ZAE000138608|JSE|Investment_Product|SI FSR 770CE 1:1JUL10                   |SI FSR CE      |FSRSIE
+ZAE000146122|JSE|Investment_Product|SB FSR 1550CET 1:1MAY11                 |SB FSR CET     |FSRSTE
+ZAE000066304|JSE|Ordinary_Share|FIRSTRAND NM                            |FIRSTRAND NM   |FST
+CA34660G1046|JSE|Ordinary_Share|FORSYS METALS CORP NM                   |FORSYS NM      |FSY
+CA33744R1029|JSE|Ordinary_Share|FIRST URANIUM CORPORATION               |FIURANIUM      |FUM
+ZAE000034658|JSE|Ordinary_Share|FAIRVEST PROPERTY HLDGS                 |FAIRVEST       |FVT
+ZAE000109450|JSE|Ordinary_Share|FREEWORLD COATINGS LTD                  |FREEWORLD      |FWD
+ZAE000086237|JSE|Ordinary_Share|FONEWORX HOLDINGS LTD                   |FONEWORX       |FWX
+CA3901241057|JSE|Ordinary_Share|GREAT BASIN GOLD LTD                    |GB GOLD        |GBG
+ZAE000143764|JSE|Investment_Product|SB GBP 1225CA 4:1SEP10                  |SB GBP CA      |GBPSCA
+ZAE000144994|JSE|Investment_Product|SB GBP 1150CB 2:1SEP10                  |SB GBP CB      |GBPSCB
+ZAE000143756|JSE|Investment_Product|SB GBP 1175PP 2:1SEP10                  |SB GBP PP      |GBPSCP
+ZAE000028338|JSE|Ordinary_Share|GOLD REEF RESORTS LTD                   |GOLDREEF       |GDF
+ZAE000050381|JSE|Ordinary_Share|GOODHOPE DIAM (KIM) LTD                 |GOODHOPE       |GDH
+ZAE000084984|JSE|Ordinary_Share|GOODERSON LEISURE CORP                  |GOODERSON      |GDN
+AU000000GDO5|JSE|Ordinary_Share|GOLD ONE INTERNATIONAL LD               |GOLDONE        |GDO
+ZAE000018123|JSE|Ordinary_Share|GOLD FIELDS LTD                         |GFIELDS        |GFI
+ZAE000144135|JSE|Investment_Product|IB GFI52.50CDI1:1NOV10                  |IB GFI CDI     |GFIIDI
+ZAE000146502|JSE|Investment_Product|IB GFI75.00CHH:1FEB11                   |IB GFI CHH     |GFIIHH
+ZAE000145389|JSE|Investment_Product|NB GFI 4645CIG 1:1APR11                 |NB GFI CIG     |GFINIG
+ZAE000140240|JSE|Investment_Product|NB GFI 7796CND 1:1OCT10                 |NB GFI CND     |GFINND
+ZAE000144804|JSE|Investment_Product|NB GFI 6472CNY 1:1MAR11                 |NB GFI CNY     |GFINNY
+ZAE000144010|JSE|Warrants|SB GFI R105CA 35:1AUG10                 |SB GFI CA      |GFISBA
+ZAE000144705|JSE|Warrants|SB GFI R115CB 40:1JAN11                 |SB GFI CB      |GFISBB
+ZAE000144424|JSE|Warrants|SB GFI 9000PU 35:1SEP10                 |SB GFI PU      |GFISBU
+ZAE000143848|JSE|Investment_Product|SI GFI 5000CC 1:1JAN11                  |SI GFI CC      |GFISIC
+ZAE000139556|JSE|Investment_Product|SB GFI 7800CET 1:1SEP10                 |SB GFI CET     |GFISTE
+ZAE000064606|JSE|Ordinary_Share|GIJIMA AST GROUP LTD                    |GIJIMA AST     |GIJ
+ZAE000060067|JSE|Tradable_Fund|NEW GOLD ISSUER LTD                     |NEWGOLD        |GLD
+ZAE000142972|JSE|Warrants|SB GLD 9200CG 30:1JUL10                 |SB GLD CG      |GLDSBG
+ZAE000145314|JSE|Warrants|SB GLD 8500CH 20:1NOV10                 |SB GLD CH      |GLDSBH
+ZAE000143426|JSE|Warrants|SB GLD 7600PT 20:1AUG10                 |SB GLD PT      |GLDSBT
+ZAE000139564|JSE|Investment_Product|SI GLD 3700CE 1:1SEP10                  |SI GLD CE      |GLDSIE
+ZAE000078010|JSE|Ordinary_Share|GLENRAND M.I.B. LTD                     |GLENMIB        |GMB
+ZAE000072328|JSE|Ordinary_Share|GRINDROD LTD                            |GRINDROD       |GND
+ZAE000141867|JSE|Investment_Product|NB GND 910CID 1:1OCT10                  |NB GND CID     |GNDNID
+ZAE000071106|JSE|Preference_Shares|GRINDROD LTD CUM PREF                   |GRINDROD PRF   |GNDP
+ZAE000142766|JSE|Investment_Product|SB GND 1350CDT 1:1NOV10                 |SB GND CDT     |GNDSTD
+ZAE000146262|JSE|Investment_Product|SBGOLR10500CA1800:1DEC10                |SB GOL CA      |GOLSBA
+ZAE000146239|JSE|Investment_Product|SBGOLR9000PP1500:1DEC10                 |SB GOL PP      |GOLSBP
+ZAE000119814|JSE|Ordinary_Share|GRAND PARADE INV LTD                    |GRANPRADE      |GPL
+ZAE000027405|JSE|Ordinary_Share|GROUP FIVE LTD ORD                      |GROUP 5        |GRF
+ZAE000037669|JSE|Ordinary_Share|GROWTHPOINT PROP LTD                    |GROWPNT        |GRT
+ZAE000144127|JSE|Investment_Product|IB GRT7.75CDE1:1NOV10                   |IB GRT CDE     |GRTIDE
+ZAE000081774|JSE|Investment_Product|IB GRTR301.20CBV 1:1JUL16               |IB GRT CBV     |GRTIVB
+ZAE000138194|JSE|Warrants|IB GRTR622.26BC1:1 JUL19                |IB GRT CBC     |GRTIVC
+ZAE000142139|JSE|Investment_Product|SI GRT 700CF 1:1NOV10                   |SI GRT CF      |GRTSIF
+ZAE000015228|JSE|Ordinary_Share|HARMONY G M CO LTD                      |HARMONY        |HAR
+ZAE000140760|JSE|Investment_Product|NB HAR 4313CIF 1:1OCT10                 |NB HAR CIF     |HARNIF
+ZAE000144002|JSE|Warrants|SB HAR 8500CA 30:1SEP10                 |SB HAR CA      |HARSBA
+ZAE000144697|JSE|Warrants|SB HAR 7800CB 25:1NOV10                 |SB HAR CB      |HARSBB
+ZAE000142428|JSE|Warrants|SB HAR 8500CO 40:1JUL10                 |SB HAR CO      |HARSBO
+ZAE000144432|JSE|Warrants|SB HAR 7000PT 25:1OCT10                 |SB HAR PT      |HARSBT
+ZAE000139572|JSE|Investment_Product|SB HAR 6200CDT 1:1SEP10                 |SB HAR CDT     |HARSTD
+ZAE000003257|JSE|Ordinary_Share|HOSKEN CONS INVEST LTD                  |HCI            |HCI
+ZAE000003273|JSE|Ordinary_Share|HUDACO INDUSTRIES LTD                   |HUDACO         |HDC
+ZAE000096210|JSE|Ordinary_Share|HULAMIN LIMITED                         |HULAMIN        |HLM
+ZAE000146387|JSE|Nil_Paid_Letter|HULAMIN LTD NPL                         |HULAMIN NPL    |HLMN
+ZAE000141891|JSE|Investment_Product|NB HLM 675CID 1:1OCT10                  |NB HLM CID     |HLMNID
+ZAE000076790|JSE|Ordinary_Share|HOSPITALITY PROP FUND A                 |HOSP A         |HPA
+ZAE000076808|JSE|Ordinary_Share|HOSPITALITY PROP FUND B                 |HOSP B         |HPB
+ZAE000102042|JSE|Ordinary_Share|HUGE GROUP LTD                          |HUGE           |HUG
+ZAE000003422|JSE|Ordinary_Share|HIVELD STEEL AND VANADUM                |HIVELD         |HVL
+ZW0009011934|JSE|Ordinary_Share|HWANGE COLLIERY LD ORD                  |HWANGE         |HWA
+ZAE000010583|JSE|Ordinary_Share|HOWDEN AFRICA HLDGS LTD                 |HOWDEN         |HWN
+ZAE000104253|JSE|Ordinary_Share|HARDWARE WAREHOUSE LTD                  |HARDWARE       |HWW
+ZAE000003430|JSE|Ordinary_Share|HYPROP INVESTMENTS LTD                  |HYPROP         |HYP
+ZAE000081782|JSE|Investment_Product|IB HYP 547CBV 1:1JUL16                  |IB HYP CBV     |HYPIVB
+ZAE000138202|JSE|Warrants|IB HYP1853BC 1:1 JUL19                  |IB HYP CBC     |HYPIVC
+ZAE000053203|JSE|Ordinary_Share|INDUS CREDIT CO AFRICA H                |ICC            |ICC
+ZAE000107579|JSE|Ordinary_Share|IDECO GROUP LTD                         |IDECO          |IDE
+ZAE000016606|JSE|Ordinary_Share|INDEQUITY GROUP LTD                     |INDEQTY        |IDQ
+ZAE000088555|JSE|Ordinary_Share|IFCA TECHNOLOGIES LTD                   |IFCA TECH      |IFC
+ZAE000075669|JSE|Ordinary_Share|IFA HOTELS AND RESORTS                  |IFA            |IFH
+ZAE000015038|JSE|Ordinary_Share|ILIAD AFRICA LTD                        |ILIAD          |ILA
+ZAE000083846|JSE|Ordinary_Share|ILLOVO SUGAR LTD                        |ILLOVO         |ILV
+ZAE000141875|JSE|Investment_Product|NB ILV 1835CID 1:1OCT10                 |NB ILV CID     |ILVNID
+ZAE000142147|JSE|Investment_Product|SI ILV 1700CF 1:1NOV10                  |SI ILV CF      |ILVSIF
+ZAE000083648|JSE|Ordinary_Share|IMPALA PLATINUM HLGS LD                 |IMPLATS        |IMP
+ZAE000138251|JSE|Warrants|IB IMPR180CM100:1JUL10                  |IB IMP CM      |IMPIBM
+ZAE000138269|JSE|Warrants|IB IMPR180PQ100:1JUL10                  |IB IMP PQ      |IMPIBQ
+ZAE000146817|JSE|Investment_Product|IB IMP106.50CDI1:1FEB11                 |IB IMP CDI     |IMPIDI
+ZAE000143111|JSE|Investment_Product|NB IMP 9150CIH 1:1DEC10                 |NB IMP CIH     |IMPNIH
+ZAE000145371|JSE|Investment_Product|NB IMPR107.50CII1:1APR11                |NB IMP CII     |IMPNII
+ZAE000140257|JSE|Investment_Product|NB IMPR121.88CNC1:1OCT10                |NB IMP CNC     |IMPNNC
+ZAE000141974|JSE|Warrants|SB IMP R230CE 70:1SEP10                 |SB IMP CE      |IMPSBE
+ZAE000144689|JSE|Warrants|SB IMP R200CF 85:1JAN11                 |SB IMP CF      |IMPSBF
+ZAE000143400|JSE|Warrants|SB IMP R185PS 60:1AUG10                 |SB IMP PS      |IMPSBS
+ZAE000145843|JSE|Warrants|SB IMP R180PT 75:1JAN11                 |SB IMP PT      |IMPSBT
+ZAE000142063|JSE|Investment_Product|SI IMP 8300CC 1:1NOV10                  |SI IMP CC      |IMPSIC
+ZAE000139580|JSE|Investment_Product|SB IMP R140CDT 1:1SEP10                 |SB IMP CDT     |IMPSTD
+ZAE000089199|JSE|Ordinary_Share|IMUNITI HOLDINGS LTD                    |IMUNITI        |IMU
+ZAE000127411|JSE|Ordinary_Share|INGENUITY PROPERTY INV LD               |INGENUITY      |ING
+ZAE000081949|JSE|Ordinary_Share|INVESTEC LTD                            |INVLTD         |INL
+ZAE000143574|JSE|Investment_Product|IB INL40.50CHC1:1SEPT10                 |IB INL CHC     |INLIHC
+ZAE000141438|JSE|Investment_Product|NB INL 2878CID 1:1OCT10                 |NB INL CIC     |INLNIC
+ZAE000048393|JSE|Preference_Shares|INVESTEC BANK LTD PREF                  |INVESTEC-P     |INLP
+GB00B17BBQ50|JSE|Ordinary_Share|INVESTEC PLC                            |INVPLC         |INP
+ZAE000145363|JSE|Investment_Product|NB INP 3000CIG 1:1APR11                 |NB INP CIG     |INPNIG
+ZAE000140265|JSE|Investment_Product|NB INP 4027CNE 1:1OCT10                 |NB INP CNE     |INPNNE
+GB00B19RX541|JSE|Preference_Shares|INVESTEC PLC PREF                       |INVPLC PREF    |INPP
+ZAE000063814|JSE|Preference_Shares|INVESTEC LTD PREF                       |INVLTD PREF    |INPR
+ZAE000143723|JSE|Warrants|SB INP 5800CL 15:1AUG10                 |SB INP CL      |INPSBL
+ZAE000146700|JSE|Warrants|SB INP 5700CM 15:1JAN11                 |SB INP CM      |INPSBM
+ZAE000143285|JSE|Warrants|SB INP 5000PT 12:1JUL10                 |SB INP PT      |INPSBT
+ZAE000145298|JSE|Warrants|SB INP 5800PU 12:1NOV10                 |SB INP PU      |INPSBU
+ZAE000144051|JSE|Investment_Product|SB INP 4000CET 1:1JAN11                 |SB INP CET     |INPSTE
+ZAE000067211|JSE|Ordinary_Share|IMPERIAL HOLDINGS LTD                   |IMPERIAL       |IPL
+ZAE000144119|JSE|Investment_Product|IB IPL44.50CDE1:1NOV10                  |IB IPL CDE     |IPLIDE
+ZAE000140778|JSE|Investment_Product|NB IPL 4085CIG 1:1OCT10                 |NB IPL CIG     |IPLNIG
+ZAE000088076|JSE|Preference_Shares|IMPERIAL HOLDINGS PREF                  |IMPERIAL PREF  |IPLP
+GB00B0CJ3F01|JSE|Ordinary_Share|IPSA GROUP PLC                          |IPSA           |IPS
+ZAE000101622|JSE|Ordinary_Share|IQUAD GROUP LTD                         |IQUAD          |IQG
+ZAE000101507|JSE|Ordinary_Share|INFRASORS HOLDINGS LTD                  |INFRASORS      |IRA
+ZAE000067344|JSE|Ordinary_Share|ISA HOLDINGS LTD                        |ISA            |ISA
+ZAE000116828|JSE|Ordinary_Share|INSIMBI REF&ALLOY SUP LD                |INSIMBI        |ISB
+ZAE000099123|JSE|Ordinary_Share|ITALTILE LTD                            |ITLTILE        |ITE
+ZAE000015566|JSE|Ordinary_Share|INTERTRADING LTD                        |INTRADING      |ITR
+ZAE000081949|JSE|Ordinary_Share|INVESTEC LTD NM                         |INVLTD NM      |IVD
+ZAE000029773|JSE|Ordinary_Share|INVICTA HOLDINGS LTD                    |INVICTA        |IVT
+ZAE000097903|JSE|Ordinary_Share|INTERWASTE HOLDINGS LTD                 |INTEWASTE      |IWE
+GB0031852162|JSE|Ordinary_Share|JUBILEE PLATINUM PLC                    |JUBILEE        |JBL
+ZAE000039681|JSE|Ordinary_Share|JCI LTD                                 |JCI            |JCD
+ZAE000030771|JSE|Ordinary_Share|JD GROUP LTD                            |JDGROUP        |JDG
+ZAE000140786|JSE|Investment_Product|NB JDG 2188CIG 1:1OCT10                 |NB JDG CIG     |JDGNIG
+ZAE000136677|JSE|Ordinary_Share|JOHN DANIEL HOLDINGS LTD                |JOHNDAN        |JDH
+ZAE000102406|JSE|Investment_Product|CITY OF JHB MET MUN                     |JOZISEP10      |JOZI02
+ZAE000102414|JSE|Investment_Product|CITY OF JHB MET MUN                     |JOZISEP12      |JOZI03
+ZAE000003794|JSE|Ordinary_Share|JASCO ELECTRONICS HLDGS                 |JASCO          |JSC
+ZAE000079711|JSE|Ordinary_Share|JSE LTD                                 |JSE            |JSE
+GB00B117S132|JSE|Ordinary_Share|KALAHARI MINERALS PLC                   |KALMIN         |KAH
+ZAE000059564|JSE|Ordinary_Share|KAP INTERNATIONAL HLDGS                 |KAP            |KAP
+ZAE000119996|JSE|Ordinary_Share|KIMBERLEY CONS MINING LD                |KCMIN          |KCM
+ZAE000108940|JSE|Ordinary_Share|KAYDAV GROUP LTD                        |KAYDAV         |KDV
+ZAE000117420|JSE|Ordinary_Share|KEATON ENERGY HLDGS LTD                 |KEATON         |KEH
+ZAE000093373|JSE|Ordinary_Share|KELLY GROUP LTD                         |KELLY          |KEL
+ZAE000014007|JSE|Ordinary_Share|KAGISO MEDIA LTD                        |KGMEDIA        |KGM
+ZAE000085346|JSE|Ordinary_Share|KUMBA IRON ORE LTD                      |KUMBA          |KIO
+ZAE000143582|JSE|Investment_Product|IB KIO217.50CHC1:1SEPT10                |IB KIO CHC     |KIOIHC
+ZAE000140794|JSE|Investment_Product|NBKIOR120.76CID 1:1OCT10                |NB KIO CID     |KIONID
+ZAE000142436|JSE|Warrants|SB KIO R340CI 100:1SEP10                |SB KIO CI      |KIOSBI
+ZAE000143384|JSE|Warrants|SB KIO R280PS 110:1AUG10                |SB KIO PS      |KIOSBS
+ZAE000145272|JSE|Warrants|SB KIO R350PT 90:1NOV10                 |SB KIO PT      |KIOSBT
+ZAE000142378|JSE|Investment_Product|SI KIO R115CA 1:1NOV10                  |SI KIO CA      |KIOSIA
+ZAE000137899|JSE|Investment_Product|SB KIO R140CDT 1:1SEP10                 |SB KIO CDT     |KIOSTD
+ZAE000011284|JSE|Ordinary_Share|KAIROS INDUSTRIAL HLDGS                 |KAIROS         |KIR
+ZAE000003950|JSE|Kruger_Rand|KRUGER RAND                             |KR             |KR
+ZAE000003968|JSE|Kruger_Rand|KRUGER RAND HALF                        |KR HALF        |KRHT
+ZAE000003976|JSE|Kruger_Rand|KRUGER RAND QUARTER                     |KR QUARTER     |KRQT
+ZAE000003992|JSE|Kruger_Rand|KRUGER RAND TENTH                       |KR TENTH       |KRTT
+ZAE000018354|JSE|Ordinary_Share|LABAT AFRICA LTD                        |LABAT          |LAB
+GB0002568813|JSE|Ordinary_Share|LONRHO PLC                              |LONRHO         |LAF
+ZAE000127148|JSE|Ordinary_Share|LIBERTY HOLDINGS LTD ORD                |LIB HOLD       |LBH
+ZAE000004040|JSE|Preference_Shares|LIBERTY HLDGS 11C CUMPRF                |LIB HOLD 11P   |LBHP
+ZAE000140711|JSE|Investment_Product|SI LBT 3000CC 1:1SEP10                  |SI LBT CC      |LBTSIC
+ZAE000058236|JSE|Ordinary_Share|LEWIS GROUP LTD                         |LEWIS          |LEW
+ZAE000144044|JSE|Investment_Product|SB LEW 3800CDT 1:1JAN11                 |SB LEW CDT     |LEWSTD
+ZAE000145892|JSE|Ordinary_Share|LIFE HEALTHCARE GRP HLDG LTD            |LIFEHC         |LHC
+ZAE000144671|JSE|Ordinary_Share|LITHA HEALTHCARE GROUP LTD              |LITHA          |LHG
+ZAE000067229|JSE|Debentures|LEREKO MOBILITY (PTY) DB                |LEREKO DEB     |LMID
+GB0002994001|JSE|Ordinary_Share|LONDON FIN INV GRP PLC                  |LONFIN         |LNF
+GB0031192486|JSE|Ordinary_Share|LONMIN P L C                            |LONMIN         |LON
+ZAE000004289|JSE|Ordinary_Share|MASONITE AFRICA LTD ORD                 |MASNITE        |MAS
+ZAE000033353|JSE|Ordinary_Share|M CUBED HLDGS LTD                       |MCUBED         |MCU
+ZAE000074142|JSE|Ordinary_Share|MEDI-CLINIC CORP LTD ORD                |MEDCLIN        |MDC
+ZAE000050456|JSE|Ordinary_Share|METROPOLITAN HLDGS LTD                  |MET LTD        |MET
+ZAE000061727|JSE|Ordinary_Share|METROFILE HOLDINGS LTD                  |METROFILE      |MFL
+ZAE000102265|JSE|Ordinary_Share|MERCHANT & IND PROP LTD                 |MERCHANT       |MIP
+ZAE000125316|JSE|Ordinary_Share|MIX TELEMATICS LTD                      |MIXTEL         |MIX
+ZAE000034435|JSE|Ordinary_Share|MICROMEGA HOLDINGS LTD                  |MICROMEGA      |MMG
+ZAE000074019|JSE|Ordinary_Share|MIRANDA MINERAL HLDGS LD                |MIRANDA        |MMH
+ZAE000078747|JSE|Ordinary_Share|METMAR LTD                              |METMAR         |MML
+ZAE000097051|JSE|Ordinary_Share|MONDI LIMITED                           |MONDILTD       |MND
+ZAE000145462|JSE|Investment_Product|NB MND 2652CID 1:1APR11                 |NB MND CIE     |MNDNIE
+GB00B1CRLC47|JSE|Ordinary_Share|MONDI PLC                               |MONDIPLC       |MNP
+ZAE000145546|JSE|Investment_Product|NB MNP 2588CIE 1:1APR11                 |NB MNP CIE     |MNPNIE
+ZAE000025409|JSE|Ordinary_Share|MONEY WEB HOLDINGS LTD                  |MONEYWB        |MNY
+ZAE000091435|JSE|Ordinary_Share|MOBILE INDUSTRIES ORD                   |MOBILE         |MOB
+ZAE000026951|JSE|Ordinary_Share|MR PRICE GROUP LTD                      |MR PRICE       |MPC
+ZAE000144036|JSE|Investment_Product|SB MPC 2600CDT 1:1JAN11                 |SB MPC CDT     |MPCSTD
+ZAE000060000|JSE|Ordinary_Share|MERAFE RESOURCES LTD                    |MERAFE         |MRF
+ZAE000029534|JSE|Ordinary_Share|MASSMART HOLDINGS LTD                   |MASSMART       |MSM
+ZAE000143590|JSE|Investment_Product|IB MSM64.50CHB1:1SEPT10                 |IB MSM CHB     |MSMIHB
+ZAE000141909|JSE|Investment_Product|NB MSM 4543CID 1:1OCT10                 |NB MSM CID     |MSMNID
+ZAE000142642|JSE|Investment_Product|SI MSM 4400CA 1:1NOV10                  |SI MSM CA      |MSMSIA
+IM00B4LFGH00|JSE|Ordinary_Share|MAS PLC                                 |MAS            |MSP
+ZAE000012373|JSE|Ordinary_Share|MUSTEK LTD                              |MUSTEK         |MST
+ZAE000090692|JSE|Ordinary_Share|METAIR INVESTMENTS ORD                  |METAIR         |MTA
+ZAE000050456|JSE|Ordinary_Share|METROPOLITAN HLDGS LD NM                |MET LTD NM     |MTD
+LU0035797272|JSE|Ordinary_Share|MARSHALL MONTEAGLE HD SA                |MARSHALL       |MTE
+ZAE000064721|JSE|Ordinary_Share|MERCANTILE BANK HLDGS LD                |MERCANTIL      |MTL
+ZAE000042164|JSE|Ordinary_Share|MTN GROUP LTD                           |MTN GROUP      |MTN
+ZAE000138277|JSE|Warrants|IB MTNR130CO 50:1JUL10                  |IB MTN CO      |MTNIBO
+ZAE000138285|JSE|Warrants|IB MTNR130PR50:1 JUL10                  |IB MTN PR      |MTNIBR
+ZAE000145751|JSE|Investment_Product|IB MTN61.50CHH1:1JAN11                  |IB MTN CHH     |MTNIDH
+ZAE000146825|JSE|Investment_Product|IB MTN58.00CDI1:1FEB11                  |IB MTN CDI     |MTNIDI
+ZAE000143608|JSE|Investment_Product|IB MTN84.75CHF1:1SEPT10                 |IB MTN CHF     |MTNIHF
+ZAE000146486|JSE|Investment_Product|IB MTN155.00PRR1:1FEB11                 |IB MTN PRR     |MTNIRR
+ZAE000145439|JSE|Investment_Product|NB MTN 5588CIG 1:1APR11                 |NB MTN CIG     |MTNNIG
+ZAE000140273|JSE|Investment_Product|NB MTN 9871CND 1:1OCT10                 |NB MTN CND     |MTNNND
+ZAE000143988|JSE|Investment_Product|NB MTN 8061CNE 1:1JAN11                 |NB MTN CNE     |MTNNNE
+ZAE000142444|JSE|Warrants|SB MTN R125CD 40:1JUL10                 |SB MTN CD      |MTNSBD
+ZAE000143947|JSE|Warrants|SB MTN R130CE 25:1NOV10                 |SB MTN CE      |MTNSBE
+ZAE000146395|JSE|Warrants|SB MTN R115CF 30:1DEC10                 |SB MTN CF      |MTNSBF
+ZAE000143277|JSE|Warrants|SB MTN R110PP 40:1JUL10                 |SB MTN PP      |MTNSBP
+ZAE000146361|JSE|Warrants|SB MTN R100PQ 25:1DEC10                 |SB MTN PQ      |MTNSBQ
+ZAE000146452|JSE|Investment_Product|SI MTN 5000CD 1:1JUN11                  |SI MTN CD      |MTNSID
+ZAE000146445|JSE|Investment_Product|SB MTN 7500CET 1:1JUN11                 |SB MTN CET     |MTNSTE
+ZAE000022745|JSE|Ordinary_Share|METOREX LTD                             |METOREX        |MTX
+ZAE000073441|JSE|Ordinary_Share|MURRAY AND ROBERTS H ORD                |M&R HLD        |MUR
+ZAE000141917|JSE|Investment_Product|NB MUR 2740CID 1:1OCT10                 |NB MUR CID     |MURNID
+ZAE000142154|JSE|Investment_Product|SB MUR 4000CDT 1:1NOV10                 |SB MUR CDT     |MURSTD
+ZAE000060737|JSE|Ordinary_Share|MVELAPHANDA GROUP LTD                   |MVELA GRP      |MVG
+ZAE000073540|JSE|Preference_Shares|MVELAPHANDA GROUP LTD PF                |MVELA GRP PREF |MVGP
+ZAE000050266|JSE|Ordinary_Share|MVELAPHANDA RESOURCES LD                |MVELA RES      |MVL
+ZAE000109823|JSE|Ordinary_Share|MAZOR GROUP LTD                         |MAZOR          |MZR
+ZAE000033338|JSE|Ordinary_Share|NEW AFRICA INVEST LD ORD                |NAIL           |NAI
+NA000A0JMZ44|JSE|Ordinary_Share|NAMIBIA ASSET MNGM LD NM                |NAMASSET NM    |NAM
+ZAE000033346|JSE|Ordinary_Share|NEW AFRICA INVESTMNT-N-                 |NAIL -N-       |NAN
+ZAE000004875|JSE|Ordinary_Share|NEDBANK GROUP LTD NM                    |NEDBANK NM     |NBK
+ZAE000043667|JSE|Preference_Shares|NEDBANK LTD NONCUMPREF                  |NEDBANK-P      |NBKP
+NA0009114944|JSE|Ordinary_Share|NAMIBIA BREWERIES NM                    |NAMIB BRWS NM  |NBS
+ZAE000067765|JSE|Ordinary_Share|NEW CORPCAPITAL LTD                     |NEW CPA        |NCA
+NA0009123481|JSE|Ordinary_Share|NICTUS BEPERK                           |NICTUS         |NCS
+NA0009123481|JSE|Ordinary_Share|NICTUS NM                               |NICTUS NM      |NCT
+ZAE000004875|JSE|Ordinary_Share|NEDBANK GROUP LTD                       |NEDBANK        |NED
+ZAE000143616|JSE|Investment_Product|IB NED92.25CHB1:1SEPT10                 |IB NED CHB     |NEDIHB
+ZAE000143368|JSE|Warrants|SB NED R135CD 40:1AUG10                 |SB NED CD      |NEDSBD
+ZAE000144366|JSE|Warrants|SB NED R115PV 35:1OCT10                 |SB NED PV      |NEDSBV
+ZAE000146114|JSE|Investment_Product|SB NED R100CET 1:1MAY11                 |SB NED CET     |NEDSTE
+IM00B23XCH02|JSE|Ordinary_Share|NEW EUROPE PROP INV PLC                 |NEPI           |NEP
+ZAE000104055|JSE|Tradable_Fund|NEWFUNDS NEWSA INDEX                    |NEWSA          |NEWFSA
+ZAE000130431|JSE|Tradable_Fund|NEWFUNDS SHARIA TOP40                   |SHARIAH40      |NFSH40
+ZAE000030912|JSE|Ordinary_Share|NORTHAM PLATINUM LTD                    |NORTHAM        |NHM
+ZAE000143020|JSE|Investment_Product|NB NHM 2095CIC 1:1DEC10                 |NB NHM CIC     |NHMNIC
+ZAE000146320|JSE|Investment_Product|SI NHM 2400CB 1:1MAY11                  |SI NHM CB      |NHMSIB
+ZAE000071676|JSE|Ordinary_Share|NAMPAK LTD ORD                          |NAMPAK         |NPK
+ZAE000004958|JSE|Preference_Shares|NAMPAK LTD 6% CUMPREF                   |NAMPAK 6% P    |NPKP
+ZAE000015889|JSE|Ordinary_Share|NASPERS LTD -N-                         |NASPERS-N-     |NPN
+ZAE000145793|JSE|Investment_Product|IB NPN168.25CDC1:1JAN11                 |IB NPN CDC     |NPNIDC
+ZAE000142345|JSE|Investment_Product|IB NPNR202.25CHF1:1JUL10                |IB NPN CHF     |NPNIHF
+ZAE000141354|JSE|Investment_Product|NB NPNR130.50CIF1:1OCT10                |NB NPN CIF     |NPNNIF
+ZAE000143376|JSE|Warrants|SB NPN R330CJ 100:1AUG10                |SB NPN CJ      |NPNSBJ
+ZAE000144333|JSE|Warrants|SB NPN R300CM 80:1SEP10                 |SB NPN CM      |NPNSBM
+ZAE000147336|JSE|Warrants|SB NPN R290CN 100:1FEB11                |SB NPN CN      |NPNSBN
+ZAE000144440|JSE|Warrants|SB NPN R270PU 80:1SEP10                 |SB NPN PU      |NPNSBU
+ZAE000145264|JSE|Warrants|SB NPN R300PV 75:1NOV10                 |SB NPN PV      |NPNSBV
+ZAE000140836|JSE|Investment_Product|SI NPN R128CD 1:1SEP10                  |SI NPN CD      |NPNSID
+ZAE000004966|JSE|Preference_Shares|NAMPAK LTD 6,5% CUMPREF                 |NAMPAK 6,5%P   |NPP1
+ZAE000047841|JSE|Tradable_Fund|NEW RAND                                |NEW RAND       |NRD
+US64107N2062|JSE|Ordinary_Share|NET 1 UEPS TECH INC                     |NET1UEPS       |NT1
+ZAE000011953|JSE|Ordinary_Share|NETCARE LIMITED                         |NETCARE        |NTC
+ZAE000081121|JSE|Preference_Shares|NETCARE CP                              |NETCARE CP     |NTCP
+ZAE000005070|JSE|Ordinary_Share|NU-WORLD HOLDINGS LTD                   |NUWORLD        |NWL
+NGOANDO00002|JSE|Ordinary_Share|OANDO PLC                               |OANDO          |OAO
+ZAE000074332|JSE|Ordinary_Share|OASIS CRESCENT PROP FUND                |OASIS          |OAS
+ZAE000025284|JSE|Ordinary_Share|OCEANA GROUP LTD                        |OCEANA         |OCE
+ZAE000025284|JSE|Ordinary_Share|OCEANA GROUP LTD NM                     |OCEANA NM      |OCG
+ZAE000005104|JSE|Ordinary_Share|OCTODEC INVEST LTD                      |OCTODEC        |OCT
+ZAE000026399|JSE|Ordinary_Share|ONELOGIX GROUP LTD                      |ONELOGIX       |OLG
+ZAE000110730|JSE|Ordinary_Share|O-LINE HOLDINGS LTD                     |O-LINE         |OLI
+GB0007389926|JSE|Ordinary_Share|OLD MUTUAL PLC NM                       |OLDMUTUAL NM   |OLM
+GB0007389926|JSE|Ordinary_Share|OLD MUTUAL PLC                          |OLDMUTUAL      |OML
+ZAE000141362|JSE|Investment_Product|NB OML 637CIG 1:1OCT10                  |NB OML CIG     |OMLNIG
+ZAE000143392|JSE|Warrants|SB OML 1450CN 5:1AUG10                  |SB OML CN      |OMLSBN
+ZAE000146338|JSE|Warrants|SB OML 1400CO 5:1DEC10                  |SB OML CO      |OMLSBO
+ZAE000144457|JSE|Warrants|SB OML 1250PT 3:1OCT10                  |SB OML PT      |OMLSBT
+ZAE000146437|JSE|Investment_Product|SB OML 950CET 1:1JUN11                  |SB OML CET     |OMLSTE
+ZAE000005153|JSE|Ordinary_Share|OMNIA HOLDINGS LTD                      |OMNIA          |OMN
+ZAE000144663|JSE|Ordinary_Share|OPTIMUM COAL HLDGS LTD                  |OPTIMUM        |OPT
+ZAE000075651|JSE|Ordinary_Share|ORION REAL ESTATE LTD                   |ORION          |ORE
+NA0001574913|JSE|Ordinary_Share|ORYX PROPERTIES LTD NM                  |ORYX NM        |ORY
+ZAE000005245|JSE|Ordinary_Share|PALABORA MINING CO ORD                  |PALAMIN        |PAM
+GB0004300496|JSE|Ordinary_Share|PAN AFRICAN RESOURCE PLC                |PAN-AF         |PAN
+ZAE000005252|JSE|Ordinary_Share|PANGBOURNE PROP LTD                     |PANPROP        |PAP
+ZAE000138210|JSE|Warrants|IB PAP715BB 1:1 JUL19                   |IB PAP CBB     |PAPIVB
+ZAE000029674|JSE|Ordinary_Share|PARACON HOLDINGS LTD                    |PARACON        |PCN
+AU000000PDN8|JSE|Ordinary_Share|PALADIN ENERGY LTD NM                   |PALADIN NM     |PDN
+ZAE000076014|JSE|Ordinary_Share|PETMIN LTD                              |PETMIN         |PET
+ZAE000118279|JSE|Ordinary_Share|PIONEER FOODS GROUP LTD                 |PNR FOODS      |PFG
+ZAE000096079|JSE|Preference_Shares|PSG FINANCIAL SERV PREF                 |PSGFIN PREF    |PGFP
+GG00B27Y8Z93|JSE|Ordinary_Share|PALLINGHURST RES LTD                    |PALLINGHT      |PGL
+ZAE000078127|JSE|Ordinary_Share|PEREGRINE HOLDINGS LTD                  |PERGRIN        |PGR
+ZAE000039269|JSE|Ordinary_Share|PHUMELELA GAME LEISURE                  |PHUMELELA      |PHM
+ZAE000005443|JSE|Ordinary_Share|PIK N PAY STORES LTD                    |PICKNPAY       |PIK
+ZAE000141370|JSE|Investment_Product|NB PIK 1966CIF 1:1OCT10                 |NB PIK CIF     |PIKNIF
+ZAE000101986|JSE|Ordinary_Share|PROTECH KHUTHELE HLDG LD                |PROTECH        |PKH
+ZAE000138970|JSE|Ordinary_Share|PALADIN CAPITAL LTD                     |PALCAP         |PLD
+CA72765Y1097|JSE|Ordinary_Share|PLATMIN LTD                             |PLATMIN        |PLN
+ZAE000146221|JSE|Investment_Product|SBPLTR15000CA3000:1JAN11                |SB PLT CA      |PLTSBA
+ZAE000146213|JSE|Investment_Product|SBPLTR12500PP3000:1JAN11                |SB PLT PP      |PLTSBP
+ZAE000009254|JSE|Ordinary_Share|PREMIUM PROPERTIES LTD                  |PREMIUM        |PMM
+ZAE000039277|JSE|Ordinary_Share|PRIMESERV GROUP LTD                     |PRIMESERV      |PMV
+ZAE000022570|JSE|Ordinary_Share|PINNACLE TECH HLDGS LTD                 |PINNACLE       |PNC
+ZAE000127122|JSE|Ordinary_Share|PINNACLE POINT GROUP LD                 |PINPOINT       |PNG
+ZAE000005534|JSE|Preference_Shares|BRIAN PORTER 5,5%CUMPREF                |PORT 5,5%P     |POTP
+ZAE000121299|JSE|Ordinary_Share|POYNTING HOLDINGS LTD                   |POYNTING       |POY
+ZAE000125886|JSE|Ordinary_Share|PRETORIA PORT CEMNT                     |PPC            |PPC
+ZAE000144952|JSE|Investment_Product|IB PPC24.50CHI1:1DEC10                  |IB PPC CHI     |PPCIHI
+ZAE000142600|JSE|Investment_Product|NB PPC 1645CIF 1:1NOV10                 |NB PPC CIF     |PPCNIF
+ZAE000139598|JSE|Investment_Product|SB PPC 2500CET 1:1SEP10                 |SB PPC CET     |PPCSTE
+ZAE000071411|JSE|Ordinary_Share|PURPLE CAPITAL LTD                      |PURPLE         |PPE
+ZAE000072310|JSE|Ordinary_Share|PUTPROP LTD                             |PUTPROP        |PPR
+ZAE000013017|JSE|Ordinary_Share|PSG GROUP LIMITED                       |PSG            |PSG
+ZAE000078705|JSE|Ordinary_Share|PSV HOLDINGS LTD                        |PSV            |PSV
+ZAE000101911|JSE|Tradable_Fund|PROP INDEX TR COLL INV S                |PROPXSAPY      |PTXSPY
+ZAE000005724|JSE|Ordinary_Share|PIK N PAY HOLDINGS LTD                  |PIKWIK         |PWK
+ZAE000088563|JSE|Ordinary_Share|PAMODZI GOLD LTD                        |PZGOLD         |PZG
+ZAE000113718|JSE|Ordinary_Share|QUEENSGATE HOT & LEIS LD                |QLEISURE       |QHL
+ZAE000125647|JSE|Ordinary_Share|QUANTUM PROP GROUP LD                   |QPG            |QPG
+ZAE000105409|JSE|Ordinary_Share|RACEC GROUP LTD                         |RACEC          |RAC
+ZAE000146197|JSE|Nil_Paid_Letter|RACEC GROUP LTD NPL                     |RACEC NPL      |RACN
+ZAE000145041|JSE|Preference_Shares|RECM & CALIBRE LTD PREFS                |RAC PREFS      |RACP
+ZAE000134979|JSE|Tradable_Fund|ERAFI SA FINANCIAL15 IDX                |RAFIFIN        |RAFFIN
+ZAE000135182|JSE|Tradable_Fund|ERAFI SA INDUSTRIAL25 IDX               |RAFIINDI       |RAFIND
+ZAE000117149|JSE|Tradable_Fund|ERAFI OVERALL SA INDEX ETF              |RAFISA         |RAFISA
+ZAE000135166|JSE|Tradable_Fund|ERAFI SA RESOURCE 20 IDX                |RAFIRESI       |RAFRES
+ZAE000008702|JSE|Ordinary_Share|REAL AFRICA HLDGS LTD                   |RA HOLD        |RAH
+ZAE000092714|JSE|Ordinary_Share|RARE HOLDINGS LTD                       |RARE           |RAR
+ZAE000104154|JSE|Ordinary_Share|RBA HOLDINGS LTD                        |RBA            |RBA
+ZAE000019063|JSE|Ordinary_Share|RAINBOW CHICKEN LTD                     |RAINBOW        |RBW
+ZAE000093183|JSE|Ordinary_Share|RAUBEX GROUP LTD                        |RAUBEX         |RBX
+ZAE000143178|JSE|Ordinary_Share|REDEFINE PROPERTIES LTD                 |REDEFINE       |RDF
+ZAE000144101|JSE|Investment_Product|IB RDF4.00CDF1:1NOV10                   |IB RDF CDF     |RDFIDF
+ZAE000145785|JSE|Investment_Product|IB RDF6.00CHC1:1JAN11                   |IB RDF CHC     |RDFIHC
+ZAE000081816|JSE|Investment_Product|IBRDF R133.37CBV1:1JUL16                |IB RDF CBV     |RDFIVB
+ZAE000084489|JSE|Investment_Product|IBRDF R189.45CVC1:1JUL16                |IB RDF CAV     |RDFIVC
+ZAE000146429|JSE|Investment_Product|SI RDF 375CF 1:1SEP11                   |SI RDF CF      |RDFSIF
+ZAE000142162|JSE|Investment_Product|SI RDF 360CI 1:1NOV10                   |SI RDF CI      |RDFSII
+CA77434W1032|JSE|Ordinary_Share|ROCKWELL DIAMONDS INCOR                 |ROCKWELL       |RDI
+CH0045793657|JSE|Ordinary_Share|REINET INVESTMENTS SCA                  |REINET         |REI
+ZAE000141800|JSE|Investment_Product|NB REI 582CIB 1:1OCT10                  |NB REI CIB     |REINIB
+ZAE000139606|JSE|Investment_Product|SB REI 780CDT 1:1SEP10                  |SB REI CDT     |REISTD
+ZAE000026480|JSE|Ordinary_Share|REMGRO LTD                              |REMGRO         |REM
+ZAE000144093|JSE|Investment_Product|IB REM49.00CDG1:1NOV10                  |IB REM CDG     |REMIDG
+ZAE000144945|JSE|Investment_Product|IB REM72.50CHE1:1DEC10                  |IB REM CHE     |REMIHE
+ZAE000043642|JSE|Ordinary_Share|RESILIENT PROP INC FD LD                |RESILIENT      |RES
+ZAE000143715|JSE|Ordinary_Share|RGT SMART MARKET INT LTD                |RGT SMART      |RGT
+ZAE000096202|JSE|Ordinary_Share|ROLFES TECHNOLOGY HLDGS                 |ROLFES         |RLF
+ZAE000057428|JSE|Ordinary_Share|REUNERT ORD                             |REUNERT        |RLO
+ZAE000141925|JSE|Investment_Product|NB RLO 2843CID 1:1OCT10                 |NB RLO CID     |RLONID
+ZAE000005930|JSE|Preference_Shares|REUNERT 5,5%CUM PREF                    |REUNERT5,5%P   |RLZP
+ZAE000024501|JSE|Ordinary_Share|RMB HOLDINGS LTD                        |RMBH           |RMH
+ZAE000144978|JSE|Investment_Product|IB RMH17.75CHC1:1DEC10                  |IB RMH CHC     |RMHIDC
+ZAE000141388|JSE|Investment_Product|NB RMH 1353CIF 1:1OCT10                 |NB RMH CIF     |RMHNIF
+ZAE000008819|JSE|Ordinary_Share|RANDGOLD AND EXP CO                     |RANGOLD        |RNG
+ZAE000009700|JSE|Ordinary_Share|REX TRUEFORM CL CO -N-                  |REX TRUE -N-   |RTN
+ZAE000006144|JSE|Ordinary_Share|REX TRUEFORM CLOTH ORD                  |REX TRUE       |RTO
+ZAE000006151|JSE|Preference_Shares|REX TRUEFORM 6% CUM PREF                |REX TRUE 6%P   |RTOP
+GB0004835483|JSE|Ordinary_Share|SABMILLER PLC                           |SAB            |SAB
+ZAE000144184|JSE|Investment_Product|IB SAB112.75CDH1:1NOV10                 |IB SAB CDH     |SABIDH
+ZAE000146528|JSE|Investment_Product|IB SAB125.75CDI1:1FEB11                 |IB SAB CDI     |SABIDI
+ZAE000142352|JSE|Investment_Product|IB SABR154.50CHE1:1JUL10                |IB SAB CHE     |SABIHE
+ZAE000145520|JSE|Investment_Product|NB SABR108.40CIG1:1APR11                |NB SAB CIG     |SABNIG
+ZAE000083614|JSE|Ordinary_Share|SA CORP REAL ESTATE FUND                |SA CORP        |SAC
+ZAE000139614|JSE|Investment_Product|SI SAC 130CE 1:1SEP10                   |SI SAC CE      |SACSIE
+ZAE000102034|JSE|Ordinary_Share|SOUTH AFRICAN COAL MIN                  |SACMH          |SAH
+ZAE000022588|JSE|Ordinary_Share|SALLIES LTD                             |SALLIES        |SAL
+ZAE000117305|JSE|Debentures|SALLIES LIMITED CD                      |SALLIES CD     |SALD
+ZAE000081055|JSE|Ordinary_Share|SANYATI HOLDINGS LTD                    |SANYATI        |SAN
+ZAE000006284|JSE|Ordinary_Share|SAPPI LTD                               |SAPPI          |SAP
+ZAE000145512|JSE|Investment_Product|NB SAP 1620CIH 1:1APR11                 |NB SAP CIH     |SAPNIH
+ZAE000143418|JSE|Warrants|SB SAP 3800CN 25:1AUG10                 |SB SAP CN      |SAPSBN
+ZAE000145249|JSE|Warrants|SB SAP 3300CO 10:1JAN11                 |SB SAP CO      |SAPSBO
+ZAE000143442|JSE|Warrants|SB SAP 3400PS 15:1AUG10                 |SB SAP PS      |SAPSBS
+ZAE000074878|JSE|Ordinary_Share|SIMEKA BUS GROUP LTD                    |SIMEKA         |SBG
+ZAE000109815|JSE|Ordinary_Share|STANDARD BANK GROUP LTD                 |STANBANK       |SBK
+ZAE000142329|JSE|Investment_Product|IB SBK 5225CDG 1:1JUL10                 |IB SBK CDG     |SBKIDG
+ZAE000143095|JSE|Investment_Product|NB SBK 4850CIH 1:1DEC10                 |NB SBK CIH     |SBKNIH
+ZAE000145553|JSE|Investment_Product|NB SBK 5868CII 1:1APR11                 |NB SBK CII     |SBKNII
+ZAE000138178|JSE|Investment_Product|NB SBK 6509CNE 1:1JUL10                 |NB SBK CNE     |SBKNNE
+ZAE000140281|JSE|Investment_Product|NB SBK 7088CNF 1:1OCT10                 |NB SBK CNF     |SBKNNF
+ZAE000143970|JSE|Investment_Product|NB SBK 7948CNG 1:1JAN11                 |NB SBK CNG     |SBKNNG
+ZAE000038881|JSE|Preference_Shares|STD BANK GROUP LTD 6,5%P                |STANBANK6,5%P  |SBKP
+ZAE000142451|JSE|Warrants|SB SBK R112CG 25:1AUG10                 |SB SBK SG      |SBKSBG
+ZAE000146692|JSE|Warrants|SB SBK R112CH 30:1JAN11                 |SB SBK CH      |SBKSBH
+ZAE000006383|JSE|Ordinary_Share|SABLE HLDGS LTD ORD                     |SABLE          |SBL
+ZAE000006409|JSE|Ordinary_Share|SAAMBOU HOLDINGS LTD                    |SAAMBOU        |SBO
+ZAE000056339|JSE|Preference_Shares|STANDARD BANK GROUP PREF                |STANBANK-P     |SBPP
+ZAE000083853|JSE|Investment_Product|SB RETAIL(JIBAR+15)SEP11                |SBRJSEP11      |SBR002
+ZAE000128195|JSE|Investment_Product|SB RETAIL(JIBAR+30)NOV13                |SBRJNOV13      |SBR003
+ZAE000105045|JSE|Investment_Product|SBVESRESETSWX4015SEP15                  |SBVES018       |SBSW12
+ZAE000112264|JSE|Investment_Product|SBVESRESETSWX4011DEC15                  |SBVES020       |SBSW14
+ZAE000112280|JSE|Investment_Product|SBVESRESETSWX4015DEC15                  |SBVES021       |SBSW15
+ZAE000115861|JSE|Investment_Product|SBVES RESETSWX40 15FEB 16               |SBVES023       |SBSW17
+ZAE000124715|JSE|Investment_Product|SBVES RESETSWX40 01AUG16                |SBVES024       |SBSW18
+ZAE000128534|JSE|Investment_Product|SBVESRESETSWX4014OCT16                  |SBVES025       |SBSW19
+ZAE000137972|JSE|Investment_Product|SBVESTESETSWX4017JUL17                  |SBVES030       |SBSW21
+ZAE000142543|JSE|Investment_Product|SBVESRESETSWX40 03NOV17                 |SBVES032       |SBSW23
+ZAE000097408|JSE|Investment_Product|SBVESRESETSWX4014MAY15                  |SBVES009       |SBSWV4
+ZAE000099131|JSE|Investment_Product|SBVESRESETSWX40JUNE15                   |SBVES011       |SBSWV5
+ZAE000099586|JSE|Investment_Product|SBVESRESETSWX4022JUNE15                 |SBVES012       |SBSWV6
+ZAE000093613|JSE|Investment_Product|SBVESRESETDTOP40MARCH15                 |SBVES004       |SBTPV4
+ZAE000128906|JSE|Investment_Product|SBVESRESETTOP4028OCT16                  |SBVES026       |SBTPV5
+ZAE000129128|JSE|Investment_Product|SBVESRESETTOP4004NOV16                  |SBVES027       |SBTPV6
+ZAE000129813|JSE|Investment_Product|SBVESRESETTOP4018NOV16                  |SBVES028       |SBTPV7
+ZAE000146734|JSE|Investment_Product|SBVES RESETTOP40 11MAY18                |SBVES033       |SBTPV8
+ZAE000006417|JSE|Ordinary_Share|SABVEST LTD                             |SABVEST        |SBV
+ZAE000127460|JSE|Ordinary_Share|SACOIL HOLDINGS LD                      |SACOIL         |SCL
+ZAE000096368|JSE|Ordinary_Share|SECUREDATA HOLDINGS LTD                 |SECDATA        |SDH
+ZAE000138459|JSE|Ordinary_Share|SEPHAKU HLDGS LTD                       |SEPHAKU        |SEP
+ZAE000029815|JSE|Ordinary_Share|SEARDEL INVEST CORP LTD                 |SEARDEL        |SER
+ZAE000108890|JSE|Ordinary_Share|S A FRENCH LTD                          |SA FRENCH      |SFH
+ZAE000006565|JSE|Ordinary_Share|SASFIN HOLDINGS LTD                     |SASFIN         |SFN
+ZAE000060273|JSE|Preference_Shares|SASFIN HOLDINGS LTD PREF                |SASFIN PREF    |SFNP
+ZAE000016176|JSE|Ordinary_Share|STEINHOFF INTERNTL HLDGS                |STEINHOFF      |SHF
+ZAE000068367|JSE|Preference_Shares|STEINHOFF INVEST HLD PRF                |SHFINV-PREF    |SHFF
+ZAE000141396|JSE|Investment_Product|NB SHF 900CIF 1:1OCT10                  |NB SHF CIF     |SHFNIF
+ZAE000140653|JSE|Investment_Product|SB SHF 1200CCT 1:1SEP10                 |SB SHF CCT     |SHFSTC
+ZAE000012084|JSE|Ordinary_Share|SHOPRITE HLDGS LTD ORD                  |SHOPRIT        |SHP
+ZAE000006672|JSE|Preference_Shares|SHOPRITE 6% PREF                        |SHOPRIT 6%P    |SHP1
+ZAE000006680|JSE|Preference_Shares|SHOPRITE 5% PREF                        |SHOPRIT 5%P    |SHP2
+ZAE000006698|JSE|Preference_Shares|SHOPRITE 2ND 5% PREF                    |SHPRT 2ND5%P   |SHP3
+ZAE000006706|JSE|Preference_Shares|SHOPRITE 3RD 5% PREF                    |SHPRT 3RD5%P   |SHP4
+ZAE000143624|JSE|Investment_Product|IB SHP49.50CHB1:1SEPT10                 |IB SHP CHB     |SHPIHB
+ZAE000141412|JSE|Investment_Product|NB SHP 3160CIE 1:1OCT10                 |NB SHP CIE     |SHPNIE
+ZAE000142170|JSE|Investment_Product|SB SHP 4700CCT 1:1NOV10                 |SB SHP CCT     |SHPSTC
+ZAE000006722|JSE|Ordinary_Share|SIMMER AND JACK MINES                   |SIMMERS        |SIM
+ZAE000017893|JSE|Ordinary_Share|SEKUNJALO INVESTMENTS LD                |SEKUNJALO      |SKJ
+ZAE000135893|JSE|Ordinary_Share|SKINWELL HLDGS LTD                      |SKINWELL       |SKW
+ZAE000102380|JSE|Ordinary_Share|SEA KAY HOLDINGS LTD                    |SEAKAY         |SKY
+ZAE000070660|JSE|Ordinary_Share|SANLAM LTD NM                           |SANLAM NM      |SLA
+ZAE000018198|JSE|Ordinary_Share|STELLA VISTA TECHNOL LTD                |STELLA         |SLL
+ZAE000070660|JSE|Ordinary_Share|SANLAM LTD                              |SANLAM         |SLM
+ZAE000144960|JSE|Investment_Product|IB SLM13.75CHH1:1DEC10                  |IB SLM CHH     |SLMIDH
+ZAE000145504|JSE|Investment_Product|NB SLM 1229CIG 1:1APR11                 |NB SLM CIG     |SLMNIG
+ZAE000142188|JSE|Investment_Product|SB SLM 1600CDT 1:1NOV10                 |SB SLM CDT     |SLMSTD
+ZAE000041919|JSE|Ordinary_Share|SOUTHERN ELECTRICITY CO                 |SELCO          |SLO
+NA000A0DK7D9|JSE|Preference_Shares|STIMULUS INVEST LTD NM                  |STIMULUS NM    |SMSP
+ZAE000109815|JSE|Ordinary_Share|STANDARD BANK GROUP NM                  |STANBANK NM    |SNB
+ZAE000093779|JSE|Ordinary_Share|SANTAM LTD NM                           |SANTAM NM      |SNM
+ZAE000093779|JSE|Ordinary_Share|SANTAM LTD                              |SANTAM         |SNT
+ZAE000107223|JSE|Ordinary_Share|SENTULA MINING LTD                      |SENTULA        |SNU
+ZAE000090650|JSE|Ordinary_Share|SANTOVA LOGISTICS LTD                   |SANTOVA        |SNV
+ZAE000092748|JSE|Ordinary_Share|SOUTH OCEAN HOLDINGS LTD                |S.OCEAN        |SOH
+ZAE000006896|JSE|Ordinary_Share|SASOL LTD                               |SASOL          |SOL
+ZAE000138137|JSE|Warrants|IB SOL  R281CE150:1JUL10                |IB SOL CE      |SOLIBE
+ZAE000138160|JSE|Warrants|IB SOL  R281PY100:1JUL10                |IB SOLPY       |SOLIBY
+ZAE000140703|JSE|Investment_Product|IB SOL156.50CHG1:1AUG10                 |IB SOL CHG     |SOLIDG
+ZAE000143632|JSE|Investment_Product|IB SOL217.00CHF1:1SEPT10                |IB SOL CHF     |SOLIHF
+ZAE000146866|JSE|Investment_Product|IB SOL418.00PRS1:1FEB11                 |IB SOL PRS     |SOLIRS
+ZAE000145496|JSE|Investment_Product|NB SOLR155.50CIG1:1APR11                |NB SOL CIG     |SOLNIG
+ZAE000140299|JSE|Investment_Product|NB SOLR206.26CNC1:1OCT10                |NB SOL CNC     |SOLNNC
+ZAE000142469|JSE|Warrants|SB SOL R320CH 110:1JUL10                |SB SOL CH      |SOLSBH
+ZAE000144226|JSE|Warrants|SB SOL R300CI 90:1SEP10                 |SB SOL CI      |SOLSBI
+ZAE000146767|JSE|Warrants|SB SOL R300CJ 90:1JAN11                 |SB SOL CJ      |SOLSBJ
+ZAE000143889|JSE|Warrants|SB SOL R260PT 60:1SEP10                 |SB SOL PT      |SOLSBT
+ZAE000145884|JSE|Warrants|SB SOL R260PU 65:1JAN11                 |SB SOL PU      |SOLSBU
+ZAE000134789|JSE|Investment_Product|SB SOL R205CET 1:1JUL10                 |SB SOL CET     |SOLSTE
+ZAE000009221|JSE|Ordinary_Share|SOVEREIGN FOOD INVEST LD                |SOVFOOD        |SOV
+ZAE000006938|JSE|Ordinary_Share|SPANJAARD LTD                           |SPANJAARD      |SPA
+ZAE000011334|JSE|Ordinary_Share|SUPER GROUP LTD                         |SUPRGRP        |SPG
+ZAE000058517|JSE|Ordinary_Share|THE SPAR GROUP LTD                      |SPAR           |SPP
+ZAE000141404|JSE|Investment_Product|NB SPP 3350CIF 1:1OCT10                 |NB SPP CIF     |SPPNIF
+ZAE000142774|JSE|Investment_Product|SB SPP 5000CDT 1:1NOV10                 |SB SPP CDT     |SPPSTD
+ZAE000017919|JSE|Ordinary_Share|SPESCOM LTD                             |SPESCOM        |SPS
+ZAE000023768|JSE|Ordinary_Share|SQUARE ONE SOLUTIONS GRP                |SQONE          |SQE
+ZAE000012084|JSE|Ordinary_Share|SHOPRITE HLDGS LTD NM                   |SHOPRIT NM     |SRH
+ZAE000030144|JSE|Ordinary_Share|SEARDEL INVST CORP -N-                  |SEARDEL-N-     |SRN
+ZAE000123766|JSE|Ordinary_Share|STEFANUTTI STOCKS HLD LD                |STEFSTOCK      |SSK
+ZAE000034294|JSE|Ordinary_Share|STRATCORP LTD                           |STRATCORP      |STA
+ZAE000027108|JSE|Tradable_Fund|SATRIX 40                               |SATRIX 40      |STX40
+ZAE000102018|JSE|Tradable_Fund|SATRIX DIV PLUS PORTFOLI                |SATRIXDIV      |STXDIV
+ZAE000036356|JSE|Tradable_Fund|SATRIX FINI                             |SATRIX FINI    |STXFIN
+ZAE000146841|JSE|Investment_Product|IB STX13.50CDE1:1FEB11                  |IB STX CDE     |STXIDE
+ZAE000036364|JSE|Tradable_Fund|SATRIX INDI                             |SATRIX INDI    |STXIND
+ZAE000146478|JSE|Investment_Product|IB STX36.50PRT1:1FEB11                  |IB STX PRT     |STXIRT
+ZAE000146874|JSE|Investment_Product|IB STX36.75PRU1:1FEB11                  |IB STX PRU     |STXIRU
+ZAE000145488|JSE|Investment_Product|NB STX 1323CIG 1:1APR11                 |NB STX CIG     |STXNIG
+ZAE000140307|JSE|Investment_Product|NB STX 1652CNC 1:1OCT10                 |NB STX CNC     |STXNNC
+ZAE000126033|JSE|Tradable_Fund|SATRIX RAFI 40                          |SATRIXRAF      |STXRAF
+ZAE000078622|JSE|Tradable_Fund|SATRIX RESI PORTFOLIO                   |SATRIXRES      |STXRES
+ZAE000078580|JSE|Tradable_Fund|SWIX TOP 40 PORTFOLIO                   |SATRIXSWX      |STXSWX
+ZAE000097580|JSE|Ordinary_Share|SUN INTERNATIONAL LTD                   |SUNINT         |SUI
+ZAE000022653|JSE|Ordinary_Share|SPUR CORPORATION LTD                    |SPURCORP       |SUR
+ZAE000086229|JSE|Ordinary_Share|SILVERBRIDGE HLDGS LTD                  |SILVERB        |SVB
+ZAE000012043|JSE|Ordinary_Share|SABVEST LTD -N-                         |SABVEST -N-    |SVN
+ZAE000137907|JSE|Investment_Product|SB SXF 500CAT 1:1JUL10                  |SB SXF CAT     |SXFSTA
+ZAE000019303|JSE|Ordinary_Share|SYCOM PROPERTY FUND                     |SYCOM          |SYC
+ZAE000081824|JSE|Investment_Product|IB SYC 671CBV 1:1JUL16                  |IB SYC CBV     |SYCIVB
+ZAE000138228|JSE|Warrants|IB SYC850BC 1:1 JUL19                   |IB SYC CBC     |SYCIVC
+ZAE000081162|JSE|Ordinary_Share|TASTE HOLDINGS LTD                      |TASTE          |TAS
+AU000000TAW7|JSE|Ordinary_Share|TAWANA RESOURCES NL                     |TAWANA         |TAW
+AU0000TAWOA6|JSE|Ordinary_Share|TAWANA RESOURCES OPTNS                  |TAWOPT2011     |TAWA
+ZAE000071080|JSE|Ordinary_Share|TIGER BRANDS LTD ORD                    |TIGBRANDS      |TBS
+ZAE000142337|JSE|Investment_Product|IB TBS 8475CDF 1:1JUL10                 |IB TBS CDF     |TBSIDF
+ZAE000141420|JSE|Investment_Product|NB TBS 7780CIF 1:1OCT10                 |NB TBS CIF     |TBSNIF
+ZAE000142196|JSE|Investment_Product|SB TBS R115CDT 1:1NOV10                 |SB TBS CDT     |TBSSTD
+ZAE000013686|JSE|Ordinary_Share|THABEX LTD                              |THABEX         |TBX
+ZAE000116208|JSE|Ordinary_Share|TOTAL CLIENT SERVICES LTD               |TCS            |TCS
+ZAE000026902|JSE|Ordinary_Share|TRADEHOLD LTD                           |TRADEH         |TDH
+ZAE000088423|JSE|Ordinary_Share|TOP FIX HOLDINGS LTD                    |TOPFIX         |TFX
+ZAE000018552|JSE|Ordinary_Share|TRANS HEX GROUP LTD NM                  |TRANS HEX NM   |THX
+ZAE000044897|JSE|Ordinary_Share|TELKOM SA LTD                           |TELKOM         |TKG
+ZAE000146858|JSE|Investment_Product|IB TKG20.00CDH1:1FEB11                  |IB TKG CDH     |TKGIDH
+ZAE000143640|JSE|Investment_Product|IB TKG25.50CHF1:1SEPT10                 |IB TKG CHF     |TKGIHF
+ZAE000145470|JSE|Investment_Product|NB TKG 1720CIG 1:1APR11                 |NB TKG CIG     |TKGNIG
+ZAE000138574|JSE|Investment_Product|NB TKG 2814 CND 1:1AUG10                |NB TKG CND     |TKGNND
+ZAE000140315|JSE|Investment_Product|NB TKG 3218CNE 1:1OCT10                 |NB TKG CNE     |TKGNNE
+ZAE000143269|JSE|Warrants|SB TKG 3800CA 9:1AUG10                  |SB TKG CA      |TKGSBA
+ZAE000144168|JSE|Warrants|SB TKG 4000CB 8:1JAN11                  |SB TKG CB      |TKGSBB
+ZAE000143434|JSE|Warrants|SB TKG 3300PT 10:1AUG10                 |SB TKG PT      |TKGSBT
+ZAE000146908|JSE|Warrants|SB TKG 3400PU 10:1JAN11                 |SB TKG PU      |TKGSBU
+ZAE000146106|JSE|Investment_Product|SB TKG 2700CET 1:1MAY11                 |SB TKG CET     |TKGSTE
+ZAE000093324|JSE|Ordinary_Share|TELEMASTER HOLDINGS LTD                 |TELEMASTR      |TLM
+ZAE000013991|JSE|Ordinary_Share|TREMATON CAPITAL INV LTD                |TREMATON       |TMT
+ZAE000096541|JSE|Ordinary_Share|TONGAAT HULETT LTD                      |TONGAAT        |TON
+ZAE000141644|JSE|Investment_Product|IB TON 5200CHF 1:1JUL10                 |IB TON CHF     |TONIDF
+ZAE000141933|JSE|Investment_Product|NB TON 4935CID 1:1OCT10                 |NB TON CID     |TONNID
+ZAE000138715|JSE|Investment_Product|SI TON 4500CA 1:1SEP10                  |SI TON CA      |TONSIA
+DE000DB0T1R7|JSE|Investment_Product|DB TOP 2100CM 0002 NOV10                |DB TOP CMW     |TOPDWM
+DE000DB0T1S5|JSE|Investment_Product|DB TOP 2000CN 0002 NOV10                |DB TOP CNW     |TOPDWN
+DE000DB0T1Q9|JSE|Investment_Product|DB  TOP 3000PP 0002 OCT10               |DB TOP PP W    |TOPDWP
+DE000DB0T2A1|JSE|Investment_Product|DB TOP 2600PQ 0002NOV10                 |DB TOP PQ W    |TOPDWQ
+DE000DB0T1U1|JSE|Investment_Product|DB TOP 2750PR 0002NOV10                 |DB TOP PR W    |TOPDWR
+ZAE000139507|JSE|Investment_Product|SBTOP18000CB100:1JUN10                  |SB TOP CB      |TOPSBB
+ZAE000146643|JSE|Investment_Product|SBTOP18000CC001JUN11                    |SB TOP CC      |TOPSBC
+ZAE000144358|JSE|Investment_Product|SB TOP 26000CM 0002OCT10                |SB TOP CM      |TOPSBM
+ZAE000146635|JSE|Investment_Product|SBTOP25500CN0002JAN11                   |SB TOP CN      |TOPSBN
+ZAE000146627|JSE|Investment_Product|SBTOP22000PP0002JAN11                   |SB TOP PP      |TOPSBP
+ZAE000146619|JSE|Investment_Product|SBTOP30000PQ001JUN11                    |SB TOP PQ      |TOPSBQ
+ZAE000143863|JSE|Investment_Product|SBTOP24500PX0002AUG10                   |SB TOP PX      |TOPSBX
+ZAE000139515|JSE|Investment_Product|SBTOP28000PZ100:1JUN10                  |SB TOP PZ      |TOPSBZ
+ZAE000142816|JSE|Investment_Product|SBTOP22500CCK0002JUN10                  |SB TOP CCK     |TOPSKC
+ZAE000146304|JSE|Investment_Product|SBTOP22000CFK0001MAR11                  |SB TOP CFK     |TOPSKF
+ZAE000142824|JSE|Investment_Product|SBTOP27500PSK0001JUN10                  |SB TOP PSK     |TOPSKS
+ZAE000141990|JSE|Investment_Product|SBTOP26500PTK0001MAR11                  |SB TOP PTK     |TOPSKT
+ZAE000007480|JSE|Ordinary_Share|TRANSPACO LTD                           |TRNPACO        |TPC
+ZAE000007506|JSE|Ordinary_Share|TRENCOR LTD                             |TRENCOR        |TRE
+ZAE000028296|JSE|Ordinary_Share|TRUWORTHS INTERNATIONAL                 |TRUWTHS        |TRU
+ZAE000143657|JSE|Investment_Product|IB TRU32.00CHB1:1SEPT10                 |IB TRU CHB     |TRUIHB
+ZAE000141941|JSE|Investment_Product|NB TRU 2245CID 1:1OCT10                 |NB TRU CID     |TRUNID
+ZAE000028296|JSE|Ordinary_Share|TRUWORTH NM                             |TRUWORTHS NM   |TRW
+ZAE000018552|JSE|Ordinary_Share|TRANS HEX GROUP LTD                     |TRNSHEX        |TSX
+NA000A0RF067|JSE|Ordinary_Share|TRUSTCO GROUP HLDGS LTD                 |TRUSTCO        |TTO
+NA000A0RF067|JSE|Ordinary_Share|TRUSTCO GROUP HLDGS LTD NM              |TRUSTCO NM     |TUC
+ZAE000140182|JSE|Ordinary_Share|UBUBELE HLDGS LTD                       |UBUBELE        |UBU
+ZAE000016150|JSE|Ordinary_Share|UCS GROUP LTD                           |UCS            |UCS
+ZAE000110664|JSE|Ordinary_Share|UNIVERSAL INDUS CORP LTD                |UNIVERSAL      |UNI
+ZAE000143749|JSE|Warrants|SB USD 750CB 2:1SEP10                   |SB USD CB      |USDSCB
+ZAE000146296|JSE|Investment_Product|SB USD 725PQ 1:1DEC10                   |SB USD PQ      |USDSCQ
+CA91701P1053|JSE|Ordinary_Share|URANIUM ONE INC                         |URONE          |UUU
+ZAE000007720|JSE|Ordinary_Share|VILLAGE MAIN REEF G M CO                |VILLAGE        |VIL
+ZAE000056370|JSE|Ordinary_Share|VUKILE PROPERTY FUND LTD                |VUKILE         |VKE
+ZAE000056370|JSE|Ordinary_Share|VUKILE PROPERTY FUND LTD NM             |VUKILE NM      |VKN
+ZAE000016507|JSE|Ordinary_Share|VALUE GROUP LTD                         |VALUE          |VLE
+ZAE000068011|JSE|Ordinary_Share|VERIMARK HOLDINGS LTD                   |VERIMARK       |VMK
+ZAE000132577|JSE|Ordinary_Share|VODACOM GROUP LIMITED                   |VODACOM        |VOD
+ZAE000145538|JSE|Investment_Product|NB VOD 2812CIB 1:1APR11                 |NB VOD CIB     |VODNIB
+ZAE000138582|JSE|Investment_Product|NB VOD 3871 CNC 1:1AUG10                |NB VOD CNC     |VODNNC
+ZAE000140323|JSE|Investment_Product|NB VOD 4125CND 1:1OCT10                 |NB VOD CND     |VODNND
+ZAE000141651|JSE|Warrants|SB VOD 5700CC 15:1JUL10                 |SB VOD CC      |VODSBC
+ZAE000146379|JSE|Warrants|SB VOD 6200CD 15:1DEC10                 |SB VOD CD      |VODSBD
+ZAE000144465|JSE|Warrants|SB VOD 5200PR 15:1OCT10                 |SB VOD PR      |VODSBR
+ZAE000146098|JSE|Investment_Product|SB VOD 4200CET 1:1MAY11                 |SB VOD CET     |VODSTE
+ZAE000097234|JSE|Ordinary_Share|VOX TELECOM LTD                         |VOXTELCOM      |VOX
+ZAE000110359|JSE|Ordinary_Share|VUNANI LTD                              |VUNANI         |VUN
+AU000000WME4|JSE|Ordinary_Share|WEST AUSTRALIAN METALS LTD              |WAMETALS       |WAM
+ZAE000009932|JSE|Ordinary_Share|WILSON BAYLY HLM-OVC ORD                |WBHO           |WBO
+ZAE000078002|JSE|Ordinary_Share|W G WEARNE LTD                          |WEARNE         |WEA
+ZAE000075859|JSE|Ordinary_Share|WESIZWE PLATINUM LTD                    |WESIZWE        |WEZ
+ZAE000079703|JSE|Ordinary_Share|WITWATERSRAND CONS GOLD                 |WITS GOLD      |WGR
+ZAE000063863|JSE|Ordinary_Share|WOOLWORTHS HOLDINGS LTD                 |WOOLIES        |WHL
+ZAE000141958|JSE|Investment_Product|NB WHL 875CIE 1:1OCT10                  |NB WHL CIE     |WHLNIE
+BW0000000868|JSE|Ordinary_Share|WILDERNESS HLDGS LTD                    |WILDRNESS      |WIL
+ZAE000087847|JSE|Ordinary_Share|WORKFORCE HOLDINGS LTD                  |WORKFORCE      |WKF
+ZAE000008744|JSE|Ordinary_Share|WOOLTRU LTD-N-                          |WOOLTRU-N-     |WLN
+ZAE000007993|JSE|Ordinary_Share|WOOLTRU LTD ORD                         |WOOLTRU        |WLO
+ZAE000008009|JSE|Preference_Shares|WOOLTRU LTD 6%CUM PREF                  |WOOLTRU 6%P    |WLOP
+ZAE000008017|JSE|Preference_Shares|WOOLTRU LTD 6,75% PREF                  |WOLTRU6,75%P   |WLP1
+ZAE000033916|JSE|Ordinary_Share|WINHOLD LTD ORD                         |WINHOLD        |WNH
+ZAE000069639|JSE|Ordinary_Share|WESCOAL HOLDINGS LTD                    |WESCOAL        |WSL
+ZAE000098133|JSE|Ordinary_Share|WILLIAM TELL HOLDINGS LTD               |WILLTELL       |WTL
+ZAE000130712|JSE|Ordinary_Share|WHITE WATER RESOURCES LTD               |WHTWATER       |WWR
+CA9840071042|JSE|Ordinary_Share|XEMPLAR ENERGY CORP NM                  |XEMPLAR NM     |XEM
+ZAE000133450|JSE|Ordinary_Share|YORK TIMBER HLDGS LTD                   |YORK           |YRK
+BMG9887P1068|JSE|Ordinary_Share|ZCI LTD                                 |ZCI            |ZCI
+ZAE000088431|JSE|Ordinary_Share|ZEDER INVESTMENTS LTD                   |ZEDER          |ZED
+ZAE000126686|JSE|Tradable_Fund|ZSHARES GOVI                            |ZGOVI          |ZGOVI
+ZAE000070934|JSE|Ordinary_Share|ZAPTRONIX LTD                           |ZAPTRONIX      |ZPT
+ZAE000094496|JSE|Ordinary_Share|ZURICH INSURANCE CO S A                 |ZURICH SA      |ZSA
