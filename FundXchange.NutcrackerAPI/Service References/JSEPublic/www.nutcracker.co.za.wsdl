@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://www.nutcracker.co.za" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://www.nutcracker.co.za" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.nutcracker.co.za/Imports">
+      <xsd:import schemaLocation="" namespace="http://www.nutcracker.co.za" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IJSEPublic_ShareCodeLookup_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShareCodeLookup" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_ShareCodeLookup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShareCodeLookupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetMultipleShareData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMultipleShareData" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetMultipleShareData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMultipleShareDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetPublicTradesForSymbol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicTradesForSymbol" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetPublicTradesForSymbol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicTradesForSymbolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetLastTradesForSymbolList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastTradesForSymbolList" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetLastTradesForSymbolList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastTradesForSymbolListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetSensNewsMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSensNewsMessages" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetSensNewsMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSensNewsMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetIndexValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndexValues" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetIndexValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIndexValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetSensNewsBody_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSensNewsBody" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetSensNewsBody_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSensNewsBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetDepth5_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepth5" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetDepth5_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepth5Response" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversUp" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversDown_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversDown" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversDown_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversValue" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversVolume_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversVolume" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketMoversVolume_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketMoversVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketStats_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarketStats" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_MarketStats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarketStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetHistoryForSymbol_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryForSymbol" />
+  </wsdl:message>
+  <wsdl:message name="IJSEPublic_GetHistoryForSymbol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHistoryForSymbolResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IJSEPublic">
+    <wsdl:operation name="ShareCodeLookup">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/ShareCodeLookup" message="tns:IJSEPublic_ShareCodeLookup_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/ShareCodeLookupResponse" message="tns:IJSEPublic_ShareCodeLookup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMultipleShareData">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetMultipleShareData" message="tns:IJSEPublic_GetMultipleShareData_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetMultipleShareDataResponse" message="tns:IJSEPublic_GetMultipleShareData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicTradesForSymbol">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetPublicTradesForSymbol" message="tns:IJSEPublic_GetPublicTradesForSymbol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetPublicTradesForSymbolResponse" message="tns:IJSEPublic_GetPublicTradesForSymbol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastTradesForSymbolList">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetLastTradesForSymbolList" message="tns:IJSEPublic_GetLastTradesForSymbolList_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetLastTradesForSymbolListResponse" message="tns:IJSEPublic_GetLastTradesForSymbolList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSensNewsMessages">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetSensNewsMessages" message="tns:IJSEPublic_GetSensNewsMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetSensNewsMessagesResponse" message="tns:IJSEPublic_GetSensNewsMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIndexValues">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetIndexValues" message="tns:IJSEPublic_GetIndexValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetIndexValuesResponse" message="tns:IJSEPublic_GetIndexValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSensNewsBody">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetSensNewsBody" message="tns:IJSEPublic_GetSensNewsBody_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetSensNewsBodyResponse" message="tns:IJSEPublic_GetSensNewsBody_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepth5">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetDepth5" message="tns:IJSEPublic_GetDepth5_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetDepth5Response" message="tns:IJSEPublic_GetDepth5_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketMoversUp">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversUp" message="tns:IJSEPublic_MarketMoversUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversUpResponse" message="tns:IJSEPublic_MarketMoversUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketMoversDown">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversDown" message="tns:IJSEPublic_MarketMoversDown_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversDownResponse" message="tns:IJSEPublic_MarketMoversDown_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketMoversValue">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversValue" message="tns:IJSEPublic_MarketMoversValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversValueResponse" message="tns:IJSEPublic_MarketMoversValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketMoversVolume">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversVolume" message="tns:IJSEPublic_MarketMoversVolume_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketMoversVolumeResponse" message="tns:IJSEPublic_MarketMoversVolume_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarketStats">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketStats" message="tns:IJSEPublic_MarketStats_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/MarketStatsResponse" message="tns:IJSEPublic_MarketStats_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHistoryForSymbol">
+      <wsdl:input wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetHistoryForSymbol" message="tns:IJSEPublic_GetHistoryForSymbol_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.nutcracker.co.za/IJSEPublic/GetHistoryForSymbolResponse" message="tns:IJSEPublic_GetHistoryForSymbol_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

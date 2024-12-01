@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0cd78ca8-b7c8-4a60-9c12-df25c7eb80e5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="www.nutcracker.co.za.wsdl" MetadataType="Wsdl" ID="16bb64d6-8cdf-455b-88c6-bd58a01d83ae" SourceId="1" SourceUrl="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="89109583-7e90-4f7a-ac01-36fae46c4c89" SourceId="1" SourceUrl="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" />
+    <MetadataFile FileName="www.nutcracker.co.za.xsd" MetadataType="Schema" ID="69798457-ba38-4f17-973a-c88b9d276faa" SourceId="1" SourceUrl="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="11a1bfeb-6d62-4265-b165-534eddfcf02b" SourceId="1" SourceUrl="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" />
+    <MetadataFile FileName="Nutcracker.CMS35.NTVoyager.Common.JSEPublic.xsd" MetadataType="Schema" ID="a77b3859-386a-4576-80c6-4961315d7364" SourceId="1" SourceUrl="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="65214123-3843-45ce-b449-59d4e0f07d27" SourceId="1" SourceUrl="http://209.212.116.37/FundXchange/JSEPublic.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

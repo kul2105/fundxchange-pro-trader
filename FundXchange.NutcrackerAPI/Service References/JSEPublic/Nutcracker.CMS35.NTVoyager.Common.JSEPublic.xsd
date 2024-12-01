@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfWatchlistShareRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WatchlistShareRow" nillable="true" type="tns:WatchlistShareRow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWatchlistShareRow" nillable="true" type="tns:ArrayOfWatchlistShareRow" />
+  <xs:complexType name="WatchlistShareRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AskPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="AskSize" type="xs:long" />
+      <xs:element minOccurs="0" name="BidPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="BidSize" type="xs:long" />
+      <xs:element minOccurs="0" name="Change" type="xs:double" />
+      <xs:element minOccurs="0" name="ChangePercentage" type="xs:double" />
+      <xs:element minOccurs="0" name="CountryOfRegister" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DailyValue" type="xs:double" />
+      <xs:element minOccurs="0" name="DailyVolume" type="xs:long" />
+      <xs:element minOccurs="0" name="High" type="xs:double" />
+      <xs:element minOccurs="0" name="IsinCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastTradePrice" type="xs:double" />
+      <xs:element minOccurs="0" name="LastTradeSize" type="xs:long" />
+      <xs:element minOccurs="0" name="LastTradeTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastUpdated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LotSize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Low" type="xs:double" />
+      <xs:element minOccurs="0" name="MarketSegmentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NMS" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoOfTrades" type="xs:long" />
+      <xs:element minOccurs="0" name="Sector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SharesInIssue" type="xs:long" />
+      <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TradingStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VWAP" type="xs:double" />
+      <xs:element minOccurs="0" name="YesterdaysClosePrice" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WatchlistShareRow" nillable="true" type="tns:WatchlistShareRow" />
+  <xs:complexType name="ArrayOfPublicTrade">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PublicTrade" nillable="true" type="tns:PublicTrade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPublicTrade" nillable="true" type="tns:ArrayOfPublicTrade" />
+  <xs:complexType name="PublicTrade">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LastTradePrice" type="xs:double" />
+      <xs:element minOccurs="0" name="LastTradeSize" type="xs:long" />
+      <xs:element minOccurs="0" name="LastTradeTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MsgSeqNo" type="xs:int" />
+      <xs:element minOccurs="0" name="TradeableInstrumentCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PublicTrade" nillable="true" type="tns:PublicTrade" />
+  <xs:complexType name="ArrayOfNewsMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NewsMessage" nillable="true" type="tns:NewsMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNewsMessage" nillable="true" type="tns:ArrayOfNewsMessage" />
+  <xs:complexType name="NewsMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Headline" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MsgId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeStamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NewsMessage" nillable="true" type="tns:NewsMessage" />
+  <xs:complexType name="ArrayOfIndexValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IndexValue" nillable="true" type="tns:IndexValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIndexValue" nillable="true" type="tns:ArrayOfIndexValue" />
+  <xs:complexType name="IndexValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Differential" type="xs:double" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HeadlineGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndexIdentifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IndexName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IndexValue" nillable="true" type="tns:IndexValue" />
+  <xs:complexType name="NewsBody">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HeadLine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageBody" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NewsBody" nillable="true" type="tns:NewsBody" />
+  <xs:complexType name="Depth5">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AskPrice1" type="xs:double" />
+      <xs:element minOccurs="0" name="AskPrice2" type="xs:double" />
+      <xs:element minOccurs="0" name="AskPrice3" type="xs:double" />
+      <xs:element minOccurs="0" name="AskPrice4" type="xs:double" />
+      <xs:element minOccurs="0" name="AskPrice5" type="xs:double" />
+      <xs:element minOccurs="0" name="AskVol1" type="xs:int" />
+      <xs:element minOccurs="0" name="AskVol2" type="xs:int" />
+      <xs:element minOccurs="0" name="AskVol3" type="xs:int" />
+      <xs:element minOccurs="0" name="AskVol4" type="xs:int" />
+      <xs:element minOccurs="0" name="AskVol5" type="xs:int" />
+      <xs:element minOccurs="0" name="BidPrice1" type="xs:double" />
+      <xs:element minOccurs="0" name="BidPrice2" type="xs:double" />
+      <xs:element minOccurs="0" name="BidPrice3" type="xs:double" />
+      <xs:element minOccurs="0" name="BidPrice4" type="xs:double" />
+      <xs:element minOccurs="0" name="BidPrice5" type="xs:double" />
+      <xs:element minOccurs="0" name="BidVol1" type="xs:int" />
+      <xs:element minOccurs="0" name="BidVol2" type="xs:int" />
+      <xs:element minOccurs="0" name="BidVol3" type="xs:int" />
+      <xs:element minOccurs="0" name="BidVol4" type="xs:int" />
+      <xs:element minOccurs="0" name="BidVol5" type="xs:int" />
+      <xs:element minOccurs="0" name="StockCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Depth5" nillable="true" type="tns:Depth5" />
+  <xs:complexType name="MarketStats">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Down" type="xs:int" />
+      <xs:element minOccurs="0" name="NoTrades" type="xs:long" />
+      <xs:element minOccurs="0" name="Unchg" type="xs:int" />
+      <xs:element minOccurs="0" name="Up" type="xs:int" />
+      <xs:element minOccurs="0" name="Value" type="xs:double" />
+      <xs:element minOccurs="0" name="Volume" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MarketStats" nillable="true" type="tns:MarketStats" />
+</xs:schema>

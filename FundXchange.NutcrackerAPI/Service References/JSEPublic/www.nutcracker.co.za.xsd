@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.nutcracker.co.za" elementFormDefault="qualified" targetNamespace="http://www.nutcracker.co.za" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" />
+  <xs:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="ShareCodeLookup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sSymbolSearch" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShareCodeLookupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="ShareCodeLookupResult" nillable="true" type="q1:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMultipleShareData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sWatchlistSymbols" nillable="true" type="q2:ArrayOfstring" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMultipleShareDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetMultipleShareDataResult" nillable="true" type="q3:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicTradesForSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+        <xs:element minOccurs="0" name="NumRowsToReturn" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicTradesForSymbolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetPublicTradesForSymbolResult" nillable="true" type="q4:ArrayOfPublicTrade" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastTradesForSymbolList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="oSymbolList" nillable="true" type="q5:ArrayOfstring" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+        <xs:element minOccurs="0" name="NumRowsToReturn" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastTradesForSymbolListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetLastTradesForSymbolListResult" nillable="true" type="q6:ArrayOfPublicTrade" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSensNewsMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSensNewsMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetSensNewsMessagesResult" nillable="true" type="q7:ArrayOfNewsMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexValues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIndexValuesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetIndexValuesResult" nillable="true" type="q8:ArrayOfIndexValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSensNewsBody">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sNewsId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bIsLive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSensNewsBodyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetSensNewsBodyResult" nillable="true" type="q9:NewsBody" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepth5">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepth5Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetDepth5Result" nillable="true" type="q10:Depth5" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversUp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bReturnWarrants" type="xs:boolean" />
+        <xs:element minOccurs="0" name="NumOfRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversUpResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="MarketMoversUpResult" nillable="true" type="q11:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversDown">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bReturnWarrants" type="xs:boolean" />
+        <xs:element minOccurs="0" name="NumOfRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversDownResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="MarketMoversDownResult" nillable="true" type="q12:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bReturnWarrants" type="xs:boolean" />
+        <xs:element minOccurs="0" name="NumOfRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="MarketMoversValueResult" nillable="true" type="q13:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversVolume">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bReturnWarrants" type="xs:boolean" />
+        <xs:element minOccurs="0" name="NumOfRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketMoversVolumeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="MarketMoversVolumeResult" nillable="true" type="q14:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketStats">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bRealtime" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarketStatsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="MarketStatsResult" nillable="true" type="q15:MarketStats" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryForSymbol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ToDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHistoryForSymbolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Nutcracker.CMS35.NTVoyager.Common.JSEPublic" minOccurs="0" name="GetHistoryForSymbolResult" nillable="true" type="q16:ArrayOfWatchlistShareRow" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
