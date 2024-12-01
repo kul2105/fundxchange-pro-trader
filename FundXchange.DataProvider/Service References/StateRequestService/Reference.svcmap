@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20af01b0-7901-4234-99db-e5ba60dc518d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StateRequestService.wsdl" MetadataType="Wsdl" ID="a47ad5cc-3c9f-45f4-8d38-9f9fae2560fd" SourceId="1" SourceUrl="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?wsdl" />
+    <MetadataFile FileName="StateRequestService.xsd" MetadataType="Schema" ID="47984348-8a6b-480a-bc99-e88a1eb49891" SourceId="1" SourceUrl="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd0" />
+    <MetadataFile FileName="StateRequestService.disco" MetadataType="Disco" ID="64aac0f6-c717-4ea6-a9b3-f1bf47ddc5d6" SourceId="1" SourceUrl="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?disco" />
+    <MetadataFile FileName="StateRequestService1.xsd" MetadataType="Schema" ID="6eabd275-c374-4c8f-a47d-905174475800" SourceId="1" SourceUrl="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StateRequestService2.xsd" MetadataType="Schema" ID="8d7e9df5-7267-4f0b-bcdb-07c1d5f4e745" SourceId="1" SourceUrl="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

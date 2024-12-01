@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" />
+  <xs:element name="GetInstrumentWithTrades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="instrumentRef" nillable="true" type="q1:InstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentWithTradesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetInstrumentWithTradesResult" nillable="true" type="q2:InstrumentAndTradesDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sequenceNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTradeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetTradeResult" nillable="true" type="q3:TradeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="instrumentRef" nillable="true" type="q4:InstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderBookResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetOrderBookResult" nillable="true" type="q5:ArrayOfOrderDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sequenceNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetOrderResult" nillable="true" type="q6:OrderDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentReferenceForAllCurrentInstruments">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentReferenceForAllCurrentInstrumentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetInstrumentReferenceForAllCurrentInstrumentsResult" nillable="true" type="q7:ArrayOfInstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20InstrumentsByValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20InstrumentsByValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetTop20InstrumentsByValueResult" nillable="true" type="q8:ArrayOfInstrumentMarketSummaryDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20InstrumentsByVolume">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop20InstrumentsByVolumeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetTop20InstrumentsByVolumeResult" nillable="true" type="q9:ArrayOfInstrumentMarketSummaryDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40Instruments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="exchange" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTop40InstrumentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetTop40InstrumentsResult" nillable="true" type="q10:ArrayOfInstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentReference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="instrumentRef" nillable="true" type="q11:InstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentReferenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetInstrumentReferenceResult" nillable="true" type="q12:InstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSnapshots">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="request" nillable="true" type="q13:SnapshotRequestDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSnapshotsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetSnapshotsResult" nillable="true" type="q14:SnapshotResponseDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasProcessedTradesBeyond">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sequenceNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasProcessedTradesBeyondResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HasProcessedTradesBeyondResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasProcessedOrdersBeyond">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sequenceNumber" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasProcessedOrdersBeyondResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HasProcessedOrdersBeyondResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinnersAndLosers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinnersAndLosersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetWinnersAndLosersResult" nillable="true" type="q15:ArrayOfMoversDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentReferenceForType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="instrumentType" type="q16:Enumerations.InstrumentType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstrumentReferenceForTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" minOccurs="0" name="GetInstrumentReferenceForTypeResult" nillable="true" type="q17:ArrayOfInstrumentReferenceDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

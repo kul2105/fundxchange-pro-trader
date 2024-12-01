@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="StateRequestService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/fin24.Markets.StateService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStateRequestService_GetInstrumentWithTrades_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentWithTrades" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentWithTrades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentWithTradesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTrade_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrade" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTrade_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetOrderBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderBook" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetOrderBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentReferenceForAllCurrentInstruments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentReferenceForAllCurrentInstruments" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentReferenceForAllCurrentInstruments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentReferenceForAllCurrentInstrumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTop20InstrumentsByValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20InstrumentsByValue" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTop20InstrumentsByValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20InstrumentsByValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTop20InstrumentsByVolume_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20InstrumentsByVolume" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTop20InstrumentsByVolume_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop20InstrumentsByVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTop40Instruments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40Instruments" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetTop40Instruments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTop40InstrumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentReference" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetSnapshots_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSnapshots" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetSnapshots_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSnapshotsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_HasProcessedTradesBeyond_InputMessage">
+    <wsdl:part name="parameters" element="tns:HasProcessedTradesBeyond" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_HasProcessedTradesBeyond_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HasProcessedTradesBeyondResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_HasProcessedOrdersBeyond_InputMessage">
+    <wsdl:part name="parameters" element="tns:HasProcessedOrdersBeyond" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_HasProcessedOrdersBeyond_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HasProcessedOrdersBeyondResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetWinnersAndLosers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinnersAndLosers" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetWinnersAndLosers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinnersAndLosersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentReferenceForType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentReferenceForType" />
+  </wsdl:message>
+  <wsdl:message name="IStateRequestService_GetInstrumentReferenceForType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstrumentReferenceForTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStateRequestService">
+    <wsdl:operation name="GetInstrumentWithTrades">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentWithTrades" message="tns:IStateRequestService_GetInstrumentWithTrades_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentWithTradesResponse" message="tns:IStateRequestService_GetInstrumentWithTrades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrade">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetTrade" message="tns:IStateRequestService_GetTrade_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetTradeResponse" message="tns:IStateRequestService_GetTrade_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetOrderBook" message="tns:IStateRequestService_GetOrderBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetOrderBookResponse" message="tns:IStateRequestService_GetOrderBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetOrder" message="tns:IStateRequestService_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetOrderResponse" message="tns:IStateRequestService_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstrumentReferenceForAllCurrentInstruments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentReferenceForAllCurrentInstruments" message="tns:IStateRequestService_GetInstrumentReferenceForAllCurrentInstruments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentReferenceForAllCurrentInstrumentsResponse" message="tns:IStateRequestService_GetInstrumentReferenceForAllCurrentInstruments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20InstrumentsByValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetTop20InstrumentsByValue" message="tns:IStateRequestService_GetTop20InstrumentsByValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetTop20InstrumentsByValueResponse" message="tns:IStateRequestService_GetTop20InstrumentsByValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20InstrumentsByVolume">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetTop20InstrumentsByVolume" message="tns:IStateRequestService_GetTop20InstrumentsByVolume_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetTop20InstrumentsByVolumeResponse" message="tns:IStateRequestService_GetTop20InstrumentsByVolume_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40Instruments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetTop40Instruments" message="tns:IStateRequestService_GetTop40Instruments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetTop40InstrumentsResponse" message="tns:IStateRequestService_GetTop40Instruments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstrumentReference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentReference" message="tns:IStateRequestService_GetInstrumentReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentReferenceResponse" message="tns:IStateRequestService_GetInstrumentReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSnapshots">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetSnapshots" message="tns:IStateRequestService_GetSnapshots_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetSnapshotsResponse" message="tns:IStateRequestService_GetSnapshots_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HasProcessedTradesBeyond">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/HasProcessedTradesBeyond" message="tns:IStateRequestService_HasProcessedTradesBeyond_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/HasProcessedTradesBeyondResponse" message="tns:IStateRequestService_HasProcessedTradesBeyond_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HasProcessedOrdersBeyond">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/HasProcessedOrdersBeyond" message="tns:IStateRequestService_HasProcessedOrdersBeyond_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/HasProcessedOrdersBeyondResponse" message="tns:IStateRequestService_HasProcessedOrdersBeyond_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWinnersAndLosers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetWinnersAndLosers" message="tns:IStateRequestService_GetWinnersAndLosers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetWinnersAndLosersResponse" message="tns:IStateRequestService_GetWinnersAndLosers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstrumentReferenceForType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentReferenceForType" message="tns:IStateRequestService_GetInstrumentReferenceForType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStateRequestService/GetInstrumentReferenceForTypeResponse" message="tns:IStateRequestService_GetInstrumentReferenceForType_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="basicHttpEndpoint" type="tns:IStateRequestService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInstrumentWithTrades">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetInstrumentWithTrades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrade">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetTrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderBook">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetOrderBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstrumentReferenceForAllCurrentInstruments">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetInstrumentReferenceForAllCurrentInstruments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20InstrumentsByValue">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetTop20InstrumentsByValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop20InstrumentsByVolume">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetTop20InstrumentsByVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTop40Instruments">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetTop40Instruments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstrumentReference">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetInstrumentReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSnapshots">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetSnapshots" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasProcessedTradesBeyond">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/HasProcessedTradesBeyond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasProcessedOrdersBeyond">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/HasProcessedOrdersBeyond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWinnersAndLosers">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetWinnersAndLosers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstrumentReferenceForType">
+      <soap:operation soapAction="http://tempuri.org/IStateRequestService/GetInstrumentReferenceForType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StateRequestService">
+    <wsdl:port name="basicHttpEndpoint" binding="tns:basicHttpEndpoint">
+      <soap:address location="http://test.feeds1.mcgbfa.com/MarketsStateService/StateRequestService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

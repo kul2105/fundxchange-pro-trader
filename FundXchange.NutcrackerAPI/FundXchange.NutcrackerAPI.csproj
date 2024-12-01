@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22AAB3E6-B1B4-493F-B26E-73851D694151}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FundXchange.NutcrackerAPI</RootNamespace>
+    <AssemblyName>FundXchange.NutcrackerAPI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Borland.Delphi, Version=11.0.5000.9245, Culture=neutral, PublicKeyToken=91d62ebb5b0d1b1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Borland.Delphi.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.83.1.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Common.ClientMessagesV2, Version=2.5.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Common.ClientMessagesV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Common.KeyCache, Version=2.5.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Common.KeyCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Common.NotificationManagerv3, Version=2.5.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Common.NotificationManagerv3.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Common.SubscriptionHandler, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Common.SubscriptionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Compression, Version=2.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Configuration.Common, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Configuration.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.BidOfferPrice, Version=2.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.BidOfferPrice.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.BidOfferVolume, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.BidOfferVolume.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.ClosingPrice, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.ClosingPrice.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.Depth3, Version=2.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.Depth3.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.FullDepthSide, Version=2.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.FullDepthSide.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.HighLow, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.HighLow.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.IndexValue, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.IndexValue.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.LastTradeV2, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.LastTradeV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.MarketStats, Version=2.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.MarketStats.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.OpenPrice, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.OpenPrice.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.GUIMessages.VWAP, Version=2.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.GUIMessages.VWAP.dll</HintPath>
+    </Reference>
+    <Reference Include="NutCracker.CMS.InfoHandler2, Version=2.5.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NutCracker.CMS.InfoHandler2.dll</HintPath>
+    </Reference>
+    <Reference Include="NutCracker.CMS.InfoHandler2.Link, Version=2.5.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NutCracker.CMS.InfoHandler2.Link.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.Interapp.Clientv2, Version=2.5.0.19, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.Interapp.Clientv2.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.NTVoyager.CommonV3, Version=2.5.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.NTVoyager.CommonV3.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.NTVRequests.MainV2, Version=2.5.0.14, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.NTVRequests.MainV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.CMS.SmokeSignalsv3.API, Version=2.5.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.CMS.SmokeSignalsv3.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.FeederAPI, Version=2.5.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.FeederAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.Serialization.CustomFormatters, Version=2.5.0.18, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.Serialization.CustomFormatters.dll</HintPath>
+    </Reference>
+    <Reference Include="Nutcracker.Serialization.Formatters, Version=2.5.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Nutcracker.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealtimeDataProvider.cs" />
+    <Compile Include="Service References\JSEPublic\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\JSEPublic\Arrays.xsd" />
+    <None Include="Service References\JSEPublic\Nutcracker.CMS35.NTVoyager.Common.JSEPublic.xsd" />
+    <None Include="Service References\JSEPublic\service.wsdl" />
+    <None Include="Service References\JSEPublic\service.xsd" />
+    <None Include="Service References\JSEPublic\www.nutcracker.co.za.wsdl" />
+    <None Include="Service References\JSEPublic\www.nutcracker.co.za.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\JSEPublic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JSEPublic\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JSEPublic\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.Depth5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.IndexValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.MarketStats.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.NewsBody.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.NewsMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.PublicTrade.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\FundXchange.NutcrackerAPI.JSEPublic.WatchlistShareRow.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\JSEPublic\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FundXchange.DataProviderContracts\FundXchange.DataProviderContracts.csproj">
+      <Project>{8988F757-656D-4F68-AF7F-850AAEA4DFF8}</Project>
+      <Name>FundXchange.DataProviderContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.Domain\FundXchange.Domain.csproj">
+      <Project>{25E9FD71-50F8-4A30-8CB3-83F8FA443AA5}</Project>
+      <Name>FundXchange.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.Infrastructure\FundXchange.Infrastructure.csproj">
+      <Project>{6611B189-5924-4980-9E7E-A1519881BA8C}</Project>
+      <Name>FundXchange.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
