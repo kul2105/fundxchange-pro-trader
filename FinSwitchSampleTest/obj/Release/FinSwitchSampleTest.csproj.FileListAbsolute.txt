@@ -1,0 +1,9 @@
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Release\FinSwitchSampleTest.exe.config
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Release\FinSwitchSampleTest.exe
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Release\FinSwitchSampleTest.XmlSerializers.dll
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Release\FinSwitchSampleTest.pdb
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Release\FinSwitchSampleTest.csprojAssemblyReference.cache
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Release\FinSwitchSampleTest.csproj.CoreCompileInputs.cache
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Release\FinSwitchSampleTest.exe
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Release\FinSwitchSampleTest.pdb
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Release\FinSwitchSampleTest.XmlSerializers.dll

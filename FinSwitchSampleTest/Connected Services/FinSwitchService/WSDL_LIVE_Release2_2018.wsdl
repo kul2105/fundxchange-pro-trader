@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/FinSwitch/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/FinSwitch/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/FinSwitch/">
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mimeType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileContent" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlyDownloadIfFileChanged" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadFileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileAsString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlyDownloadIfFileChanged" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileAsStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadFileAsStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRPreviewDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="processLogID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRPreviewDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRPreviewDownloadResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRPreviewDownloadAsString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="processLogID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRPreviewDownloadAsStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRPreviewDownloadAsStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionRequestDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlyDownloadIfFileChanged" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="category" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionRequestDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionRequestDownloadResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionRequestDownloadFileAsString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlyDownloadIfFileChanged" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="category" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionRequestDownloadFileAsStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionRequestDownloadFileAsStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FundAccountFileDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fundCodeFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mancoCodeFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productCodeFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bulkedInvestorCodeFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fundAccountNumberFilter" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sortDescending" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FundAccountFileDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FundAccountFileDownloadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FundStaticDataDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="allManCos" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="manCoCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="allFunds" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fundCodes" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FundStaticDataDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FundStaticDataDownloadResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductStaticDataDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="downloadAllBulkedInvestors" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="bulkedInvestorCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProductStaticDataDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProductStaticDataDownloadResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DistributionFileDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="distributionDocumentType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="reportingPeriodType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportingDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="distributorAsisaCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fundAsisaCodes" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DistributionFileDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DistributionFileDownloadResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DistributionFileUpload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="distributionFileType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fundAsisaCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="yearOfIssue" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="quarter" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isCorrection" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isZippedUpload" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mimeType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileContent" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DistributionFileUploadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DistributionFileUploadResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcessStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="processLogID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcessStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProcessStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="processLogID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileDownloadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRAndCTReconDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reconDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRAndCTReconDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRAndCTReconDownloadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadTransferSchedule">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:TransferScheduleQuery" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransferScheduleQuery">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DownloadTransferScheduleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadTransferScheduleResult" type="tns:WebServiceSchedule" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebServiceSchedule">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UploadTransferDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="upload" type="tns:UploadDocumentCommand" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UploadDocumentCommand">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransferNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransferDocumentationTypeID" type="tns:TransferDocumentationTypeID" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransferType" type="tns:TransferTypeID" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileContents" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TransferDocumentationTypeID">
+        <s:restriction base="s:string">
+          <s:enumeration value="VolInitialRequirements" />
+          <s:enumeration value="VolProofOfTransfer" />
+          <s:enumeration value="S148InitialRequirements" />
+          <s:enumeration value="TransferorHForm" />
+          <s:enumeration value="TransfereeHForm" />
+          <s:enumeration value="TransferorJForm" />
+          <s:enumeration value="TransfereeJForm" />
+          <s:enumeration value="S141InitialRequirements" />
+          <s:enumeration value="AForm" />
+          <s:enumeration value="FSBApprovalLetter" />
+          <s:enumeration value="TransferorROT" />
+          <s:enumeration value="TransfereeROT" />
+          <s:enumeration value="S37InitialRequirements" />
+          <s:enumeration value="Annexure2Out" />
+          <s:enumeration value="Annexure2OutAndIn" />
+          <s:enumeration value="S37ProofOfTransfer" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="TransferTypeID">
+        <s:restriction base="s:string">
+          <s:enumeration value="Voluntary" />
+          <s:enumeration value="FourteenEight" />
+          <s:enumeration value="FourteenOne" />
+          <s:enumeration value="ThirtySeven" />
+          <s:enumeration value="Unrestricted" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UploadTransferDocumentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DownloadTransferDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:DownloadTransferDocumentQuery" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DownloadTransferDocumentQuery">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransferNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransferDocumentationTypeID" type="tns:TransferDocumentationTypeID" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DownloadTransferDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadTransferDocumentResult" type="tns:WebServiceDocument" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebServiceDocument">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PDCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:PDDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PDDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="StatusOption" type="tns:PriceDistributionDownloadStatusOption" />
+              <s:element minOccurs="0" maxOccurs="1" name="PriceTypes" type="tns:ArrayOfString" />
+              <s:element minOccurs="1" maxOccurs="1" name="IncludeISINNumber" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="FundTypes" type="tns:ArrayOfString" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateKind" type="tns:DateSwitch" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="MancoCodes" type="tns:ArrayOfString" />
+              <s:element minOccurs="0" maxOccurs="1" name="Funds" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CustomDownloadOptions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PriceDistributionDownloadStatusOption">
+        <s:restriction base="s:string">
+          <s:enumeration value="AllStatus" />
+          <s:enumeration value="AllStatusExcludeIfCorrected" />
+          <s:enumeration value="OriginalOnly" />
+          <s:enumeration value="CorrectedOnly" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DateSwitch">
+        <s:restriction base="s:string">
+          <s:enumeration value="CycleDate" />
+          <s:enumeration value="ValueDate" />
+          <s:enumeration value="SubmissionDate" />
+          <s:enumeration value="DeclarationDate" />
+          <s:enumeration value="UploadDate" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="PDCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PDCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CustomDownloadResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProcessLogID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FPDCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:FPDDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FPDDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="StatusOption" type="tns:PriceDistributionDownloadStatusOption" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateKind" type="tns:DateSwitch" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="MancoCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="FPDCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FPDCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FCTCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:FCTDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FCTDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateKind" type="tns:DateSwitch" />
+              <s:element minOccurs="1" maxOccurs="1" name="StatusOption" type="tns:CTDownloadStatusOption" />
+              <s:element minOccurs="0" maxOccurs="1" name="MancoCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="CTDownloadStatusOption">
+        <s:restriction base="s:string">
+          <s:enumeration value="AllStatus" />
+          <s:enumeration value="AllStatusExcludeIfCorrected" />
+          <s:enumeration value="AllStatusExcludeIfRejected" />
+          <s:enumeration value="AllStatusExcludeIfCorrectedAndIfRejected" />
+          <s:enumeration value="OriginalOnly" />
+          <s:enumeration value="CorrectedOnly" />
+          <s:enumeration value="RejectedOnly" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="FCTCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FCTCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TERCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:TERCustomDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TERCustomDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="MancoCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="TERCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TERCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RICustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:RICustomDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RICustomDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="StatusOption" type="tns:RetailInstitutionalSplitFileOption" />
+              <s:element minOccurs="1" maxOccurs="1" name="DeclarationDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="BulkedInvestorCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="RetailInstitutionalSplitFileOption">
+        <s:restriction base="s:string">
+          <s:enumeration value="All" />
+          <s:enumeration value="AllExcludeOriginalIfCorrectionExists" />
+          <s:enumeration value="Original" />
+          <s:enumeration value="Corrected" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RICustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RICustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FTRCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:FTRCustomDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FTRCustomDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="BulkedInvestorCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="FTRCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FTRCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:TRCustomDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TRCustomDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="FundType" type="tns:FundTypeCategoryID" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionTypeCodes" type="tns:ArrayOfString" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="BulkedInvestorCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="FundTypeCategoryID">
+        <s:restriction base="s:string">
+          <s:enumeration value="AllTransactionRequests" />
+          <s:enumeration value="MoneyMarketTransactionRequestsOnly" />
+          <s:enumeration value="TransactionRequestsExcludingMoneyMarket" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="TRCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CTCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:CTCustomDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CTCustomDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="StatusFilter" type="tns:CTDownloadStatusOption" />
+              <s:element minOccurs="0" maxOccurs="1" name="TransactionTypeCodes" type="tns:ArrayOfString" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateKind" type="tns:DateSwitch" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="MancoCodes" type="tns:ArrayOfString" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CTCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CTCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IDCustomDownload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="query" type="tns:IDCustomDownloadOptions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="IDCustomDownloadOptions">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CustomDownloadOptions">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="StatusFilter" type="tns:IncomeDistributionFileOption" />
+              <s:element minOccurs="1" maxOccurs="1" name="ExcludeZeroDistributions" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="FileVersion" type="tns:FileVersion" />
+              <s:element minOccurs="1" maxOccurs="1" name="DateKind" type="tns:DateSwitch" />
+              <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="MancoCodes" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="IncomeDistributionFileOption">
+        <s:restriction base="s:string">
+          <s:enumeration value="All" />
+          <s:enumeration value="AllExcludeOriginalIfCorrectionExists" />
+          <s:enumeration value="Original" />
+          <s:enumeration value="Corrected" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="FileVersion">
+        <s:restriction base="s:string">
+          <s:enumeration value="Standard" />
+          <s:enumeration value="DWTVersion60" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="IDCustomDownloadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IDCustomDownloadResult" type="tns:CustomDownloadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRDownloadStatusAsString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRDownloadStatusAsStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRDownloadStatusAsStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRDownloadStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRDownloadStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRDownloadStatusResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadASISADailyFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receivingCompanyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileContent" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadASISADailyFileResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DownloadASISADailyFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fileDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="dateType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="onlyDownloadIfFileChanged" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadASISADailyFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadASISADailyFileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadFile" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileAsStringSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadFileAsString" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileAsStringSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadFileAsStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRPreviewDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:TRPreviewDownload" />
+  </wsdl:message>
+  <wsdl:message name="TRPreviewDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:TRPreviewDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRPreviewDownloadAsStringSoapIn">
+    <wsdl:part name="parameters" element="tns:TRPreviewDownloadAsString" />
+  </wsdl:message>
+  <wsdl:message name="TRPreviewDownloadAsStringSoapOut">
+    <wsdl:part name="parameters" element="tns:TRPreviewDownloadAsStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionRequestDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionRequestDownload" />
+  </wsdl:message>
+  <wsdl:message name="TransactionRequestDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionRequestDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionRequestDownloadFileAsStringSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionRequestDownloadFileAsString" />
+  </wsdl:message>
+  <wsdl:message name="TransactionRequestDownloadFileAsStringSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionRequestDownloadFileAsStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="FundAccountFileDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:FundAccountFileDownload" />
+  </wsdl:message>
+  <wsdl:message name="FundAccountFileDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:FundAccountFileDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="FundStaticDataDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:FundStaticDataDownload" />
+  </wsdl:message>
+  <wsdl:message name="FundStaticDataDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:FundStaticDataDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProductStaticDataDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:ProductStaticDataDownload" />
+  </wsdl:message>
+  <wsdl:message name="ProductStaticDataDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:ProductStaticDataDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="DistributionFileDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:DistributionFileDownload" />
+  </wsdl:message>
+  <wsdl:message name="DistributionFileDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:DistributionFileDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="DistributionFileUploadSoapIn">
+    <wsdl:part name="parameters" element="tns:DistributionFileUpload" />
+  </wsdl:message>
+  <wsdl:message name="DistributionFileUploadSoapOut">
+    <wsdl:part name="parameters" element="tns:DistributionFileUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProcessStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProcessStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileDownload" />
+  </wsdl:message>
+  <wsdl:message name="GetFileDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRAndCTReconDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:TRAndCTReconDownload" />
+  </wsdl:message>
+  <wsdl:message name="TRAndCTReconDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:TRAndCTReconDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadTransferScheduleSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadTransferSchedule" />
+  </wsdl:message>
+  <wsdl:message name="DownloadTransferScheduleSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadTransferScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadTransferDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadTransferDocument" />
+  </wsdl:message>
+  <wsdl:message name="UploadTransferDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadTransferDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadTransferDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadTransferDocument" />
+  </wsdl:message>
+  <wsdl:message name="DownloadTransferDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadTransferDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="PDCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:PDCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="PDCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:PDCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="FPDCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:FPDCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="FPDCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:FPDCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="FCTCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:FCTCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="FCTCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:FCTCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TERCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:TERCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="TERCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:TERCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="RICustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:RICustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="RICustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:RICustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="FTRCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:FTRCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="FTRCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:FTRCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:TRCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="TRCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:TRCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="CTCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:CTCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="CTCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:CTCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDCustomDownloadSoapIn">
+    <wsdl:part name="parameters" element="tns:IDCustomDownload" />
+  </wsdl:message>
+  <wsdl:message name="IDCustomDownloadSoapOut">
+    <wsdl:part name="parameters" element="tns:IDCustomDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRDownloadStatusAsStringSoapIn">
+    <wsdl:part name="parameters" element="tns:TRDownloadStatusAsString" />
+  </wsdl:message>
+  <wsdl:message name="TRDownloadStatusAsStringSoapOut">
+    <wsdl:part name="parameters" element="tns:TRDownloadStatusAsStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRDownloadStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:TRDownloadStatus" />
+  </wsdl:message>
+  <wsdl:message name="TRDownloadStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:TRDownloadStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadASISADailyFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadASISADailyFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadASISADailyFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadASISADailyFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadASISADailyFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadASISADailyFile" />
+  </wsdl:message>
+  <wsdl:message name="DownloadASISADailyFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadASISADailyFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FinSwitchWebServiceSoap">
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <wsdl:input message="tns:DownloadFileSoapIn" />
+      <wsdl:output message="tns:DownloadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFileAsString">
+      <wsdl:input message="tns:DownloadFileAsStringSoapIn" />
+      <wsdl:output message="tns:DownloadFileAsStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRPreviewDownload">
+      <wsdl:input message="tns:TRPreviewDownloadSoapIn" />
+      <wsdl:output message="tns:TRPreviewDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRPreviewDownloadAsString">
+      <wsdl:input message="tns:TRPreviewDownloadAsStringSoapIn" />
+      <wsdl:output message="tns:TRPreviewDownloadAsStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionRequestDownload">
+      <wsdl:input message="tns:TransactionRequestDownloadSoapIn" />
+      <wsdl:output message="tns:TransactionRequestDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionRequestDownloadFileAsString">
+      <wsdl:input message="tns:TransactionRequestDownloadFileAsStringSoapIn" />
+      <wsdl:output message="tns:TransactionRequestDownloadFileAsStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FundAccountFileDownload">
+      <wsdl:input message="tns:FundAccountFileDownloadSoapIn" />
+      <wsdl:output message="tns:FundAccountFileDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FundStaticDataDownload">
+      <wsdl:input message="tns:FundStaticDataDownloadSoapIn" />
+      <wsdl:output message="tns:FundStaticDataDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProductStaticDataDownload">
+      <wsdl:input message="tns:ProductStaticDataDownloadSoapIn" />
+      <wsdl:output message="tns:ProductStaticDataDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DistributionFileDownload">
+      <wsdl:input message="tns:DistributionFileDownloadSoapIn" />
+      <wsdl:output message="tns:DistributionFileDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DistributionFileUpload">
+      <wsdl:input message="tns:DistributionFileUploadSoapIn" />
+      <wsdl:output message="tns:DistributionFileUploadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessStatus">
+      <wsdl:input message="tns:GetProcessStatusSoapIn" />
+      <wsdl:output message="tns:GetProcessStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileDownload">
+      <wsdl:input message="tns:GetFileDownloadSoapIn" />
+      <wsdl:output message="tns:GetFileDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRAndCTReconDownload">
+      <wsdl:input message="tns:TRAndCTReconDownloadSoapIn" />
+      <wsdl:output message="tns:TRAndCTReconDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadTransferSchedule">
+      <wsdl:input message="tns:DownloadTransferScheduleSoapIn" />
+      <wsdl:output message="tns:DownloadTransferScheduleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadTransferDocument">
+      <wsdl:input message="tns:UploadTransferDocumentSoapIn" />
+      <wsdl:output message="tns:UploadTransferDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadTransferDocument">
+      <wsdl:input message="tns:DownloadTransferDocumentSoapIn" />
+      <wsdl:output message="tns:DownloadTransferDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PDCustomDownload">
+      <wsdl:input message="tns:PDCustomDownloadSoapIn" />
+      <wsdl:output message="tns:PDCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FPDCustomDownload">
+      <wsdl:input message="tns:FPDCustomDownloadSoapIn" />
+      <wsdl:output message="tns:FPDCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FCTCustomDownload">
+      <wsdl:input message="tns:FCTCustomDownloadSoapIn" />
+      <wsdl:output message="tns:FCTCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TERCustomDownload">
+      <wsdl:input message="tns:TERCustomDownloadSoapIn" />
+      <wsdl:output message="tns:TERCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RICustomDownload">
+      <wsdl:input message="tns:RICustomDownloadSoapIn" />
+      <wsdl:output message="tns:RICustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FTRCustomDownload">
+      <wsdl:input message="tns:FTRCustomDownloadSoapIn" />
+      <wsdl:output message="tns:FTRCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRCustomDownload">
+      <wsdl:input message="tns:TRCustomDownloadSoapIn" />
+      <wsdl:output message="tns:TRCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CTCustomDownload">
+      <wsdl:input message="tns:CTCustomDownloadSoapIn" />
+      <wsdl:output message="tns:CTCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IDCustomDownload">
+      <wsdl:input message="tns:IDCustomDownloadSoapIn" />
+      <wsdl:output message="tns:IDCustomDownloadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRDownloadStatusAsString">
+      <wsdl:input message="tns:TRDownloadStatusAsStringSoapIn" />
+      <wsdl:output message="tns:TRDownloadStatusAsStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRDownloadStatus">
+      <wsdl:input message="tns:TRDownloadStatusSoapIn" />
+      <wsdl:output message="tns:TRDownloadStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadASISADailyFile">
+      <wsdl:input message="tns:UploadASISADailyFileSoapIn" />
+      <wsdl:output message="tns:UploadASISADailyFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadASISADailyFile">
+      <wsdl:input message="tns:DownloadASISADailyFileSoapIn" />
+      <wsdl:output message="tns:DownloadASISADailyFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FinSwitchWebServiceSoap" type="tns:FinSwitchWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://localhost/FinSwitch/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap:operation soapAction="http://localhost/FinSwitch/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFileAsString">
+      <soap:operation soapAction="http://localhost/FinSwitch/DownloadFileAsString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRPreviewDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/TRPreviewDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRPreviewDownloadAsString">
+      <soap:operation soapAction="http://localhost/FinSwitch/TRPreviewDownloadAsString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionRequestDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/TransactionRequestDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionRequestDownloadFileAsString">
+      <soap:operation soapAction="http://localhost/FinSwitch/TransactionRequestDownloadFileAsString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FundAccountFileDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/FundAccountFileDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FundStaticDataDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/FundStaticDataDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductStaticDataDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/ProductStaticDataDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DistributionFileDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/DistributionFileDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DistributionFileUpload">
+      <soap:operation soapAction="http://localhost/FinSwitch/DistributionFileUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessStatus">
+      <soap:operation soapAction="http://localhost/FinSwitch/GetProcessStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/GetFileDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRAndCTReconDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/TRAndCTReconDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadTransferSchedule">
+      <soap:operation soapAction="http://localhost/FinSwitch/DownloadTransferSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadTransferDocument">
+      <soap:operation soapAction="http://localhost/FinSwitch/UploadTransferDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadTransferDocument">
+      <soap:operation soapAction="http://localhost/FinSwitch/DownloadTransferDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PDCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/PDCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FPDCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/FPDCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FCTCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/FCTCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TERCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/TERCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RICustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/RICustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FTRCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/FTRCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/TRCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/CTCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDCustomDownload">
+      <soap:operation soapAction="http://localhost/FinSwitch/IDCustomDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRDownloadStatusAsString">
+      <soap:operation soapAction="http://localhost/FinSwitch/TRDownloadStatusAsString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRDownloadStatus">
+      <soap:operation soapAction="http://localhost/FinSwitch/TRDownloadStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadASISADailyFile">
+      <soap:operation soapAction="http://localhost/FinSwitch/UploadASISADailyFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadASISADailyFile">
+      <soap:operation soapAction="http://localhost/FinSwitch/DownloadASISADailyFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FinSwitchWebServiceSoap12" type="tns:FinSwitchWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://localhost/FinSwitch/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFileAsString">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DownloadFileAsString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRPreviewDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TRPreviewDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRPreviewDownloadAsString">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TRPreviewDownloadAsString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionRequestDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TransactionRequestDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionRequestDownloadFileAsString">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TransactionRequestDownloadFileAsString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FundAccountFileDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/FundAccountFileDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FundStaticDataDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/FundStaticDataDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProductStaticDataDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/ProductStaticDataDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DistributionFileDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DistributionFileDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DistributionFileUpload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DistributionFileUpload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessStatus">
+      <soap12:operation soapAction="http://localhost/FinSwitch/GetProcessStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/GetFileDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRAndCTReconDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TRAndCTReconDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadTransferSchedule">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DownloadTransferSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadTransferDocument">
+      <soap12:operation soapAction="http://localhost/FinSwitch/UploadTransferDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadTransferDocument">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DownloadTransferDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PDCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/PDCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FPDCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/FPDCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FCTCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/FCTCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TERCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TERCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RICustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/RICustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FTRCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/FTRCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TRCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/CTCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDCustomDownload">
+      <soap12:operation soapAction="http://localhost/FinSwitch/IDCustomDownload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRDownloadStatusAsString">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TRDownloadStatusAsString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRDownloadStatus">
+      <soap12:operation soapAction="http://localhost/FinSwitch/TRDownloadStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadASISADailyFile">
+      <soap12:operation soapAction="http://localhost/FinSwitch/UploadASISADailyFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadASISADailyFile">
+      <soap12:operation soapAction="http://localhost/FinSwitch/DownloadASISADailyFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FinSwitchWebService">
+    <wsdl:port name="FinSwitchWebServiceSoap" binding="tns:FinSwitchWebServiceSoap">
+      <soap:address location="https://finswitch2.finswitch.com/webservices/finswitchwebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FinSwitchWebServiceSoap12" binding="tns:FinSwitchWebServiceSoap12">
+      <soap12:address location="https://finswitch2.finswitch.com/webservices/finswitchwebservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

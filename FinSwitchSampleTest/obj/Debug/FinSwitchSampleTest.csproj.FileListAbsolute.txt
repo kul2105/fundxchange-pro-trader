@@ -1,0 +1,8 @@
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Debug\FinSwitchSampleTest.exe.config
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Debug\FinSwitchSampleTest.exe
+D:\fundxchange-pro-trader\FinSwitchSampleTest\bin\Debug\FinSwitchSampleTest.pdb
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Debug\FinSwitchSampleTest.csproj.AssemblyReference.cache
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Debug\FinSwitchSampleTest.csproj.SuggestedBindingRedirects.cache
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Debug\FinSwitchSampleTest.csproj.CoreCompileInputs.cache
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Debug\FinSwitchSampleTest.exe
+D:\fundxchange-pro-trader\FinSwitchSampleTest\obj\Debug\FinSwitchSampleTest.pdb
