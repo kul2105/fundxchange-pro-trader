@@ -1,0 +1,6 @@
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\bin\Release\Util.Model.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\bin\Release\Util.Model.pdb
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Release\Util.Model.csprojAssemblyReference.cache
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Release\Util.Model.csproj.CoreCompileInputs.cache
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Release\Util.Model.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Release\Util.Model.pdb

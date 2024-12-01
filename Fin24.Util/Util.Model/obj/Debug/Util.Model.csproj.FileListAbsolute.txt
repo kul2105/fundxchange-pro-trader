@@ -1,0 +1,6 @@
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\bin\Debug\Util.Model.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\bin\Debug\Util.Model.pdb
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Debug\Util.Model.csproj.AssemblyReference.cache
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Debug\Util.Model.csproj.CoreCompileInputs.cache
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Debug\Util.Model.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.Model\obj\Debug\Util.Model.pdb

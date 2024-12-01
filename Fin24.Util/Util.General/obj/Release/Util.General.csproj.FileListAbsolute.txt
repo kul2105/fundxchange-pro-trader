@@ -1,0 +1,8 @@
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\bin\Release\Fin24.Util.General.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\bin\Release\Fin24.Util.General.pdb
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\bin\Release\log4net.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\obj\Release\Util.General.csprojAssemblyReference.cache
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\obj\Release\Util.General.csproj.CoreCompileInputs.cache
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\obj\Release\Util.General.csproj.CopyComplete
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\obj\Release\Fin24.Util.General.dll
+D:\fundxchange-pro-trader\Fin24.Util\Util.General\obj\Release\Fin24.Util.General.pdb
