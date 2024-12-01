@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{346E0BAF-7A15-48F7-B46B-8D3714E62F1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FundXchange.Model</RootNamespace>
+    <AssemblyName>FundXchange.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JsonLibCommon">
+      <HintPath>..\DLLs\JsonLibCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agents\CandlestickAgent.cs" />
+    <Compile Include="Controllers\AlertController.cs" />
+    <Compile Include="Controllers\ChartController.cs" />
+    <Compile Include="Controllers\DataManagerController.cs" />
+    <Compile Include="Controllers\IRadarGridController.cs" />
+    <Compile Include="Controllers\MarketDepthController.cs" />
+    <Compile Include="Controllers\MatrixController.cs" />
+    <Compile Include="Controllers\OrderManagerController.cs" />
+    <Compile Include="Controllers\RadarGridController.cs" />
+    <Compile Include="Controllers\TimeSalesController.cs" />
+    <Compile Include="Exceptions\InsufficientDataException.cs" />
+    <Compile Include="Exceptions\RadarAlreadyActiveException.cs" />
+    <Compile Include="Exceptions\SymbolNotFoundException.cs" />
+    <Compile Include="Exceptions\SymbolNotValidException.cs" />
+    <Compile Include="Extensions\NumberExtensions.cs" />
+    <Compile Include="Gateways\AlertServiceGateway.cs" />
+    <Compile Include="Gateways\AuthenticationGateway.cs" />
+    <Compile Include="Gateways\Credential.cs" />
+    <Compile Include="Gateways\PortfolioGateway.cs" />
+    <Compile Include="Agents\AbstractOrderbookAgent.cs" />
+    <Compile Include="Agents\DepthByPrice.cs" />
+    <Compile Include="Infrastructure\ErrorService.cs" />
+    <Compile Include="Infrastructure\GlobalDeclarations.cs" />
+    <Compile Include="Infrastructure\GlobalIndicatorRepository.cs" />
+    <Compile Include="Infrastructure\IMarketRepository.cs" />
+    <Compile Include="Infrastructure\MarketRepository.cs" />
+    <Compile Include="Agents\BuyOrderbookAgent.cs" />
+    <Compile Include="Agents\Orderbook.cs" />
+    <Compile Include="Agents\SellOrderbookAgent.cs" />
+    <Compile Include="Observer\ConnectionNotifier.cs" />
+    <Compile Include="Observer\IConnectionNotifier.cs" />
+    <Compile Include="Observer\IConnectionObserver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infrastructure\IIndicatorRepository.cs" />
+    <Compile Include="Infrastructure\IndicatorRepository.cs" />
+    <Compile Include="Serialization\IPersistable.cs" />
+    <Compile Include="Serialization\ObjectSerializer.cs" />
+    <Compile Include="Service References\AlertService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AuthenticationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PortfolioService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Charts\BarData.cs" />
+    <Compile Include="ViewModels\Charts\Candlestick.cs" />
+    <Compile Include="ViewModels\Charts\IChartView.cs" />
+    <Compile Include="ViewModels\Charts\Periodicity.cs" />
+    <Compile Include="ViewModels\DataManagerViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\DataManager\DataManagerInstrument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Generic\SubscriptionDescriptor.cs" />
+    <Compile Include="ViewModels\Indicators\Indicator.cs" />
+    <Compile Include="ViewModels\Indicators\IndicatorGroup.cs" />
+    <Compile Include="ViewModels\MarketDepthViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\MarketDepth\BidOfferCross.cs" />
+    <Compile Include="ViewModels\MarketDepth\CompressedDatas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\MarketDepth\IMarketDepthView.cs" />
+    <Compile Include="ViewModels\MarketDepth\PaintItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\MarketDepth\VolumeAndCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Markets\MarketLeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Matrix\IMatrixView.cs" />
+    <Compile Include="ViewModels\Generic\GridCell.cs" />
+    <Compile Include="ViewModels\Matrix\MatrixViewItem.cs" />
+    <Compile Include="ViewModels\Matrix\MatrixViewItemList.cs" />
+    <Compile Include="ViewModels\OrderManager\OrderManagerItem.cs" />
+    <Compile Include="ViewModels\OrderManager\PortfolioSummary.cs" />
+    <Compile Include="ViewModels\OrderManager\SymbolSummary.cs" />
+    <Compile Include="ViewModels\RadarView\IndicatorColumnTemplate.cs" />
+    <Compile Include="ViewModels\RadarView\IRadarItem.cs" />
+    <Compile Include="ViewModels\RadarView\IRadarViewIndicator.cs" />
+    <Compile Include="ViewModels\RadarView\RadarAlertType.cs" />
+    <Compile Include="ViewModels\RadarView\RadarColumnType.cs" />
+    <Compile Include="ViewModels\RadarView\RadarGridCell.cs" />
+    <Compile Include="ViewModels\RadarView\RadarItem.cs" />
+    <Compile Include="ViewModels\RadarView\RadarItemIndicator.cs" />
+    <Compile Include="ViewModels\RadarView\RadarTemplate.cs" />
+    <Compile Include="ViewModels\TimeSales\ITimeAndSalesView.cs" />
+    <Compile Include="ViewModels\TimeSales\TimeAndSalesTradeItem.cs" />
+    <Compile Include="ViewModels\RadarView\IRadarGridView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FundXchange.Data.McGregorBFA\FundXchange.Data.McGregorBFA.csproj">
+      <Project>{B4BE7DB0-2D77-43A3-ABCC-F10ED65A0047}</Project>
+      <Name>FundXchange.Data.McGregorBFA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.DataProviderContracts\FundXchange.DataProviderContracts.csproj">
+      <Project>{8988F757-656D-4F68-AF7F-850AAEA4DFF8}</Project>
+      <Name>FundXchange.DataProviderContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.Domain\FundXchange.Domain.csproj">
+      <Project>{25E9FD71-50F8-4A30-8CB3-83F8FA443AA5}</Project>
+      <Name>FundXchange.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.Infrastructure\FundXchange.Infrastructure.csproj">
+      <Project>{6611B189-5924-4980-9E7E-A1519881BA8C}</Project>
+      <Name>FundXchange.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FundXchange.Orders\FundXchange.Orders.csproj">
+      <Project>{2B70A270-BEDD-4155-924B-D83B9179FFBA}</Project>
+      <Name>FundXchange.Orders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MQTTAPI\MQTTAPI.csproj">
+      <Project>{cc25ea75-8652-49cb-8eb8-5a025816124a}</Project>
+      <Name>MQTTAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{2227038A-097C-4E36-A81B-FC6DDB66F086}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\FundXchange.Orders.FX_OrderService.GeneralResult.datasource" />
+    <None Include="Service References\AlertService\AlertService.wsdl" />
+    <None Include="Service References\AlertService\AlertService.xsd" />
+    <None Include="Service References\AlertService\AlertService1.xsd" />
+    <None Include="Service References\AlertService\AlertService2.xsd" />
+    <None Include="Service References\AlertService\AlertService3.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AlertService\" />
+    <WCFMetadataStorage Include="Service References\AuthenticationService\" />
+    <WCFMetadataStorage Include="Service References\PortfolioService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AlertService\AlertService.disco" />
+    <None Include="Service References\AlertService\AlertService4.xsd" />
+    <None Include="Service References\AlertService\AlertService5.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AlertService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AlertService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AlertService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AuthenticationService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AuthenticationService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AuthenticationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PortfolioService\PortfolioService.xsd" />
+    <None Include="Service References\PortfolioService\PortfolioService1.xsd" />
+    <None Include="Service References\PortfolioService\PortfolioService2.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PortfolioService\PortfolioService.disco" />
+    <None Include="Service References\PortfolioService\PortfolioService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PortfolioService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PortfolioService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AlertService\FundXchange.Model.AlertService.GeneralResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AuthenticationService\FundXchange.Model.AuthenticationService.RecoverPasswordResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AuthenticationService\FundXchange.Model.AuthenticationService.UserResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AuthenticationService\FundXchange.Services.ActionResults.xsd" />
+    <None Include="Service References\AuthenticationService\FundXchange.Services.State.DTOs.xsd" />
+    <None Include="Service References\AuthenticationService\FundXchange.Services.State.Enumerations.xsd" />
+    <None Include="Service References\AuthenticationService\FundXchange.Services.State.xsd" />
+    <None Include="Service References\AuthenticationService\service.wsdl" />
+    <None Include="Service References\AuthenticationService\service.xsd" />
+    <None Include="Service References\AuthenticationService\service1.xsd" />
+    <None Include="Service References\PortfolioService\FundXchange.Model.PortfolioService.GeneralResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PortfolioService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\Alerts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
