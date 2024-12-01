@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{383CBABF-0828-4C21-8623-E8053798B9DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FundXchangeMessenger</RootNamespace>
+    <AssemblyName>FundXchangeMessenger</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp, Version=106.5.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.5.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FundXchangeChatRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FundXchangeChatRegistrationForm.Designer.cs">
+      <DependentUpon>FundXchangeChatRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Groupchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Groupchat.Designer.cs">
+      <DependentUpon>Groupchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupWindow.Designer.cs">
+      <DependentUpon>GroupWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMClient.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMEvents.cs" />
+    <Compile Include="LogRegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogRegForm.Designer.cs">
+      <DependentUpon>LogRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TalkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkForm.Designer.cs">
+      <DependentUpon>TalkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FundXchangeChatRegistrationForm.resx">
+      <DependentUpon>FundXchangeChatRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groupchat.resx">
+      <DependentUpon>Groupchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupWindow.resx">
+      <DependentUpon>GroupWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogRegForm.resx">
+      <DependentUpon>LogRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TalkForm.resx">
+      <DependentUpon>TalkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InstantMessengerServer\ChatServer.csproj">
+      <Project>{4c59e561-37a5-4ac9-a88b-9de7744fb916}</Project>
+      <Name>ChatServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\chat-application-500x500.png" />
+    <Content Include="Icons\download.png" />
+    <Content Include="Icons\icons8-gmail-24.png" />
+    <Content Include="Icons\icons8-sms-24.png" />
+    <Content Include="Icons\icons8-speech-bubble-24.png" />
+    <Content Include="Icons\images.jpg" />
+    <Content Include="Icons\main-qimg-3076f6ac95a0b95b9f1aea4d6c1f5883-c.jpg" />
+    <Content Include="Icons\Messenger_iOS_App_Icon_1024x1024-57e56f725f9b586c35d96f1e.png" />
+    <Content Include="Icons\noahtrader-icon-32x32.ico" />
+    <Content Include="Icons\Search2.ico" />
+    <Content Include="Icons\User.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

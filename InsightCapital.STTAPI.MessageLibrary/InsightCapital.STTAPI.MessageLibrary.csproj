@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{143D1D3C-DAC4-4BD9-BC02-6B1D9BEA481C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InsightCapital.STTAPI.MessageLibrary</RootNamespace>
+    <AssemblyName>InsightCapital.STTAPI.MessageLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>..\lib\ProtoBuf\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utility\clsLogWriter.cs" />
+    <Compile Include="CustomEnums\AddOrderFlags.cs" />
+    <Compile Include="AuctionInfo.cs" />
+    <Compile Include="CustomEnums\clsEnums.cs" />
+    <Compile Include="DepthElements.cs" />
+    <Compile Include="DepthMessage.cs" />
+    <Compile Include="ExtendedStatistics.cs" />
+    <Compile Include="Utility\ExtensionMethods.cs" />
+    <Compile Include="FabricatedTrade.cs" />
+    <Compile Include="HeartBeat.cs" />
+    <Compile Include="JSEConverter.cs" />
+    <Compile Include="Logon.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageHeader.cs" />
+    <Compile Include="MITCHMessageType.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolStructs\HeartBeatPS.cs" />
+    <Compile Include="ProtocolStructs\IProtocolStruct.cs" />
+    <Compile Include="ProtocolStructs\Level2QuoteRequestPS.cs" />
+    <Compile Include="ProtocolStructs\Level2QuotesResponsePS.cs" />
+    <Compile Include="ProtocolStructs\LoginRequestPS.cs" />
+    <Compile Include="ProtocolStructs\LoginResponsePS.cs" />
+    <Compile Include="ProtocolStructs\LogoutRequestPS.cs" />
+    <Compile Include="ProtocolStructs\ProtocolStructIDS.cs" />
+    <Compile Include="ProtocolStructs\QuoteRequestPS.cs" />
+    <Compile Include="ProtocolStructs\QuoteResponsePS.cs" />
+    <Compile Include="ProtocolStructs\SymbolMasterResponsePS.cs" />
+    <Compile Include="ProtocolStructs\TradeResponsePS.cs" />
+    <Compile Include="ProtoHeader.cs" />
+    <Compile Include="ReplayRecoveryStatus.cs" />
+    <Compile Include="SerializerClass.cs" />
+    <Compile Include="Statistics.cs" />
+    <Compile Include="SymbolDirectory.cs" />
+    <Compile Include="SymbolStatus.cs" />
+    <Compile Include="SystemEvent.cs" />
+    <Compile Include="Time.cs" />
+    <Compile Include="TradeBreak.cs" />
+    <Compile Include="TradeFlags.cs" />
+    <Compile Include="Utility\clsUtility.cs" />
+    <Compile Include="Utility\FileHandling.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
